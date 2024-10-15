@@ -1,0 +1,37 @@
+{
+  "name": "playground",
+  "keywords": [
+    "ethereum-multicall"
+  ],
+  "author": "niZmosis",
+  "license": "MIT",
+  "repository": "github:niZmosis/ethereum-multicall",
+  "publishConfig": {
+    "access": "public"
+  },
+  "version": "1.0.0",
+  "files": [
+    "dist/*"
+  ],
+  "type": "commonjs",
+  "types": "./dist/index.d.ts",
+  "main": "./dist/index.js",
+  "exports": "./dist/index.js",
+  "scripts": {
+    "prebuild": "rm -rf dist",
+    "build": "tsc -p tsconfig.build.json",
+    "start": "tsc -p tsconfig.build.json --watch",
+    "dev": "node ./dist/index.js"
+  },
+  "dependencies": {
+    "@ethereum-multicall/contracts": "workspace:*",
+    "@ethereum-multicall/core": "workspace:*",
+    "@ethereum-multicall/provider": "workspace:*",
+    "@ethereum-multicall/utils": "workspace:*",
+    "ethers": "5.7.2"
+  },
+  "devDependencies": {
+    "@ethereum-abi-types-generator/converter-typescript": "workspace:*",
+    "@ethereum-multicall/types": "workspace:*"
+  }
+}

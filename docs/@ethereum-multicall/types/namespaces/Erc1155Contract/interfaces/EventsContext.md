@@ -1,0 +1,101 @@
+[**@ethereum-multicall/types v3.0.0**](../../../README.md) • **Docs**
+
+***
+
+[Documentation v3.0.0](../../../../../packages.md) / [@ethereum-multicall/types](../../../README.md) / [Erc1155Contract](../README.md) / EventsContext
+
+# Interface: EventsContext
+
+## Methods
+
+### ApprovalForAll()
+
+> **ApprovalForAll**(`account`, `operator`, `approved`): [`EventFilter`](../../../type-aliases/EventFilter.md)
+
+#### Parameters
+
+• **account**: `string`
+
+• **operator**: `string`
+
+• **approved**: `boolean`
+
+#### Returns
+
+[`EventFilter`](../../../type-aliases/EventFilter.md)
+
+#### Defined in
+
+abis/erc1155-contract.ts:27
+
+***
+
+### TransferBatch()
+
+> **TransferBatch**(`operator`, `from`, `to`, `ids`, `values`): [`EventFilter`](../../../type-aliases/EventFilter.md)
+
+#### Parameters
+
+• **operator**: `string`
+
+• **from**: `string`
+
+• **to**: `string`
+
+• **ids**: `BigNumberish`[]
+
+• **values**: `BigNumberish`[]
+
+#### Returns
+
+[`EventFilter`](../../../type-aliases/EventFilter.md)
+
+#### Defined in
+
+abis/erc1155-contract.ts:32
+
+***
+
+### TransferSingle()
+
+> **TransferSingle**(`operator`, `from`, `to`, `id`, `value`): [`EventFilter`](../../../type-aliases/EventFilter.md)
+
+#### Parameters
+
+• **operator**: `string`
+
+• **from**: `string`
+
+• **to**: `string`
+
+• **id**: `BigNumberish`
+
+• **value**: `BigNumberish`
+
+#### Returns
+
+[`EventFilter`](../../../type-aliases/EventFilter.md)
+
+#### Defined in
+
+abis/erc1155-contract.ts:39
+
+***
+
+### URI()
+
+> **URI**(`value`, `id`): [`EventFilter`](../../../type-aliases/EventFilter.md)
+
+#### Parameters
+
+• **value**: `string`
+
+• **id**: `BigNumberish`
+
+#### Returns
+
+[`EventFilter`](../../../type-aliases/EventFilter.md)
+
+#### Defined in
+
+abis/erc1155-contract.ts:46

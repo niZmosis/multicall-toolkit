@@ -1,0 +1,15 @@
+[**@ethereum-multicall/types v3.0.0**](../README.md) • **Docs**
+
+***
+
+[Documentation v3.0.0](../../../packages.md) / [@ethereum-multicall/types](../README.md) / MulticallProviderContext
+
+# Type Alias: MulticallProviderContext
+
+> **MulticallProviderContext**: [`IMulticallProvider`](../interfaces/IMulticallProvider.md) \| [`ProviderContext`](ProviderContext.md)
+
+DEX provider context, which can be an IMulticallProvider instance or a provider context.
+
+## Defined in
+
+multicall-provider.types.ts:47

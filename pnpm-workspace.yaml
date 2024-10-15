@@ -1,0 +1,4 @@
+packages:
+  - 'packages/*'
+  - 'submodules/ethereum-abi-types-generator/packages/*'
+  - 'examples/*'

@@ -1,0 +1,44 @@
+{
+  "name": "@ethereum-multicall/utils",
+  "version": "3.0.0",
+  "author": "joshstevens19@hotmail.co.uk",
+  "license": "ISC",
+  "keywords": [
+    "ethereum",
+    "blockchain",
+    "JSONRPC",
+    "multicall",
+    "ethereum-multicall",
+    "typescript"
+  ],
+  "bugs": {
+    "url": "https://github.com/joshstevens19/ethereum-multicall/issues"
+  },
+  "homepage": "https://github.com/joshstevens19/ethereum-multicall#readme",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "main": "dist/esm/index.js",
+  "exports": {
+    "import": "./dist/esm/index.js",
+    "require": "./dist/cjs/index.js"
+  },
+  "module": "./dist/esm/index.js",
+  "types": "./dist/esm/index.d.ts",
+  "scripts": {
+    "prebuild": "rm -rf dist",
+    "build": "pnpm build:esm && pnpm build:cjs",
+    "build:esm": "tsc --project tsconfig.esm.json",
+    "build:cjs": "tsc --project tsconfig.cjs.json",
+    "start": "tsc -p tsconfig.esm.json --watch",
+    "gen:abis": "abi-types-generator"
+  },
+  "devDependencies": {
+    "@ethereum-multicall/types": "workspace:*",
+    "@ethereum-abi-types-generator/converter-typescript": "workspace:*",
+    "@ethereum-abi-types-generator/core": "workspace:*",
+    "@ethersproject/providers": "5.7.2",
+    "ethers": "5.7.2"
+  }
+}
