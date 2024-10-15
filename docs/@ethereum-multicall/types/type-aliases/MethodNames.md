@@ -18,4 +18,4 @@ The contract type.
 
 ## Defined in
 
-call.types.ts:39
+[call.types.ts:39](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/types/src/call.types.ts#L39)

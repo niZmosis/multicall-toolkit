@@ -38,4 +38,4 @@ The target contract address
 
 ## Defined in
 
-aggregate.types.ts:6
+[aggregate.types.ts:6](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/types/src/aggregate.types.ts#L6)

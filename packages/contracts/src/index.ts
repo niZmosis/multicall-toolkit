@@ -1,10 +1,10 @@
 // Token
-export { Erc20ContractFactory } from './token/erc20-contract.factory'
-export { Erc777ContractFactory } from './token/erc777-contract.factory'
+export { Erc20Contract } from './token/erc20.contract'
+export { Erc777Contract } from './token/erc777.contract'
 
 // NFT
-export { Erc721ContractFactory } from './token/erc721-contract.factory'
-export { Erc1155ContractFactory } from './token/erc1155-contract.factory'
+export { Erc721Contract } from './token/erc721.contract'
+export { Erc1155Contract } from './token/erc1155.contract'
 
 // Wrapped
-export { WrappedContractFactory } from './wrapped/wrapped-contract'
+export { WrappedContract } from './wrapped/wrapped.contract'

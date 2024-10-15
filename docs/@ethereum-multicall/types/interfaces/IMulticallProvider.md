@@ -18,7 +18,7 @@ The internal blockchain provider.
 
 #### Defined in
 
-multicall-provider.types.ts:54
+[multicall-provider.types.ts:54](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/types/src/multicall-provider.types.ts#L54)
 
 ***
 
@@ -30,7 +30,7 @@ The Multicall instance.
 
 #### Defined in
 
-multicall-provider.types.ts:60
+[multicall-provider.types.ts:60](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/types/src/multicall-provider.types.ts#L60)
 
 ***
 
@@ -42,7 +42,7 @@ The provider context, which includes chain and network details.
 
 #### Defined in
 
-multicall-provider.types.ts:57
+[multicall-provider.types.ts:57](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/types/src/multicall-provider.types.ts#L57)
 
 ## Accessors
 
@@ -58,7 +58,7 @@ Retrieves the custom network configuration, if any.
 
 #### Defined in
 
-multicall-provider.types.ts:66
+[multicall-provider.types.ts:66](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/types/src/multicall-provider.types.ts#L66)
 
 ***
 
@@ -74,7 +74,7 @@ Retrieves the network details for the blockchain provider.
 
 #### Defined in
 
-multicall-provider.types.ts:69
+[multicall-provider.types.ts:69](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/types/src/multicall-provider.types.ts#L69)
 
 ***
 
@@ -90,7 +90,7 @@ Retrieves the blockchain provider instance.
 
 #### Defined in
 
-multicall-provider.types.ts:63
+[multicall-provider.types.ts:63](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/types/src/multicall-provider.types.ts#L63)
 
 ## Methods
 
@@ -118,13 +118,13 @@ their results in a structured format.
 
 #### Defined in
 
-multicall-provider.types.ts:86
+[multicall-provider.types.ts:86](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/types/src/multicall-provider.types.ts#L86)
 
 ***
 
 ### createCallContext()
 
-> **createCallContext**\<`TContract`, `TContractResultsStructureOverrides`, `TCustomData`\>(): \<`TCalls`\>(`context`) => [`ContractContext`](../type-aliases/ContractContext.md)\<`TContract`, `TCalls`, `TContractResultsStructureOverrides`, `TCustomData`\>
+> **createCallContext**\<`TContract`, `TCustomData`\>(): \<`TCalls`\>(`context`) => [`ContractContext`](../type-aliases/ContractContext.md)\<`TContract`, `TCalls`, `TCustomData`\>
 
 Creates and returns a contract call context to be used in multicall executions.
 
@@ -133,10 +133,6 @@ Creates and returns a contract call context to be used in multicall executions.
 • **TContract** *extends* `Record`\<`string`, `any`\>
 
 The type of the contract being interacted with.
-
-• **TContractResultsStructureOverrides** = `unknown`
-
-Custom overrides for the results structure.
 
 • **TCustomData** = `unknown`
 
@@ -154,15 +150,15 @@ A function that creates the contract call context.
 
 ##### Parameters
 
-• **context**: [`ContractContext`](../type-aliases/ContractContext.md)\<`TContract`, `TCalls`, `TContractResultsStructureOverrides`, `TCustomData`\>
+• **context**: [`ContractContext`](../type-aliases/ContractContext.md)\<`TContract`, `TCalls`, `TCustomData`\>
 
 ##### Returns
 
-[`ContractContext`](../type-aliases/ContractContext.md)\<`TContract`, `TCalls`, `TContractResultsStructureOverrides`, `TCustomData`\>
+[`ContractContext`](../type-aliases/ContractContext.md)\<`TContract`, `TCalls`, `TCustomData`\>
 
 #### Defined in
 
-multicall-provider.types.ts:99
+[multicall-provider.types.ts:98](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/types/src/multicall-provider.types.ts#L98)
 
 ***
 
@@ -190,4 +186,4 @@ The generated contract instance of the specified type.
 
 #### Defined in
 
-multicall-provider.types.ts:77
+[multicall-provider.types.ts:77](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/types/src/multicall-provider.types.ts#L77)

@@ -10,4 +10,4 @@
 
 ## Defined in
 
-packages/utils/src/abis/wrapped-contract.ts:1
+packages/utils/src/abis/wrapped.abi.ts:1

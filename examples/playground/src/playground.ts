@@ -1,9 +1,9 @@
-import { Erc20ContractFactory } from '@ethereum-multicall/contracts'
+import { Erc20Contract } from '@ethereum-multicall/contracts'
 import { Multicall } from '@ethereum-multicall/core'
 import { MulticallProvider } from '@ethereum-multicall/provider'
 import type {
   ContractCallOverrides,
-  Erc20Contract,
+  Erc20Types,
 } from '@ethereum-multicall/types'
 import { ethers } from 'ethers'
 
@@ -26,42 +26,120 @@ type ExtraContext = {
   }
 }
 
-// ABI for the contract
+// Mock ABI for the contract
 const GlobalPositionABI = [
   {
-    inputs: [],
-    name: 'globalPositionData',
+    inputs: [
+      {
+        name: '_owner',
+        type: 'address',
+      },
+      {
+        name: '_token',
+        type: 'address',
+      },
+      {
+        name: '_values',
+        type: 'tuple',
+        components: [
+          {
+            name: 'userAddress',
+            type: 'address',
+          },
+          {
+            name: 'amount',
+            type: 'uint256',
+          },
+          {
+            name: 'isActive',
+            type: 'bool',
+          },
+          {
+            name: 'message',
+            type: 'string',
+          },
+        ],
+      },
+    ],
+    name: 'complex',
     outputs: [
       {
         components: [
-          { internalType: 'uint256', name: 'rawValue', type: 'uint256' },
+          {
+            components: [
+              {
+                components: [
+                  {
+                    internalType: 'uint256',
+                    name: 'deepValue',
+                    type: 'uint256',
+                  },
+                  {
+                    internalType: 'address',
+                    name: 'deepOwner',
+                    type: 'address',
+                  },
+                  {
+                    components: [
+                      {
+                        internalType: 'uint256',
+                        name: 'levelThreeValue',
+                        type: 'uint256',
+                      },
+                      {
+                        internalType: 'string',
+                        name: 'levelThreeMessage',
+                        type: 'string',
+                      },
+                    ],
+                    internalType: 'struct CustomStruct.LevelThreeData',
+                    name: 'levelThreeData',
+                    type: 'tuple',
+                  },
+                ],
+                internalType: 'struct CustomStruct.LevelTwoData',
+                name: 'nestedLevelTwo',
+                type: 'tuple',
+              },
+              { internalType: 'address', name: 'owner', type: 'address' },
+            ],
+            internalType: 'struct CustomStruct.NestedData',
+            name: 'nestedInfo',
+            type: 'tuple',
+          },
+          {
+            components: [
+              { internalType: 'uint256', name: 'timestamp', type: 'uint256' },
+              {
+                components: [
+                  { internalType: 'bool', name: 'subValid', type: 'bool' },
+                  {
+                    internalType: 'string',
+                    name: 'subMessage',
+                    type: 'string',
+                  },
+                ],
+                internalType: 'struct CustomStruct.SubTimeInfo',
+                name: 'subTimeInfo',
+                type: 'tuple',
+              },
+            ],
+            internalType: 'struct CustomStruct.TimeData',
+            name: 'timeInfo',
+            type: 'tuple',
+          },
         ],
-        internalType: 'struct FixedPoint.Unsigned',
-        name: 'totalTokensOutstanding',
-        type: 'tuple',
-      },
-      {
-        components: [
-          { internalType: 'uint256', name: 'rawValue', type: 'uint256' },
-        ],
-        internalType: 'struct FixedPoint.Unsigned',
-        name: 'rawTotalPositionCollateral',
+        internalType: 'struct CustomStruct.ComplexData',
+        name: 'complexData',
         type: 'tuple',
       },
     ],
     stateMutability: 'view',
     type: 'function',
   },
-  {
-    inputs: [],
-    name: 'totalSupply',
-    outputs: [{ internalType: 'uint256', name: '', type: 'uint256' }],
-    stateMutability: 'view',
-    type: 'function',
-  },
 ]
 
-// Type definition for the contract
+// Mock type definition for the contract. You can generate a typings file for your ABI using the `ethereum-abi-types-generator` package.
 type GlobalPositionContract = {
   globalPositionData(overrides?: ContractCallOverrides): Promise<{
     totalTokensOutstanding: {
@@ -71,7 +149,36 @@ type GlobalPositionContract = {
       rawValue: ethers.BigNumber
     }
   }>
+
   totalSupply(overrides?: ContractCallOverrides): Promise<ethers.BigNumber>
+
+  complex(
+    _owner: string,
+    _token: string,
+    _values: [string, ethers.BigNumber, boolean, string],
+    overrides?: ContractCallOverrides,
+  ): Promise<{
+    complexData: {
+      nestedInfo: {
+        nestedLevelTwo: {
+          deepValue: ethers.BigNumber
+          deepOwner: string
+          levelThreeData: {
+            levelThreeValue: ethers.BigNumber
+            levelThreeMessage: string
+          }
+        }
+        owner: string
+      }
+      timeInfo: {
+        timestamp: ethers.BigNumber
+        subTimeInfo: {
+          subValid: boolean
+          subMessage: string
+        }
+      }
+    }
+  }>
 }
 
 // Raw example of how you can use the multicall contract
@@ -84,7 +191,6 @@ export const multicallRaw = async () => {
 
   const contractCallContext = multicall.createCallContext<
     GlobalPositionContract,
-    unknown,
     ExtraContext
   >()({
     contractAddress: '0xD21d3A321eDc8ca5FEA387A4D082a349c86CCfE5',
@@ -97,6 +203,19 @@ export const multicallRaw = async () => {
       totalSupply: {
         methodName: 'totalSupply',
         methodParameters: [],
+      },
+      complex: {
+        methodName: 'complex',
+        methodParameters: [
+          '0x1234567890123456789012345678901234567890',
+          '0x1234567890123456789012345678901234567890',
+          [
+            '0x1234567890123456789012345678901234567890',
+            ethers.utils.parseEther('1'),
+            true,
+            'Hello, World!',
+          ],
+        ],
       },
     },
     // Optionally pass in any data you want to keep with the contract call context to extract later
@@ -122,7 +241,7 @@ export const multicallRaw = async () => {
       originContext: {
         customData: { extraContext },
       },
-      results: { globalPositionDataCall, totalSupply },
+      results: { globalPositionDataCall, totalSupply, complex },
     },
     // NOTE: If any other contract call contexts were made, the contracts would be here
   } = contracts
@@ -133,12 +252,37 @@ export const multicallRaw = async () => {
   const { rawTotalPositionCollateral, totalTokensOutstanding } =
     globalPositionDataCall.value
 
+  const {
+    complexData: {
+      timeInfo: {
+        timestamp,
+        subTimeInfo: { subMessage, subValid },
+      },
+      nestedInfo: {
+        owner,
+        nestedLevelTwo: {
+          deepOwner,
+          deepValue,
+          levelThreeData: { levelThreeMessage, levelThreeValue },
+        },
+      },
+    },
+  } = complex.value
+
   console.log(
+    foo,
+    bar,
     rawTotalPositionCollateral.rawValue.toString(),
     totalTokensOutstanding.rawValue.toString(),
     totalSupply.value.toString(),
-    foo,
-    bar,
+    timestamp.toString(),
+    subMessage,
+    subValid,
+    owner,
+    deepOwner,
+    deepValue.toString(),
+    levelThreeMessage,
+    levelThreeValue.toString(),
   )
 }
 
@@ -155,7 +299,7 @@ export async function multicallProviderExample() {
   // })
 
   // Setup our token
-  const tokenContractFactory = new Erc20ContractFactory(multicallProvider, {
+  const tokenContractFactory = new Erc20Contract(multicallProvider, {
     address: uniswapTokenAddress,
   })
   const pairContractFactory = new PairContractFactory(multicallProvider, {
@@ -167,21 +311,20 @@ export async function multicallProviderExample() {
     tryAggregate: true,
   })
 
-  const tokenCallContext =
-    multicall.createCallContext<Erc20Contract.Contract>()({
-      contractAddress: tokenContractFactory.contractDetail.address,
-      abi: tokenContractFactory.contractDetail.abi,
-      calls: {
-        // You can use the contracts helper methods to generate the call context
-        balanceOf: tokenContractFactory.balanceOfCallContext(walletAddress),
-        name: tokenContractFactory.nameCallContext(),
-        // Or you can pass in the method name and parameters
-        symbol: {
-          methodName: 'symbol()',
-          methodParameters: [],
-        },
+  const tokenCallContext = multicall.createCallContext<Erc20Types.Contract>()({
+    contractAddress: tokenContractFactory.contractDetail.address,
+    abi: tokenContractFactory.contractDetail.abi,
+    calls: {
+      // You can use the contracts helper methods to generate the call context
+      balanceOf: tokenContractFactory.balanceOfCallContext(walletAddress),
+      name: tokenContractFactory.nameCallContext(),
+      // Or you can pass in the method name and parameters
+      symbol: {
+        methodName: 'symbol()',
+        methodParameters: [],
       },
-    })
+    },
+  })
 
   const pairCallContext =
     multicall.createCallContext<UniswapPairV2Types.Contract>()({
@@ -206,7 +349,6 @@ export async function multicallProviderExample() {
 
   const globalPositionContext = multicall.createCallContext<
     GlobalPositionContract,
-    unknown,
     ExtraContext
   >()({
     contractAddress: '0xD21d3A321eDc8ca5FEA387A4D082a349c86CCfE5',
@@ -288,14 +430,14 @@ export async function multicallDelayOnBlock() {
     ethersProvider: provider,
   })
 
-  const tokenContractFactory = new Erc20ContractFactory(multicallProvider, {
+  const tokenContractFactory = new Erc20Contract(multicallProvider, {
     address: uniswapTokenAddress,
   })
 
   const { address, abi } = tokenContractFactory.contractDetail
 
   const tokenContract =
-    multicallProvider.createCallContext<Erc20Contract.Contract>()({
+    multicallProvider.createCallContext<Erc20Types.Contract>()({
       contractAddress: address,
       abi,
       calls: {
@@ -327,7 +469,7 @@ export async function multicallDelayOnBlock() {
 
 // You can use a contract factory to directly execute multiple calls
 export async function multicallCompact() {
-  const tokenContractFactory = new Erc20ContractFactory(
+  const tokenContractFactory = new Erc20Contract(
     {
       chainId: 943,
       customRpcUrl: 'https://rpc.v4.testnet.pulsechain.com',
@@ -413,37 +555,10 @@ export async function multicallCompactPair() {
     originContext,
     blockNumber,
     balance,
-    _reserve0,
-    _reserve1,
+    _reserve0: _reserve0.toString(),
+    _reserve1: _reserve1.toString(),
     name,
     symbol,
-    totalSupply,
+    totalSupply: totalSupply.toString(),
   })
 }
-
-// You can explicitly type your contract call results
-// type Erc20Results = {
-//   balanceOf: ethers.BigNumber
-//   name: string
-//   symbol: string
-// }
-
-// You can also use the contract types to type your contract call results
-// type PairContractResults = {
-//   // Keys don't have to match the contract method names
-//   myCustomBalanceOfKey: Awaited<
-//     ReturnType<UniswapPairV2Types.Contract['balanceOf']>
-//   >
-//   myCustomBalanceOfKey3: Awaited<
-//     ReturnType<UniswapPairV2Types.Contract['balanceOf']>
-//   >
-//   name: Awaited<ReturnType<UniswapPairV2Types.Contract['name']>>
-//   symbol: Awaited<ReturnType<UniswapPairV2Types.Contract['symbol']>>
-//   totalSupply: Awaited<ReturnType<UniswapPairV2Types.Contract['totalSupply']>>
-//   getReserves: Awaited<ReturnType<UniswapPairV2Types.Contract['getReserves']>>
-// }
-
-// type MultiContractResults = {
-//   tokenContract: Erc20Results
-//   pairContract: PairContractResults
-// }

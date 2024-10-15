@@ -92,13 +92,11 @@ export interface IMulticallProvider {
    * Creates and returns a contract call context to be used in multicall executions.
    *
    * @template TContract - The type of the contract being interacted with.
-   * @template TContractResultsStructureOverrides - Custom overrides for the results structure.
    * @template TCustomData - Custom data to be associated with the call context.
    * @returns A function that creates the contract call context.
    */
   createCallContext<
     TContract extends Record<string, any>,
-    TContractResultsStructureOverrides = unknown,
     TCustomData = unknown,
   >(): <
     TCalls extends Record<
@@ -106,16 +104,6 @@ export interface IMulticallProvider {
       DiscriminatedMethodCalls<TContract>[MethodNames<TContract>]
     >,
   >(
-    context: ContractContext<
-      TContract,
-      TCalls,
-      TContractResultsStructureOverrides,
-      TCustomData
-    >,
-  ) => ContractContext<
-    TContract,
-    TCalls,
-    TContractResultsStructureOverrides,
-    TCustomData
-  >
+    context: ContractContext<TContract, TCalls, TCustomData>,
+  ) => ContractContext<TContract, TCalls, TCustomData>
 }

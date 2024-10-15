@@ -1,4 +1,4 @@
-import type { Erc20Contract } from '@ethereum-multicall/types'
+import type { Erc20Types } from '@ethereum-multicall/types'
 import { erc20ABI, ErrorCodes, MulticallError } from '@ethereum-multicall/utils'
 import { describe, it, expect } from 'vitest'
 
@@ -14,11 +14,10 @@ describe('MulticallProvider', () => {
     const address = '0x2906D377Cc622FD63fb888aDeCD39a433a89E0DA'
 
     it('getContract', () => {
-      const result =
-        multicallProvider.getContract<Erc20Contract.ContractContext>({
-          address,
-          abi: erc20ABI,
-        })
+      const result = multicallProvider.getContract<Erc20Types.ContractContext>({
+        address,
+        abi: erc20ABI,
+      })
 
       expect(result).toBeDefined()
     })
@@ -72,11 +71,10 @@ describe('MulticallProvider', () => {
     })
 
     it('getContract', () => {
-      const result =
-        multicallProvider.getContract<Erc20Contract.ContractContext>({
-          address: MockUniToken.contractAddress,
-          abi: erc20ABI,
-        })
+      const result = multicallProvider.getContract<Erc20Types.ContractContext>({
+        address: MockUniToken.contractAddress,
+        abi: erc20ABI,
+      })
 
       expect(result).toBeDefined()
     })

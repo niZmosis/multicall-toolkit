@@ -19,7 +19,7 @@ The type of execution environment being used (web3, ethers, or custom JSON-RPC).
 
 #### Defined in
 
-multicall.types.ts:81
+[multicall.types.ts:81](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/types/src/multicall.types.ts#L81)
 
 ***
 
@@ -31,7 +31,7 @@ The options for the Multicall instance.
 
 #### Defined in
 
-multicall.types.ts:86
+[multicall.types.ts:86](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/types/src/multicall.types.ts#L86)
 
 ## Methods
 
@@ -59,7 +59,7 @@ An array of aggregate call contexts ready to be executed.
 
 #### Defined in
 
-multicall.types.ts:155
+[multicall.types.ts:151](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/types/src/multicall.types.ts#L151)
 
 ***
 
@@ -87,7 +87,7 @@ An aggregated response containing the results for all contract calls.
 
 #### Defined in
 
-multicall.types.ts:214
+[multicall.types.ts:210](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/types/src/multicall.types.ts#L210)
 
 ***
 
@@ -119,13 +119,13 @@ A promise that resolves to the aggregated results of the contract calls.
 
 #### Defined in
 
-multicall.types.ts:99
+[multicall.types.ts:99](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/types/src/multicall.types.ts#L99)
 
 ***
 
 ### createCallContext()
 
-> **createCallContext**\<`TContract`, `TContractResultsStructureOverrides`, `TCustomData`\>(): (`context`) => [`ContractContext`](../type-aliases/ContractContext.md)\<`TContract`, `Record`\<`string`, [`DiscriminatedMethodCalls`](../type-aliases/DiscriminatedMethodCalls.md)\<`TContract`\>\[[`MethodNames`](../type-aliases/MethodNames.md)\<`TContract`\>\]\>, `TContractResultsStructureOverrides`, `TCustomData`\>
+> **createCallContext**\<`TContract`, `TCustomData`\>(): (`context`) => [`ContractContext`](../type-aliases/ContractContext.md)\<`TContract`, `Record`\<`string`, [`DiscriminatedMethodCalls`](../type-aliases/DiscriminatedMethodCalls.md)\<`TContract`\>\[[`MethodNames`](../type-aliases/MethodNames.md)\<`TContract`\>\]\>, `TCustomData`\>
 
 Creates and returns a contract call context to be used in multicall executions.
 
@@ -134,10 +134,6 @@ Creates and returns a contract call context to be used in multicall executions.
 • **TContract** *extends* `Record`\<`string`, `any`\>
 
 The type of the contract being interacted with.
-
-• **TContractResultsStructureOverrides** = `unknown`
-
-Custom overrides for the results structure.
 
 • **TCustomData** = `unknown`
 
@@ -151,15 +147,15 @@ A function that creates the contract call context.
 
 ##### Parameters
 
-• **context**: [`ContractContext`](../type-aliases/ContractContext.md)\<`TContract`, `Record`\<`string`, [`DiscriminatedMethodCalls`](../type-aliases/DiscriminatedMethodCalls.md)\<`TContract`\>\[[`MethodNames`](../type-aliases/MethodNames.md)\<`TContract`\>\]\>, `TContractResultsStructureOverrides`, `TCustomData`\>
+• **context**: [`ContractContext`](../type-aliases/ContractContext.md)\<`TContract`, `Record`\<`string`, [`DiscriminatedMethodCalls`](../type-aliases/DiscriminatedMethodCalls.md)\<`TContract`\>\[[`MethodNames`](../type-aliases/MethodNames.md)\<`TContract`\>\]\>, `TCustomData`\>
 
 ##### Returns
 
-[`ContractContext`](../type-aliases/ContractContext.md)\<`TContract`, `Record`\<`string`, [`DiscriminatedMethodCalls`](../type-aliases/DiscriminatedMethodCalls.md)\<`TContract`\>\[[`MethodNames`](../type-aliases/MethodNames.md)\<`TContract`\>\]\>, `TContractResultsStructureOverrides`, `TCustomData`\>
+[`ContractContext`](../type-aliases/ContractContext.md)\<`TContract`, `Record`\<`string`, [`DiscriminatedMethodCalls`](../type-aliases/DiscriminatedMethodCalls.md)\<`TContract`\>\[[`MethodNames`](../type-aliases/MethodNames.md)\<`TContract`\>\]\>, `TCustomData`\>
 
 #### Defined in
 
-multicall.types.ts:112
+[multicall.types.ts:111](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/types/src/multicall.types.ts#L111)
 
 ***
 
@@ -187,7 +183,7 @@ A promise that resolves to the aggregated response from the contract calls.
 
 #### Defined in
 
-multicall.types.ts:178
+[multicall.types.ts:174](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/types/src/multicall.types.ts#L174)
 
 ***
 
@@ -215,7 +211,7 @@ A promise that resolves to the aggregated response.
 
 #### Defined in
 
-multicall.types.ts:202
+[multicall.types.ts:198](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/types/src/multicall.types.ts#L198)
 
 ***
 
@@ -243,7 +239,7 @@ A promise that resolves to the aggregated response.
 
 #### Defined in
 
-multicall.types.ts:190
+[multicall.types.ts:186](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/types/src/multicall.types.ts#L186)
 
 ***
 
@@ -271,7 +267,7 @@ An array of output types, or undefined if the method is not found.
 
 #### Defined in
 
-multicall.types.ts:166
+[multicall.types.ts:162](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/types/src/multicall.types.ts#L162)
 
 ***
 
@@ -295,7 +291,7 @@ The formatted return values, always in array form.
 
 #### Defined in
 
-multicall.types.ts:147
+[multicall.types.ts:143](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/types/src/multicall.types.ts#L143)
 
 ***
 
@@ -319,7 +315,7 @@ The extracted return data.
 
 #### Defined in
 
-multicall.types.ts:139
+[multicall.types.ts:135](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/types/src/multicall.types.ts#L135)
 
 ***
 
@@ -343,4 +339,4 @@ An array of target contracts and encoded data for each call.
 
 #### Defined in
 
-multicall.types.ts:225
+[multicall.types.ts:221](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/types/src/multicall.types.ts#L221)

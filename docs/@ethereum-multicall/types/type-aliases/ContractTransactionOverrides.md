@@ -42,4 +42,4 @@ The amount to send with the transaction (i.e. msg.value)
 
 ## Defined in
 
-abis/common-types.ts:10
+abis/common.types.ts:10

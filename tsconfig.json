@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "ES2017",
+    "target": "ES2022",
     "lib": ["ESNext", "DOM"],
     "module": "ESNext",
     "declaration": true,
@@ -13,6 +13,7 @@
     "noImplicitOverride": true,
     "noImplicitReturns": true,
     "noImplicitThis": true,
+    "noUncheckedIndexedAccess": true,
     // Module Resolution
     "moduleResolution": "Bundler",
     "resolveJsonModule": true,
@@ -22,7 +23,6 @@
     // Diagnostics
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    // "noUncheckedIndexedAccess": true,
     // Additional Checks
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,

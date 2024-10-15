@@ -40,4 +40,4 @@ A mapping of method names to custom names or overrides for contract methods.
 
 ## Defined in
 
-contract-detail.types.ts:25
+[contract-detail.types.ts:25](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/types/src/contract-detail.types.ts#L25)

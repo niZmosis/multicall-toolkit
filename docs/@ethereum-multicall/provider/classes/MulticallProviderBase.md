@@ -22,7 +22,7 @@
 
 #### Defined in
 
-provider/src/multicall-provider-base.ts:19
+[provider/src/multicall-provider-base.ts:19](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/provider/src/multicall-provider-base.ts#L19)
 
 ## Properties
 
@@ -32,7 +32,7 @@ provider/src/multicall-provider-base.ts:19
 
 #### Defined in
 
-provider/src/multicall-provider-base.ts:17
+[provider/src/multicall-provider-base.ts:17](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/provider/src/multicall-provider-base.ts#L17)
 
 ## Accessors
 
@@ -50,7 +50,7 @@ The contract details of the concrete class.
 
 #### Defined in
 
-provider/src/multicall-provider-base.ts:39
+[provider/src/multicall-provider-base.ts:39](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/provider/src/multicall-provider-base.ts#L39)
 
 ***
 
@@ -68,7 +68,7 @@ The `MulticallProvider` instance used by this class.
 
 #### Defined in
 
-provider/src/multicall-provider-base.ts:30
+[provider/src/multicall-provider-base.ts:30](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/provider/src/multicall-provider-base.ts#L30)
 
 ## Methods
 
@@ -111,12 +111,12 @@ A promise that resolves to an object containing the block number,
 
 ##### originContext
 
-> **originContext**: `ContractContext`\<`TContract`, `TCalls`, `unknown`, `unknown`\>
+> **originContext**: `ContractContext`\<`TContract`, `TCalls`, `unknown`\>
 
 ##### results
 
-> **results**: `ContractMethodResult`\<`TContract`, `TCalls`, `unknown`\>
+> **results**: `ContractMethodResult`\<`TContract`, `TCalls`\>
 
 #### Defined in
 
-provider/src/multicall-provider-base.ts:53
+[provider/src/multicall-provider-base.ts:53](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/provider/src/multicall-provider-base.ts#L53)

@@ -1,5 +1,5 @@
 import type {
-  Erc20Contract,
+  Erc20Types,
   EthersProviderContext,
 } from '@ethereum-multicall/types'
 import { erc20ABI } from '@ethereum-multicall/utils'
@@ -30,7 +30,7 @@ describe('Multicall', async () => {
   describe('Full Functionality', () => {
     it('should fetch token data using multicall', async () => {
       const uniTokenCallContext =
-        multicall.createCallContext<Erc20Contract.Contract>()({
+        multicall.createCallContext<Erc20Types.Contract>()({
           contractAddress: MockUniToken.contractAddress,
           abi: erc20ABI,
           calls: {
@@ -78,8 +78,8 @@ describe('Multicall', async () => {
 
     it('should handle multiple contracts in a single call', async () => {
       const { blockNumber, contracts } = await multicall.call({
-        uniTokenCallContext:
-          multicall.createCallContext<Erc20Contract.Contract>()({
+        uniTokenCallContext: multicall.createCallContext<Erc20Types.Contract>()(
+          {
             contractAddress: MockUniToken.contractAddress,
             abi: erc20ABI,
             calls: {
@@ -88,9 +88,10 @@ describe('Multicall', async () => {
                 methodParameters: [MockWalletAddress],
               },
             },
-          }),
+          },
+        ),
         aaveTokenCallContext:
-          multicall.createCallContext<Erc20Contract.Contract>()({
+          multicall.createCallContext<Erc20Types.Contract>()({
             contractAddress: MockAaveToken.contractAddress,
             abi: erc20ABI,
             calls: {
@@ -108,17 +109,17 @@ describe('Multicall', async () => {
       expect(uniTokenCallContext).toBeDefined()
       expect(aaveTokenCallContext).toBeDefined()
 
-      expect(uniTokenCallContext.results.balanceOf.success).toBe(true)
-      expect(aaveTokenCallContext.results.balanceOf.success).toBe(true)
+      expect(uniTokenCallContext.results.balanceOf?.success).toBe(true)
+      expect(aaveTokenCallContext.results.balanceOf?.success).toBe(true)
 
       expect(
         ethers.BigNumber.isBigNumber(
-          uniTokenCallContext.results.balanceOf.value,
+          uniTokenCallContext.results.balanceOf?.value,
         ),
       ).toBe(true)
       expect(
         ethers.BigNumber.isBigNumber(
-          aaveTokenCallContext.results.balanceOf.value,
+          aaveTokenCallContext.results.balanceOf?.value,
         ),
       ).toBe(true)
     })

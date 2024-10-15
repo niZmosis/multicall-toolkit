@@ -8,8 +8,8 @@
 
 ## Classes
 
-- [Erc1155ContractFactory](classes/Erc1155ContractFactory.md)
-- [Erc20ContractFactory](classes/Erc20ContractFactory.md)
-- [Erc721ContractFactory](classes/Erc721ContractFactory.md)
-- [Erc777ContractFactory](classes/Erc777ContractFactory.md)
-- [WrappedContractFactory](classes/WrappedContractFactory.md)
+- [Erc1155Contract](classes/Erc1155Contract.md)
+- [Erc20Contract](classes/Erc20Contract.md)
+- [Erc721Contract](classes/Erc721Contract.md)
+- [Erc777Contract](classes/Erc777Contract.md)
+- [WrappedContract](classes/WrappedContract.md)

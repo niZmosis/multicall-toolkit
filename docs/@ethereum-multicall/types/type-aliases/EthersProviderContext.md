@@ -20,4 +20,4 @@ The blockchain provider instance.
 
 ## Defined in
 
-multicall-provider.types.ts:38
+[multicall-provider.types.ts:38](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/types/src/multicall-provider.types.ts#L38)

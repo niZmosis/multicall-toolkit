@@ -28,4 +28,4 @@
 
 ## Defined in
 
-abis/common-types.ts:3
+abis/common.types.ts:3

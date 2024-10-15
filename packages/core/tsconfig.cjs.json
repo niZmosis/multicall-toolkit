@@ -11,6 +11,7 @@
     "rootDir": "./src",
     "outDir": "./dist/cjs",
     "module": "CommonJS",
+    "moduleResolution": "Node",
     "verbatimModuleSyntax": false
   }
 }

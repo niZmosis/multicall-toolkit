@@ -112,22 +112,9 @@ export type DiscriminatedMethodCalls<TContract extends Record<string, any>> = {
 }
 
 /**
- * Represents explicitly referenced method calls with overridden result structures.
- * @template TContract - The contract type.
- * @template TContractResultsStructureOverrides - The overridden result structures.
- */
-export type ExplicitReferencedMethodCalls<
-  TContract extends Record<string, any>,
-  TContractResultsStructureOverrides,
-> = {
-  [KMethodReference in keyof TContractResultsStructureOverrides]: DiscriminatedMethodCalls<TContract>[MethodNames<TContract>]
-}
-
-/**
  * Represents the context for a contract interaction.
  * @template TContract - The contract type.
  * @template TCalls - The type of calls to be made.
- * @template TContractResultsStructureOverrides - Optional overrides for result structures.
  * @template TCustomData - Optional custom data type.
  */
 export type ContractContext<
@@ -136,17 +123,11 @@ export type ContractContext<
     string,
     DiscriminatedMethodCalls<TContract>[MethodNames<TContract>]
   >,
-  TContractResultsStructureOverrides = unknown,
   TCustomData = unknown,
 > = {
   contractAddress: string
   abi: (AbiItem | JsonFragment)[]
-  calls: TContractResultsStructureOverrides extends Record<string, any>
-    ? ExplicitReferencedMethodCalls<
-        TContract,
-        TContractResultsStructureOverrides
-      >
-    : TCalls
+  calls: TCalls
 } & (TCustomData extends Record<string, any>
   ? { customData: TCustomData }
   : { customData?: TCustomData })
@@ -155,7 +136,6 @@ export type ContractContext<
  * Represents the result of a contract method call.
  * @template TContract - The contract type.
  * @template TCalls - The type of calls made.
- * @template TContractResultsStructureOverrides - Optional overrides for result structures.
  */
 export type ContractMethodResult<
   TContract extends Record<string, any>,
@@ -163,17 +143,14 @@ export type ContractMethodResult<
     string,
     DiscriminatedMethodCalls<TContract>[MethodNames<TContract>]
   >,
-  TContractResultsStructureOverrides = unknown,
 > = {
   [K in keyof TCalls]: {
     methodName: TCalls[K]['methodName']
     methodParameters: TCalls[K]['methodParameters']
-    value: TContractResultsStructureOverrides extends Record<string, any>
-      ? TContractResultsStructureOverrides[K & string]
-      : GetReturnType<
-          TContract,
-          ExtractMethodName<TCalls[K]['methodName'] & string> & keyof TContract
-        >
+    value: GetReturnType<
+      TContract,
+      ExtractMethodName<TCalls[K]['methodName'] & string> & keyof TContract
+    >
     success: boolean
     decoded: boolean
   }
@@ -183,7 +160,6 @@ export type ContractMethodResult<
  * Represents the results of a contract method call.
  * @template TContract - The contract type.
  * @template TCalls - The type of calls made.
- * @template TContractResultsStructureOverrides - Optional overrides for result structures.
  * @template TCustomData - Optional custom data type.
  */
 export type ContractResults<
@@ -192,29 +168,16 @@ export type ContractResults<
     string,
     DiscriminatedMethodCalls<TContract>[MethodNames<TContract>]
   >,
-  TContractResultsStructureOverrides = unknown,
   TCustomData = unknown,
 > = {
-  originContext: ContractContext<
-    TContract,
-    TCalls,
-    TContractResultsStructureOverrides,
-    TCustomData
-  >
-  results: ContractMethodResult<
-    TContract,
-    TCalls,
-    TContractResultsStructureOverrides
-  >
+  originContext: ContractContext<TContract, TCalls, TCustomData>
+  results: ContractMethodResult<TContract, TCalls>
 }
 
 /**
  * Represents a collection of contract calls for multiple contracts.
  */
-export type ReferencedContracts = Record<
-  string,
-  ContractContext<any, any, any, any>
->
+export type ReferencedContracts = Record<string, ContractContext<any, any, any>>
 
 /**
  * Represents the results of multiple contract calls.
@@ -226,15 +189,9 @@ export type MulticallResults<TContractContexts extends ReferencedContracts> = {
     [KContractReference in keyof TContractContexts]: TContractContexts[KContractReference] extends ContractContext<
       infer TContract,
       infer TCalls,
-      infer TContractResultsStructureOverrides,
       infer TCustomData
     >
-      ? ContractResults<
-          TContract,
-          TCalls,
-          TContractResultsStructureOverrides,
-          TCustomData
-        >
+      ? ContractResults<TContract, TCalls, TCustomData>
       : never
   }
 }

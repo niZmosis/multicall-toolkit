@@ -19,6 +19,8 @@ import {
   isMulticallOptionsWeb3,
   isMulticallOptionsEthers,
   isMulticallOptionsCustomJsonRpcProvider,
+  MulticallError,
+  ErrorCodes,
 } from '@ethereum-multicall/utils'
 import type { JsonFragment } from '@ethersproject/abi'
 import type { Provider } from '@ethersproject/providers'
@@ -66,13 +68,11 @@ export class Multicall {
   /**
    * Creates a call context for a contract.
    * @template TContract - The type of the contract.
-   * @template TContractResultsStructureOverrides - The type of contract results structure overrides.
    * @template TCustomData - The type of custom data.
    * @returns A function that creates a call context for the specified contract.
    */
   public createCallContext<
     TContract extends Record<string, any>,
-    TContractResultsStructureOverrides = unknown,
     TCustomData = unknown,
   >() {
     return function <
@@ -81,18 +81,8 @@ export class Multicall {
         DiscriminatedMethodCalls<TContract>[MethodNames<TContract>]
       >,
     >(
-      context: ContractContext<
-        TContract,
-        TCalls,
-        TContractResultsStructureOverrides,
-        TCustomData
-      >,
-    ): ContractContext<
-      TContract,
-      TCalls,
-      TContractResultsStructureOverrides,
-      TCustomData
-    > {
+      context: ContractContext<TContract, TCalls, TCustomData>,
+    ): ContractContext<TContract, TCalls, TCustomData> {
       return context
     }
   }
@@ -130,8 +120,25 @@ export class Multicall {
       response++
     ) {
       const contractCallsResults = aggregateResponse.results[response]
-      const [contractKey, context] =
+
+      if (!contractCallsResults) {
+        throw new MulticallError(
+          `Contract call at index ${response} failed. Please check the contract address and method signature.`,
+          ErrorCodes.multicallError,
+        )
+      }
+
+      const contextEntry =
         contextArray[contractCallsResults.contractContextIndex]
+
+      if (!contextEntry) {
+        throw new MulticallError(
+          `Context entry at index ${contractCallsResults.contractContextIndex} is undefined.`,
+          ErrorCodes.multicallError,
+        )
+      }
+
+      const [contractKey, context] = contextEntry
 
       const returnObjectResult: ContractResults<any, any> = {
         originContext: structuredClone(context),
@@ -144,6 +151,14 @@ export class Multicall {
         method++
       ) {
         const methodContext = contractCallsResults.methodResults[method]
+
+        if (!methodContext) {
+          throw new MulticallError(
+            `Method context at index ${method} is undefined.`,
+            ErrorCodes.multicallError,
+          )
+        }
+
         const methodName = Object.keys(context.calls)[
           methodContext.contractMethodIndex
         ]
@@ -189,7 +204,9 @@ export class Multicall {
           }
         }
 
-        returnObjectResult.results[methodName] = callReturnContext
+        if (methodName !== undefined) {
+          returnObjectResult.results[methodName] = callReturnContext
+        }
       }
 
       returnObject.contracts[contractKey as keyof TContractContexts] =
@@ -212,6 +229,14 @@ export class Multicall {
 
     for (let contract = 0; contract < contractCallContexts.length; contract++) {
       const contractContext = contractCallContexts[contract]
+
+      if (!contractContext) {
+        throw new MulticallError(
+          `Contract context at index ${contract} is undefined.`,
+          ErrorCodes.multicallError,
+        )
+      }
+
       const executingInterface = new ethers.utils.Interface(
         JSON.stringify(contractContext.abi),
       )
@@ -283,17 +308,28 @@ export class Multicall {
   ): AbiOutput[] | undefined {
     const contract = new ethers.Contract(
       ethers.constants.AddressZero,
-      abi as any,
+      abi as JsonFragment[],
     )
     methodName = methodName.trim()
 
-    if (contract.interface.functions[methodName]) {
-      return contract.interface.functions[methodName].outputs as AbiOutput[]
+    const functionFragment = contract.interface.functions[methodName]
+
+    if (functionFragment) {
+      return functionFragment.outputs as AbiOutput[]
     }
 
     for (let i = 0; i < abi.length; i++) {
-      if (abi[i].name?.trim() === methodName) {
-        const outputs = abi[i].outputs
+      const item = abi[i]
+
+      if (!item) {
+        throw new MulticallError(
+          `ABI item at index ${i} is undefined.`,
+          ErrorCodes.multicallError,
+        )
+      }
+
+      if (item.name?.trim() === methodName) {
+        const outputs = item.outputs
 
         if (outputs) {
           return Array.isArray(outputs)
@@ -429,20 +465,31 @@ export class Multicall {
     }
 
     if (this._options.tryAggregate) {
-      const contractResponse = (await contract.callStatic.tryBlockAndAggregate(
-        false,
-        this.mapCallContextToMatchContractFormat(calls),
-        overrideOptions,
-      )) as AggregateContractResponse
+      if (typeof contract.callStatic.tryBlockAndAggregate === 'function') {
+        const contractResponse =
+          (await contract.callStatic.tryBlockAndAggregate(
+            false,
+            this.mapCallContextToMatchContractFormat(calls),
+            overrideOptions,
+          )) as AggregateContractResponse
 
-      return this.buildUpAggregateResponse(contractResponse, calls)
+        return this.buildUpAggregateResponse(contractResponse, calls)
+      } else {
+        throw new Error(
+          'tryBlockAndAggregate method is not available on the contract',
+        )
+      }
     } else {
-      const contractResponse = (await contract.callStatic.aggregate(
-        this.mapCallContextToMatchContractFormat(calls),
-        overrideOptions,
-      )) as AggregateContractResponse
+      if (typeof contract.callStatic?.aggregate === 'function') {
+        const contractResponse = (await contract.callStatic.aggregate(
+          this.mapCallContextToMatchContractFormat(calls),
+          overrideOptions,
+        )) as AggregateContractResponse
 
-      return this.buildUpAggregateResponse(contractResponse, calls)
+        return this.buildUpAggregateResponse(contractResponse, calls)
+      } else {
+        throw new Error('aggregate method is not available on the contract')
+      }
     }
   }
 
@@ -462,23 +509,33 @@ export class Multicall {
     }
 
     for (let i = 0; i < contractResponse.returnData.length; i++) {
+      const item = calls[i]
+
+      if (!item) {
+        throw new MulticallError(
+          `Call context at index ${i} is undefined.`,
+          ErrorCodes.multicallError,
+        )
+      }
+
       const existingResponse = aggregateResponse.results.find(
-        (c) => c.contractContextIndex === calls[i].contractContextIndex,
+        (c) => c.contractContextIndex === item.contractContextIndex,
       )
+
       if (existingResponse) {
         existingResponse.methodResults.push({
           result: contractResponse.returnData[i],
-          contractMethodIndex: calls[i].contractMethodIndex,
+          contractMethodIndex: item.contractMethodIndex,
         })
       } else {
         aggregateResponse.results.push({
           methodResults: [
             {
               result: contractResponse.returnData[i],
-              contractMethodIndex: calls[i].contractMethodIndex,
+              contractMethodIndex: item.contractMethodIndex,
             },
           ],
-          contractContextIndex: calls[i].contractContextIndex,
+          contractContextIndex: item.contractContextIndex,
         })
       }
     }

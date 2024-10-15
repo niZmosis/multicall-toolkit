@@ -8,13 +8,13 @@
 
 ## Namespaces
 
-- [Erc1155Contract](namespaces/Erc1155Contract/README.md)
-- [Erc20Contract](namespaces/Erc20Contract/README.md)
-- [Erc721Contract](namespaces/Erc721Contract/README.md)
-- [Erc777Contract](namespaces/Erc777Contract/README.md)
-- [Multicall2Abi](namespaces/Multicall2Abi/README.md)
-- [Multicall3Abi](namespaces/Multicall3Abi/README.md)
-- [WrappedContract](namespaces/WrappedContract/README.md)
+- [Erc1155Types](namespaces/Erc1155Types/README.md)
+- [Erc20Types](namespaces/Erc20Types/README.md)
+- [Erc721Types](namespaces/Erc721Types/README.md)
+- [Erc777Types](namespaces/Erc777Types/README.md)
+- [Multicall2Types](namespaces/Multicall2Types/README.md)
+- [Multicall3Types](namespaces/Multicall3Types/README.md)
+- [WrappedTypes](namespaces/WrappedTypes/README.md)
 
 ## Interfaces
 
@@ -28,6 +28,7 @@
 - [AggregateContractResponse](type-aliases/AggregateContractResponse.md)
 - [AggregateResponse](type-aliases/AggregateResponse.md)
 - [BaseProviderContext](type-aliases/BaseProviderContext.md)
+- [ChainId](type-aliases/ChainId.md)
 - [ChainIdAndProviderContext](type-aliases/ChainIdAndProviderContext.md)
 - [ContractCallOverrides](type-aliases/ContractCallOverrides.md)
 - [ContractContext](type-aliases/ContractContext.md)
@@ -43,7 +44,6 @@
 - [EthersProvider](type-aliases/EthersProvider.md)
 - [EthersProviderContext](type-aliases/EthersProviderContext.md)
 - [EventFilter](type-aliases/EventFilter.md)
-- [ExplicitReferencedMethodCalls](type-aliases/ExplicitReferencedMethodCalls.md)
 - [ExtractMethodName](type-aliases/ExtractMethodName.md)
 - [ExtractParams](type-aliases/ExtractParams.md)
 - [GetReturnType](type-aliases/GetReturnType.md)

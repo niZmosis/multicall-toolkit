@@ -1,7 +1,6 @@
 {
   "$schema": "./node_modules/@ethereum-abi-types-generator/core/schemas/ethereum-abi-types-generator-1.0.0.json",
   "inputDirOrPath": "./src/abis",
-  "outputDir": "../types/src/abis",
   "makeOutputDir": true,
   "library": "ethers_v5",
   "makeIndexFile": true,
@@ -14,5 +13,7 @@
   "verbatimModuleSyntax": true,
   "language": "ts",
   "eslintConfigPath": "../../.eslintrc.json",
-  "prettierConfigPath": "../../.prettierrc.json"
+  "prettierConfigPath": "../../.prettierrc.json",
+  "typingsOutputDir": "../types/src/abis",
+  "typingsOutputFileSuffix": "types"
 }

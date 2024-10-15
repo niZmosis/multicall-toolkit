@@ -10,4 +10,4 @@
 
 ## Defined in
 
-packages/utils/src/abis/erc721-contract.ts:1
+packages/utils/src/abis/erc721.abi.ts:1

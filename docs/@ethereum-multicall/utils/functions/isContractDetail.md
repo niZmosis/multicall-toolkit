@@ -29,4 +29,4 @@ True if the object is of type ContractDetail, false otherwise.
 
 ## Defined in
 
-packages/utils/src/utils/contract-detail.utils.ts:14
+[packages/utils/src/utils/contract-detail.utils.ts:14](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/utils/src/utils/contract-detail.utils.ts#L14)

@@ -20,4 +20,4 @@ Web3.js instance (any version)
 
 ## Defined in
 
-multicall.types.ts:42
+[multicall.types.ts:42](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/types/src/multicall.types.ts#L42)

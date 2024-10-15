@@ -6,8 +6,8 @@
 
 # Variable: defaultErc1155MethodMap
 
-> `const` **defaultErc1155MethodMap**: `Erc1155Contract.MethodNameMap`
+> `const` **defaultErc1155MethodMap**: `Erc1155Types.MethodNameMap`
 
 ## Defined in
 
-packages/utils/src/utils/token.utils.ts:71
+[packages/utils/src/utils/token.utils.ts:69](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/utils/src/utils/token.utils.ts#L69)

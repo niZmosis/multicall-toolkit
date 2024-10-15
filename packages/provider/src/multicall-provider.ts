@@ -165,14 +165,9 @@ export class MulticallProvider {
 
   public createCallContext<
     TContract extends Record<string, any>,
-    TContractResultsStructureOverrides = unknown,
     TCustomData = unknown,
   >() {
-    return this._multicall.createCallContext<
-      TContract,
-      TContractResultsStructureOverrides,
-      TCustomData
-    >()
+    return this._multicall.createCallContext<TContract, TCustomData>()
   }
 
   public async call<TContractContexts extends ReferencedContracts>(

@@ -20,4 +20,4 @@ Type guard for MulticallOptionsEthers.
 
 ## Defined in
 
-packages/utils/src/utils/multicall.utils.ts:20
+[packages/utils/src/utils/multicall.utils.ts:20](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/utils/src/utils/multicall.utils.ts#L20)

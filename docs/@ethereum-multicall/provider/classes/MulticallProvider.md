@@ -22,7 +22,7 @@
 
 #### Defined in
 
-provider/src/multicall-provider.ts:36
+[provider/src/multicall-provider.ts:36](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/provider/src/multicall-provider.ts#L36)
 
 ## Properties
 
@@ -32,7 +32,7 @@ provider/src/multicall-provider.ts:36
 
 #### Defined in
 
-provider/src/multicall-provider.ts:30
+[provider/src/multicall-provider.ts:30](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/provider/src/multicall-provider.ts#L30)
 
 ***
 
@@ -42,7 +42,7 @@ provider/src/multicall-provider.ts:30
 
 #### Defined in
 
-provider/src/multicall-provider.ts:34
+[provider/src/multicall-provider.ts:34](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/provider/src/multicall-provider.ts#L34)
 
 ***
 
@@ -52,7 +52,7 @@ provider/src/multicall-provider.ts:34
 
 #### Defined in
 
-provider/src/multicall-provider.ts:32
+[provider/src/multicall-provider.ts:32](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/provider/src/multicall-provider.ts#L32)
 
 ## Accessors
 
@@ -66,7 +66,7 @@ provider/src/multicall-provider.ts:32
 
 #### Defined in
 
-provider/src/multicall-provider.ts:96
+[provider/src/multicall-provider.ts:96](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/provider/src/multicall-provider.ts#L96)
 
 ***
 
@@ -80,7 +80,7 @@ provider/src/multicall-provider.ts:96
 
 #### Defined in
 
-provider/src/multicall-provider.ts:100
+[provider/src/multicall-provider.ts:100](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/provider/src/multicall-provider.ts#L100)
 
 ***
 
@@ -94,7 +94,7 @@ provider/src/multicall-provider.ts:100
 
 #### Defined in
 
-provider/src/multicall-provider.ts:92
+[provider/src/multicall-provider.ts:92](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/provider/src/multicall-provider.ts#L92)
 
 ## Methods
 
@@ -118,19 +118,17 @@ provider/src/multicall-provider.ts:92
 
 #### Defined in
 
-provider/src/multicall-provider.ts:178
+[provider/src/multicall-provider.ts:173](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/provider/src/multicall-provider.ts#L173)
 
 ***
 
 ### createCallContext()
 
-> **createCallContext**\<`TContract`, `TContractResultsStructureOverrides`, `TCustomData`\>(): \<`TCalls`\>(`context`) => `ContractContext`\<`TContract`, `TCalls`, `TContractResultsStructureOverrides`, `TCustomData`\>
+> **createCallContext**\<`TContract`, `TCustomData`\>(): \<`TCalls`\>(`context`) => `ContractContext`\<`TContract`, `TCalls`, `TCustomData`\>
 
 #### Type Parameters
 
 • **TContract** *extends* `Record`\<`string`, `any`\>
-
-• **TContractResultsStructureOverrides** = `unknown`
 
 • **TCustomData** = `unknown`
 
@@ -144,15 +142,15 @@ provider/src/multicall-provider.ts:178
 
 ##### Parameters
 
-• **context**: `ContractContext`\<`TContract`, `TCalls`, `TContractResultsStructureOverrides`, `TCustomData`\>
+• **context**: `ContractContext`\<`TContract`, `TCalls`, `TCustomData`\>
 
 ##### Returns
 
-`ContractContext`\<`TContract`, `TCalls`, `TContractResultsStructureOverrides`, `TCustomData`\>
+`ContractContext`\<`TContract`, `TCalls`, `TCustomData`\>
 
 #### Defined in
 
-provider/src/multicall-provider.ts:166
+[provider/src/multicall-provider.ts:166](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/provider/src/multicall-provider.ts#L166)
 
 ***
 
@@ -174,4 +172,4 @@ provider/src/multicall-provider.ts:166
 
 #### Defined in
 
-provider/src/multicall-provider.ts:138
+[provider/src/multicall-provider.ts:138](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/provider/src/multicall-provider.ts#L138)

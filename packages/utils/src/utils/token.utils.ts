@@ -1,36 +1,34 @@
 import type {
-  Erc1155Contract,
-  Erc721Contract,
-  Erc777Contract,
-  Erc20Contract,
-  WrappedContract,
+  Erc1155Types,
+  Erc721Types,
+  Erc777Types,
+  Erc20Types,
+  WrappedTypes,
 } from '@ethereum-multicall/types'
 
 // ------------------------
 // Method Names
 // ------------------------
 
-export const base777MethodMap: Omit<
-  Erc777Contract.MethodNameMap,
-  'granularity'
-> = {
-  name: 'name',
-  symbol: 'symbol',
-  defaultOperators: 'defaultOperators',
-  balanceOf: 'balanceOf',
-  isOperatorFor: 'isOperatorFor',
-  authorizeOperator: 'authorizeOperator',
-  defaultOperatorsSend: 'defaultOperatorsSend',
-  revokeOperator: 'revokeOperator',
-  operatorSend: 'operatorSend',
-  revokeDefaultOperators: 'revokeDefaultOperators',
-  send: 'send',
-  setDefaultOperators: 'setDefaultOperators',
-} as const
+export const base777MethodMap: Omit<Erc777Types.MethodNameMap, 'granularity'> =
+  {
+    name: 'name',
+    symbol: 'symbol',
+    defaultOperators: 'defaultOperators',
+    balanceOf: 'balanceOf',
+    isOperatorFor: 'isOperatorFor',
+    authorizeOperator: 'authorizeOperator',
+    defaultOperatorsSend: 'defaultOperatorsSend',
+    revokeOperator: 'revokeOperator',
+    operatorSend: 'operatorSend',
+    revokeDefaultOperators: 'revokeDefaultOperators',
+    send: 'send',
+    setDefaultOperators: 'setDefaultOperators',
+  } as const
 
 // ERC
 
-export const defaultErc20MethodMap: Erc20Contract.MethodNameMap = {
+export const defaultErc20MethodMap: Erc20Types.MethodNameMap = {
   name: 'name',
   approve: 'approve',
   totalSupply: 'totalSupply',
@@ -42,13 +40,13 @@ export const defaultErc20MethodMap: Erc20Contract.MethodNameMap = {
   allowance: 'allowance',
 } as const
 
-export const defaultErc777MethodMap: Erc777Contract.MethodNameMap = {
+export const defaultErc777MethodMap: Erc777Types.MethodNameMap = {
   ...base777MethodMap,
   granularity: 'granularity',
 } as const
 
-export const defaultErc721MethodMap: Erc721Contract.MethodNameMap = {
-  new: 'new',
+export const defaultErc721MethodMap: Erc721Types.MethodNameMap = {
+  // new: 'new', // TODO
   approve: 'approve',
   balanceOf: 'balanceOf',
   getApproved: 'getApproved',
@@ -68,7 +66,7 @@ export const defaultErc721MethodMap: Erc721Contract.MethodNameMap = {
   mintNFT: 'mintNFT',
 } as const
 
-export const defaultErc1155MethodMap: Erc1155Contract.MethodNameMap = {
+export const defaultErc1155MethodMap: Erc1155Types.MethodNameMap = {
   balanceOf: 'balanceOf',
   balanceOfBatch: 'balanceOfBatch',
   isApprovedForAll: 'isApprovedForAll',
@@ -81,7 +79,7 @@ export const defaultErc1155MethodMap: Erc1155Contract.MethodNameMap = {
 
 // Wrapped
 
-export const defaultWrappedContractMethodMap: WrappedContract.MethodNameMap = {
+export const defaultWrappedTypesMethodMap: WrappedTypes.MethodNameMap = {
   name: 'name',
   approve: 'approve',
   totalSupply: 'totalSupply',

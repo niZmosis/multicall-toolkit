@@ -24,4 +24,4 @@ The maximum units of gas for the transaction to use
 
 ## Defined in
 
-abis/common-types.ts:33
+abis/common.types.ts:33

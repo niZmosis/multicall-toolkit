@@ -4,9 +4,9 @@
 
 [Documentation v3.0.0](../../../packages.md) / [@ethereum-multicall/types](../README.md) / ContractContext
 
-# Type Alias: ContractContext\<TContract, TCalls, TContractResultsStructureOverrides, TCustomData\>
+# Type Alias: ContractContext\<TContract, TCalls, TCustomData\>
 
-> **ContractContext**\<`TContract`, `TCalls`, `TContractResultsStructureOverrides`, `TCustomData`\>: `object` & `TCustomData` *extends* `Record`\<`string`, `any`\> ? `object` : `object`
+> **ContractContext**\<`TContract`, `TCalls`, `TCustomData`\>: `object` & `TCustomData` *extends* `Record`\<`string`, `any`\> ? `object` : `object`
 
 Represents the context for a contract interaction.
 
@@ -18,7 +18,7 @@ Represents the context for a contract interaction.
 
 ### calls
 
-> **calls**: `TContractResultsStructureOverrides` *extends* `Record`\<`string`, `any`\> ? [`ExplicitReferencedMethodCalls`](ExplicitReferencedMethodCalls.md)\<`TContract`, `TContractResultsStructureOverrides`\> : `TCalls`
+> **calls**: `TCalls`
 
 ### contractAddress
 
@@ -34,14 +34,10 @@ The contract type.
 
 The type of calls to be made.
 
-• **TContractResultsStructureOverrides** = `unknown`
-
-Optional overrides for result structures.
-
 • **TCustomData** = `unknown`
 
 Optional custom data type.
 
 ## Defined in
 
-call.types.ts:133
+[call.types.ts:120](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/types/src/call.types.ts#L120)

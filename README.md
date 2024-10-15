@@ -8,6 +8,8 @@ A lightweight library for interacting with the [`Multicall3`](https://github.com
 ## Table of Contents
 
 - [Features](#features)
+- [Supported Libraries](#supported-libraries)
+- [Packages](#packages)
 - [Installation](#installation)
 - [Import Examples](#import-examples)
 - [Initialization](#initialization)
@@ -27,8 +29,10 @@ A lightweight library for interacting with the [`Multicall3`](https://github.com
   - [MulticallProvider](#multicallprovider)
   - [Contract Factory](#contract-factory)
 - [Supported Networks](#supported-networks)
+- [Tests](#tests)
 - [Issues](#issues)
 - [Thanks And Support](#thanks-and-support)
+- [Contributing](#contributing)
 - [License](#license)
 
 ## Features
@@ -51,37 +55,24 @@ A lightweight library for interacting with the [`Multicall3`](https://github.com
 
 💎 **Open Source and Community-Driven**: Join the community on GitHub to contribute, report issues, or request features.
 
+## Supported Libraries
+
+- Web3.js
+- Ethers.js
+
+## Packages
+
+| Package | Description |
+| --- | --- |
+| [`@ethereum-multicall/core`](/packages/core) | Core module for interacting with the Multicall contract. |
+| [`@ethereum-multicall/types`](/packages/types) | Type definitions for the entire toolkit. |
+| [`@ethereum-multicall/utils`](/packages/utils) | A collection of helper functions and utilities. |
+| [`@ethereum-multicall/provider`](/packages/provider) | A collection of helper functions and utilities. |
+| [`@ethereum-multicall/contracts`](/packages/contracts) | A set of classes of common ABIs for seamless Multicall interaction, including ERC20, ERC777, ERC721, ERC1155, and Wrapped. |
+
 ## Installation
 
 Choose the package that best fits your needs. Dependencies will be installed automatically.
-
-### For using Contract Factories (e.g., Erc20ContractFactory)
-
-This installation includes all functionalities:
-
-```bash
-npm install @ethereum-multicall/contracts
-# or
-yarn add @ethereum-multicall/contracts
-# or
-pnpm add @ethereum-multicall/contracts
-# or
-bun add @ethereum-multicall/contracts
-```
-
-### For using MulticallProvider
-
-If you only need the MulticallProvider to wrap your existing provider:
-
-```bash
-npm install @ethereum-multicall/provider
-# or
-yarn add @ethereum-multicall/provider
-# or
-pnpm add @ethereum-multicall/provider
-# or
-bun add @ethereum-multicall/provider
-```
 
 ### For using Multicall class directly
 
@@ -95,6 +86,34 @@ yarn add @ethereum-multicall/core
 pnpm add @ethereum-multicall/core
 # or
 bun add @ethereum-multicall/core
+```
+
+### For using MulticallProvider
+
+If you want the MulticallProvider to wrap your existing provider:
+
+```bash
+npm install @ethereum-multicall/provider
+# or
+yarn add @ethereum-multicall/provider
+# or
+pnpm add @ethereum-multicall/provider
+# or
+bun add @ethereum-multicall/provider
+```
+
+### For using Contract Factories (e.g., Erc20ContractFactory)
+
+If you want to use the Contract Factories for seamless Multicall interaction:
+
+```bash
+npm install @ethereum-multicall/contracts
+# or
+yarn add @ethereum-multicall/contracts
+# or
+pnpm add @ethereum-multicall/contracts
+# or
+bun add @ethereum-multicall/contracts
 ```
 
 Note: Installing any of these packages will automatically install the necessary dependencies. For example:
@@ -444,87 +463,108 @@ console.log(results.balanceOf.value, results.otherBalanceOf.value, results.name.
 
 ## Supported Networks
 
-The below networks are supported by default. You may provide a custom network configuration to support additional networks and/or multicall contracts.
+The below networks are supported by default. You may provide a `customNetwork` configuration to support additional networks and/or multicall contracts.
 
-| Chain Name                 | Chain ID   |
-|----------------------------|------------|
-| Amoy                       | 80002      |
-| Arbitrum                   | 42161      |
-| Arbitrum Sepolia           | 421614     |
-| Astar                      | 592        |
-| Aurora                     | 1313161554 |
-| Avalanche                  | 43114      |
-| Avalanche Fuji             | 43113      |
-| Base                       | 8453       |
-| Base Testnet               | 84531      |
-| Blast                      | 81457      |
-| Blast Sepolia              | 168587773  |
-| Boba                       | 288        |
-| Bob                        | 60808      |
-| BSC                        | 56         |
-| BSC Testnet                | 97         |
-| Celo                       | 42220      |
-| Celo Alfajores             | 44787      |
-| Cronos                     | 25         |
-| Energi Mainnet             | 39797      |
-| Energi Testnet             | 49797      |
-| Ethereum Mainnet           | 1          |
-| Ethereum Sepolia           | 11155111   |
-| Etherlite                  | 111        |
-| Evmos                      | 9001       |
-| Evmos Testnet              | 9000       |
-| Fantom                     | 250        |
-| Fantom Testnet             | 4002       |
-| Flare                      | 14         |
-| Fuse                       | 122        |
-| Godwoken                   | 71402      |
-| Godwoken Testnet           | 71401      |
-| Harmony                    | 1666600000 |
-| Heco                       | 128        |
-| Klaytn                     | 8217       |
-| Kovan                      | 42         |
-| Kovan Optimism             | 69         |
-| KCC                        | 321        |
-| Linea                      | 59144      |
-| Linea Testnet              | 59140      |
-| Manta Pacific              | 169        |
-| Mantle                     | 5000       |
-| Mantle Testnet             | 5001       |
-| Metis                      | 1088       |
-| Milkomeda                  | 2001       |
-| Mode                       | 34443      |
-| Mode Testnet               | 919        |
-| Moonbase Alpha Testnet     | 1287       |
-| Moonbeam                   | 1284       |
-| Moonriver                  | 1285       |
-| Optimism                   | 10         |
-| Optimism Goerli            | 420        |
-| Optimism Sepolia           | 11155420   |
-| Oasis                      | 26863      |
-| OKC                        | 66         |
-| Polygon                    | 137        |
-| Polygon Mumbai             | 80001      |
-| Polygon zkEVM              | 1101       |
-| Polygon zkEVM Testnet      | 1442       |
-| Pulsechain                 | 369        |
-| Pulsechain Testnet         | 943        |
-| Rinkeby Arbitrum           | 421611     |
-| RSK                        | 30         |
-| RSK Testnet                | 31         |
-| Sapphire                   | 23294      |
-| Scroll                     | 534352     |
-| Scroll Sepolia             | 534351     |
-| Shibarium                  | 109        |
-| Songbird Canary Network    | 19         |
-| Thundercore                | 108        |
-| Thundercore Testnet        | 18         |
-| xDai                       | 100        |
-| xDai Testnet               | 10200      |
-| zkSync Era                 | 324        |
-| zkSync Era Sepolia Testnet | 300        |
-| zkSync Era Testnet         | 280        |
-| Zora                       | 7777777    |
-| Zora Testnet               | 999999999  |
+The common multicall address `0xcA11bde05977b3631167028862bE2a173976CA11`
+
+| Chain Name                 | Chain ID   | Multicall Address |
+|----------------------------|------------|-------------------|
+| Amoy                       | 80002      | common |
+| Arbitrum                   | 42161      | common |
+| Arbitrum Sepolia           | 421614     | common |
+| Astar                      | 592        | common |
+| Aurora                     | 1313161554 | common |
+| Avalanche                  | 43114      | common |
+| Avalanche Fuji             | 43113      | common |
+| Base                       | 8453       | common |
+| Base Testnet               | 84531      | common |
+| Blast                      | 81457      | common |
+| Blast Sepolia              | 168587773  | common |
+| Boba                       | 288        | common |
+| Bob                        | 60808      | common |
+| BSC                        | 56         | common |
+| BSC Testnet                | 97         | common |
+| Celo                       | 42220      | common |
+| Celo Alfajores             | 44787      | common |
+| Cronos                     | 25         | common |
+| Energi Mainnet             | 39797      | common |
+| Energi Testnet             | 49797      | common |
+| Ethereum Mainnet           | 1          | common |
+| Ethereum Sepolia           | 11155111   | common |
+| Etherlite                  | 111        | 0x21681750D7ddCB8d1240eD47338dC984f94AF2aC |
+| Evmos                      | 9001       | common |
+| Evmos Testnet              | 9000       | common |
+| Fantom                     | 250        | common |
+| Fantom Testnet             | 4002       | common |
+| Flare                      | 14         | common |
+| Fuse                       | 122        | common |
+| Godwoken                   | 71402      | common |
+| Godwoken Testnet           | 71401      | common |
+| Harmony                    | 1666600000 | common |
+| Heco                       | 128        | common |
+| Klaytn                     | 8217       | common |
+| Kovan                      | 42         | common |
+| Kovan Optimism             | 69         | common |
+| KCC                        | 321        | common |
+| Linea                      | 59144      | common |
+| Linea Testnet              | 59140      | common |
+| Manta Pacific               | 169        | common |
+| Mantle                     | 5000       | common |
+| Mantle Testnet             | 5001       | common |
+| Metis                      | 1088       | common |
+| Milkomeda                  | 2001       | common |
+| Mode                       | 34443      | common |
+| Mode Testnet               | 919        | 0xBAba8373113Fb7a68f195deF18732e01aF8eDfCF |
+| Moonbase Alpha Testnet     | 1287       | common |
+| Moonbeam                   | 1284       | common |
+| Moonriver                  | 1285       | common |
+| Optimism                   | 10         | common |
+| Optimism Goerli            | 420        | common |
+| Optimism Sepolia           | 11155420   | common |
+| Oasis                      | 26863      | common |
+| OKC                        | 66         | common |
+| Polygon                    | 137        | common |
+| Polygon Mumbai             | 80001      | common |
+| Polygon zkEVM              | 1101       | common |
+| Polygon zkEVM Testnet      | 1442       | common |
+| Pulsechain                 | 369        | common |
+| Pulsechain Testnet         | 943        | common |
+| Rinkeby Arbitrum           | 421611     | common |
+| RSK                        | 30         | common |
+| RSK Testnet                | 31         | common |
+| Sapphire                   | 23294      | common |
+| Scroll                     | 534352     | common |
+| Scroll Sepolia             | 534351     | common |
+| Shibarium                  | 109        | 0xd1727fC8F78aBA7DD6294f6033D74c72Ccd3D3B0 |
+| Songbird Canary Network    | 19         | common |
+| Thundercore                | 108        | common |
+| Thundercore Testnet        | 18         | common |
+| xDai                       | 100        | common |
+| xDai Testnet               | 10200      | common |
+| zkSync Era                 | 324        | 0xF9cda624FBC7e059355ce98a31693d299FACd963 |
+| zkSync Era Sepolia Testnet | 300        | 0xF9cda624FBC7e059355ce98a31693d299FACd963 |
+| zkSync Era Testnet         | 280        | 0xF9cda624FBC7e059355ce98a31693d299FACd963 |
+| Zora                       | 7777777    | common |
+| Zora Testnet               | 999999999  | common |
+
+## Tests
+
+The whole repo is covered in tests output below:
+
+Dex Version: V2
+
+```shell
+Test Files  6 passed | 1 skipped (7)
+Tests  38 passed | 12 skipped (50)
+Start at  13:27:08
+Duration  3.17s (transform 362ms, setup 0ms, collect 1.89s, tests 7.46s, environment 1ms, prepare 535ms)
+```
+
+Dex Version: V3
+
+```shell
+// TODO
+```
 
 ## Issues
 
@@ -541,6 +581,12 @@ Direct donations (any token accepted) - Eth address: `0x699c2daD091ffcF18f3cd9E8
 ### Github sponsors
 
 [Sponsor me](https://github.com/sponsors/joshstevens19) via GitHub using fiat money.
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+Check out the TODO.md file for a list of future features and improvements.
 
 ## License
 

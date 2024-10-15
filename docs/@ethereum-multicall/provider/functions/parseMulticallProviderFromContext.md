@@ -32,4 +32,4 @@ MulticallError - Throws an error if the `dexContext` is not supported, or if the
 
 ## Defined in
 
-provider/src/multicall-provider.ts:202
+[provider/src/multicall-provider.ts:197](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/provider/src/multicall-provider.ts#L197)

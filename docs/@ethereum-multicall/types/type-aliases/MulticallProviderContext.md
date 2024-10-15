@@ -12,4 +12,4 @@ DEX provider context, which can be an IMulticallProvider instance or a provider 
 
 ## Defined in
 
-multicall-provider.types.ts:47
+[multicall-provider.types.ts:47](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/types/src/multicall-provider.types.ts#L47)
