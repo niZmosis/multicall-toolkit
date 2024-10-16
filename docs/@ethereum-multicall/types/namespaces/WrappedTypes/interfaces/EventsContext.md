@@ -26,7 +26,7 @@
 
 #### Defined in
 
-abis/wrapped.types.ts:18
+[abis/wrapped.types.ts:18](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/abis/wrapped.types.ts#L18)
 
 ***
 
@@ -46,7 +46,7 @@ abis/wrapped.types.ts:18
 
 #### Defined in
 
-abis/wrapped.types.ts:20
+[abis/wrapped.types.ts:20](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/abis/wrapped.types.ts#L20)
 
 ***
 
@@ -68,7 +68,7 @@ abis/wrapped.types.ts:20
 
 #### Defined in
 
-abis/wrapped.types.ts:19
+[abis/wrapped.types.ts:19](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/abis/wrapped.types.ts#L19)
 
 ***
 
@@ -88,4 +88,4 @@ abis/wrapped.types.ts:19
 
 #### Defined in
 
-abis/wrapped.types.ts:21
+[abis/wrapped.types.ts:21](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/abis/wrapped.types.ts#L21)

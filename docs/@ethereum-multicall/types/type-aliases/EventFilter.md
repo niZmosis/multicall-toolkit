@@ -28,4 +28,4 @@
 
 ## Defined in
 
-abis/common.types.ts:3
+[abis/common.types.ts:3](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/abis/common.types.ts#L3)

@@ -22,7 +22,7 @@
 
 #### Defined in
 
-[provider/src/multicall-provider-base.ts:19](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/provider/src/multicall-provider-base.ts#L19)
+[provider/src/multicall-provider-base.ts:19](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/provider/src/multicall-provider-base.ts#L19)
 
 ## Properties
 
@@ -32,7 +32,7 @@
 
 #### Defined in
 
-[provider/src/multicall-provider-base.ts:17](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/provider/src/multicall-provider-base.ts#L17)
+[provider/src/multicall-provider-base.ts:17](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/provider/src/multicall-provider-base.ts#L17)
 
 ## Accessors
 
@@ -50,7 +50,7 @@ The contract details of the concrete class.
 
 #### Defined in
 
-[provider/src/multicall-provider-base.ts:39](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/provider/src/multicall-provider-base.ts#L39)
+[provider/src/multicall-provider-base.ts:39](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/provider/src/multicall-provider-base.ts#L39)
 
 ***
 
@@ -68,13 +68,13 @@ The `MulticallProvider` instance used by this class.
 
 #### Defined in
 
-[provider/src/multicall-provider-base.ts:30](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/provider/src/multicall-provider-base.ts#L30)
+[provider/src/multicall-provider-base.ts:30](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/provider/src/multicall-provider-base.ts#L30)
 
 ## Methods
 
-### multicall()
+### executeCall()
 
-> `protected` **multicall**\<`TContract`, `TCalls`\>(`calls`, `options`): `Promise`\<`object`\>
+> `protected` **executeCall**\<`TContract`, `TCalls`\>(`calls`, `options`): `Promise`\<`object`\>
 
 Executes a multicall for the given contract methods.
 
@@ -119,4 +119,4 @@ A promise that resolves to an object containing the block number,
 
 #### Defined in
 
-[provider/src/multicall-provider-base.ts:53](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/provider/src/multicall-provider-base.ts#L53)
+[provider/src/multicall-provider-base.ts:53](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/provider/src/multicall-provider-base.ts#L53)

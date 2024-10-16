@@ -35,7 +35,6 @@
 - [ContractContextOptions](type-aliases/ContractContextOptions.md)
 - [ContractDetail](type-aliases/ContractDetail.md)
 - [ContractDetailToken](type-aliases/ContractDetailToken.md)
-- [ContractDetailUnknown](type-aliases/ContractDetailUnknown.md)
 - [ContractMethodResult](type-aliases/ContractMethodResult.md)
 - [ContractResults](type-aliases/ContractResults.md)
 - [ContractTransactionOverrides](type-aliases/ContractTransactionOverrides.md)

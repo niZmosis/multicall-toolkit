@@ -176,7 +176,7 @@ export class Erc777Contract
     >['originContext']
     results: ContractResults<Erc777Types.Contract, TCalls>['results']
   }> {
-    return super.multicall<Erc777Types.Contract, TCalls>(calls, options)
+    return super.executeCall<Erc777Types.Contract, TCalls>(calls, options)
   }
 
   /**

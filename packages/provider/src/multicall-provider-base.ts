@@ -50,7 +50,7 @@ export abstract class MulticallProviderBase {
    * @returns A promise that resolves to an object containing the block number,
    *          origin context, and the results of each method call.
    */
-  protected async multicall<
+  protected async executeCall<
     TContract extends Record<string, any>,
     TCalls extends Record<
       string,

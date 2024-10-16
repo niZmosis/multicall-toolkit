@@ -15,7 +15,7 @@ import {
   MulticallError,
   ErrorCodes,
   wrappedABI,
-  defaultWrappedTypesMethodMap,
+  defaultWrappedMethodMap,
 } from '@ethereum-multicall/utils'
 import type { BigNumber, BigNumberish, ContractTransaction } from 'ethers'
 
@@ -60,7 +60,7 @@ export class WrappedContract
       )
 
     this._methodNames = {
-      ...defaultWrappedTypesMethodMap,
+      ...defaultWrappedMethodMap,
       ...this._contractDetail.methods,
     }
   }
@@ -178,7 +178,7 @@ export class WrappedContract
     >['originContext']
     results: ContractResults<WrappedTypes.Contract, TCalls>['results']
   }> {
-    return super.multicall<WrappedTypes.Contract, TCalls>(calls, options)
+    return super.executeCall<WrappedTypes.Contract, TCalls>(calls, options)
   }
 
   /**

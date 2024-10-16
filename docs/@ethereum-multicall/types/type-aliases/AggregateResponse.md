@@ -26,4 +26,4 @@ Array of results for each contract involved in the aggregate call
 
 ## Defined in
 
-[aggregate.types.ts:30](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/types/src/aggregate.types.ts#L30)
+[aggregate.types.ts:30](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/aggregate.types.ts#L30)

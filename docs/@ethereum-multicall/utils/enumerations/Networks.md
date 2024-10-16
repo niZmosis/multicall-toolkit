@@ -14,7 +14,7 @@
 
 #### Defined in
 
-[packages/utils/src/utils/network.utils.ts:2](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/utils/src/utils/network.utils.ts#L2)
+[packages/utils/src/utils/network.utils.ts:2](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/utils/src/utils/network.utils.ts#L2)
 
 ***
 
@@ -24,7 +24,7 @@
 
 #### Defined in
 
-[packages/utils/src/utils/network.utils.ts:3](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/utils/src/utils/network.utils.ts#L3)
+[packages/utils/src/utils/network.utils.ts:3](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/utils/src/utils/network.utils.ts#L3)
 
 ***
 
@@ -34,7 +34,7 @@
 
 #### Defined in
 
-[packages/utils/src/utils/network.utils.ts:4](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/utils/src/utils/network.utils.ts#L4)
+[packages/utils/src/utils/network.utils.ts:4](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/utils/src/utils/network.utils.ts#L4)
 
 ***
 
@@ -44,7 +44,7 @@
 
 #### Defined in
 
-[packages/utils/src/utils/network.utils.ts:5](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/utils/src/utils/network.utils.ts#L5)
+[packages/utils/src/utils/network.utils.ts:5](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/utils/src/utils/network.utils.ts#L5)
 
 ***
 
@@ -54,7 +54,7 @@
 
 #### Defined in
 
-[packages/utils/src/utils/network.utils.ts:6](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/utils/src/utils/network.utils.ts#L6)
+[packages/utils/src/utils/network.utils.ts:6](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/utils/src/utils/network.utils.ts#L6)
 
 ***
 
@@ -64,7 +64,7 @@
 
 #### Defined in
 
-[packages/utils/src/utils/network.utils.ts:7](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/utils/src/utils/network.utils.ts#L7)
+[packages/utils/src/utils/network.utils.ts:7](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/utils/src/utils/network.utils.ts#L7)
 
 ***
 
@@ -74,7 +74,7 @@
 
 #### Defined in
 
-[packages/utils/src/utils/network.utils.ts:8](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/utils/src/utils/network.utils.ts#L8)
+[packages/utils/src/utils/network.utils.ts:8](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/utils/src/utils/network.utils.ts#L8)
 
 ***
 
@@ -84,7 +84,7 @@
 
 #### Defined in
 
-[packages/utils/src/utils/network.utils.ts:9](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/utils/src/utils/network.utils.ts#L9)
+[packages/utils/src/utils/network.utils.ts:9](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/utils/src/utils/network.utils.ts#L9)
 
 ***
 
@@ -94,7 +94,7 @@
 
 #### Defined in
 
-[packages/utils/src/utils/network.utils.ts:10](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/utils/src/utils/network.utils.ts#L10)
+[packages/utils/src/utils/network.utils.ts:10](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/utils/src/utils/network.utils.ts#L10)
 
 ***
 
@@ -104,7 +104,7 @@
 
 #### Defined in
 
-[packages/utils/src/utils/network.utils.ts:11](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/utils/src/utils/network.utils.ts#L11)
+[packages/utils/src/utils/network.utils.ts:11](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/utils/src/utils/network.utils.ts#L11)
 
 ***
 
@@ -114,7 +114,7 @@
 
 #### Defined in
 
-[packages/utils/src/utils/network.utils.ts:12](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/utils/src/utils/network.utils.ts#L12)
+[packages/utils/src/utils/network.utils.ts:12](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/utils/src/utils/network.utils.ts#L12)
 
 ***
 
@@ -124,7 +124,7 @@
 
 #### Defined in
 
-[packages/utils/src/utils/network.utils.ts:14](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/utils/src/utils/network.utils.ts#L14)
+[packages/utils/src/utils/network.utils.ts:14](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/utils/src/utils/network.utils.ts#L14)
 
 ***
 
@@ -134,7 +134,7 @@
 
 #### Defined in
 
-[packages/utils/src/utils/network.utils.ts:13](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/utils/src/utils/network.utils.ts#L13)
+[packages/utils/src/utils/network.utils.ts:13](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/utils/src/utils/network.utils.ts#L13)
 
 ***
 
@@ -144,7 +144,7 @@
 
 #### Defined in
 
-[packages/utils/src/utils/network.utils.ts:15](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/utils/src/utils/network.utils.ts#L15)
+[packages/utils/src/utils/network.utils.ts:15](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/utils/src/utils/network.utils.ts#L15)
 
 ***
 
@@ -154,7 +154,7 @@
 
 #### Defined in
 
-[packages/utils/src/utils/network.utils.ts:16](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/utils/src/utils/network.utils.ts#L16)
+[packages/utils/src/utils/network.utils.ts:16](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/utils/src/utils/network.utils.ts#L16)
 
 ***
 
@@ -164,7 +164,7 @@
 
 #### Defined in
 
-[packages/utils/src/utils/network.utils.ts:17](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/utils/src/utils/network.utils.ts#L17)
+[packages/utils/src/utils/network.utils.ts:17](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/utils/src/utils/network.utils.ts#L17)
 
 ***
 
@@ -174,7 +174,7 @@
 
 #### Defined in
 
-[packages/utils/src/utils/network.utils.ts:18](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/utils/src/utils/network.utils.ts#L18)
+[packages/utils/src/utils/network.utils.ts:18](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/utils/src/utils/network.utils.ts#L18)
 
 ***
 
@@ -184,7 +184,7 @@
 
 #### Defined in
 
-[packages/utils/src/utils/network.utils.ts:19](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/utils/src/utils/network.utils.ts#L19)
+[packages/utils/src/utils/network.utils.ts:19](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/utils/src/utils/network.utils.ts#L19)
 
 ***
 
@@ -194,7 +194,7 @@
 
 #### Defined in
 
-[packages/utils/src/utils/network.utils.ts:20](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/utils/src/utils/network.utils.ts#L20)
+[packages/utils/src/utils/network.utils.ts:20](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/utils/src/utils/network.utils.ts#L20)
 
 ***
 
@@ -204,7 +204,7 @@
 
 #### Defined in
 
-[packages/utils/src/utils/network.utils.ts:21](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/utils/src/utils/network.utils.ts#L21)
+[packages/utils/src/utils/network.utils.ts:21](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/utils/src/utils/network.utils.ts#L21)
 
 ***
 
@@ -214,7 +214,7 @@
 
 #### Defined in
 
-[packages/utils/src/utils/network.utils.ts:22](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/utils/src/utils/network.utils.ts#L22)
+[packages/utils/src/utils/network.utils.ts:22](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/utils/src/utils/network.utils.ts#L22)
 
 ***
 
@@ -224,7 +224,7 @@
 
 #### Defined in
 
-[packages/utils/src/utils/network.utils.ts:23](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/utils/src/utils/network.utils.ts#L23)
+[packages/utils/src/utils/network.utils.ts:23](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/utils/src/utils/network.utils.ts#L23)
 
 ***
 
@@ -234,7 +234,7 @@
 
 #### Defined in
 
-[packages/utils/src/utils/network.utils.ts:24](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/utils/src/utils/network.utils.ts#L24)
+[packages/utils/src/utils/network.utils.ts:24](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/utils/src/utils/network.utils.ts#L24)
 
 ***
 
@@ -244,7 +244,7 @@
 
 #### Defined in
 
-[packages/utils/src/utils/network.utils.ts:25](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/utils/src/utils/network.utils.ts#L25)
+[packages/utils/src/utils/network.utils.ts:25](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/utils/src/utils/network.utils.ts#L25)
 
 ***
 
@@ -254,7 +254,7 @@
 
 #### Defined in
 
-[packages/utils/src/utils/network.utils.ts:26](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/utils/src/utils/network.utils.ts#L26)
+[packages/utils/src/utils/network.utils.ts:26](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/utils/src/utils/network.utils.ts#L26)
 
 ***
 
@@ -264,7 +264,7 @@
 
 #### Defined in
 
-[packages/utils/src/utils/network.utils.ts:27](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/utils/src/utils/network.utils.ts#L27)
+[packages/utils/src/utils/network.utils.ts:27](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/utils/src/utils/network.utils.ts#L27)
 
 ***
 
@@ -274,7 +274,7 @@
 
 #### Defined in
 
-[packages/utils/src/utils/network.utils.ts:28](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/utils/src/utils/network.utils.ts#L28)
+[packages/utils/src/utils/network.utils.ts:28](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/utils/src/utils/network.utils.ts#L28)
 
 ***
 
@@ -284,7 +284,7 @@
 
 #### Defined in
 
-[packages/utils/src/utils/network.utils.ts:29](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/utils/src/utils/network.utils.ts#L29)
+[packages/utils/src/utils/network.utils.ts:29](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/utils/src/utils/network.utils.ts#L29)
 
 ***
 
@@ -294,7 +294,7 @@
 
 #### Defined in
 
-[packages/utils/src/utils/network.utils.ts:30](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/utils/src/utils/network.utils.ts#L30)
+[packages/utils/src/utils/network.utils.ts:30](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/utils/src/utils/network.utils.ts#L30)
 
 ***
 
@@ -304,7 +304,7 @@
 
 #### Defined in
 
-[packages/utils/src/utils/network.utils.ts:31](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/utils/src/utils/network.utils.ts#L31)
+[packages/utils/src/utils/network.utils.ts:31](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/utils/src/utils/network.utils.ts#L31)
 
 ***
 
@@ -314,7 +314,7 @@
 
 #### Defined in
 
-[packages/utils/src/utils/network.utils.ts:32](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/utils/src/utils/network.utils.ts#L32)
+[packages/utils/src/utils/network.utils.ts:32](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/utils/src/utils/network.utils.ts#L32)
 
 ***
 
@@ -324,7 +324,7 @@
 
 #### Defined in
 
-[packages/utils/src/utils/network.utils.ts:33](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/utils/src/utils/network.utils.ts#L33)
+[packages/utils/src/utils/network.utils.ts:33](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/utils/src/utils/network.utils.ts#L33)
 
 ***
 
@@ -334,7 +334,7 @@
 
 #### Defined in
 
-[packages/utils/src/utils/network.utils.ts:34](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/utils/src/utils/network.utils.ts#L34)
+[packages/utils/src/utils/network.utils.ts:34](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/utils/src/utils/network.utils.ts#L34)
 
 ***
 
@@ -344,7 +344,7 @@
 
 #### Defined in
 
-[packages/utils/src/utils/network.utils.ts:38](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/utils/src/utils/network.utils.ts#L38)
+[packages/utils/src/utils/network.utils.ts:38](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/utils/src/utils/network.utils.ts#L38)
 
 ***
 
@@ -354,7 +354,7 @@
 
 #### Defined in
 
-[packages/utils/src/utils/network.utils.ts:35](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/utils/src/utils/network.utils.ts#L35)
+[packages/utils/src/utils/network.utils.ts:35](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/utils/src/utils/network.utils.ts#L35)
 
 ***
 
@@ -364,7 +364,7 @@
 
 #### Defined in
 
-[packages/utils/src/utils/network.utils.ts:36](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/utils/src/utils/network.utils.ts#L36)
+[packages/utils/src/utils/network.utils.ts:36](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/utils/src/utils/network.utils.ts#L36)
 
 ***
 
@@ -374,7 +374,7 @@
 
 #### Defined in
 
-[packages/utils/src/utils/network.utils.ts:37](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/utils/src/utils/network.utils.ts#L37)
+[packages/utils/src/utils/network.utils.ts:37](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/utils/src/utils/network.utils.ts#L37)
 
 ***
 
@@ -384,7 +384,7 @@
 
 #### Defined in
 
-[packages/utils/src/utils/network.utils.ts:39](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/utils/src/utils/network.utils.ts#L39)
+[packages/utils/src/utils/network.utils.ts:39](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/utils/src/utils/network.utils.ts#L39)
 
 ***
 
@@ -394,7 +394,7 @@
 
 #### Defined in
 
-[packages/utils/src/utils/network.utils.ts:40](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/utils/src/utils/network.utils.ts#L40)
+[packages/utils/src/utils/network.utils.ts:40](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/utils/src/utils/network.utils.ts#L40)
 
 ***
 
@@ -404,7 +404,7 @@
 
 #### Defined in
 
-[packages/utils/src/utils/network.utils.ts:41](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/utils/src/utils/network.utils.ts#L41)
+[packages/utils/src/utils/network.utils.ts:41](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/utils/src/utils/network.utils.ts#L41)
 
 ***
 
@@ -414,7 +414,7 @@
 
 #### Defined in
 
-[packages/utils/src/utils/network.utils.ts:42](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/utils/src/utils/network.utils.ts#L42)
+[packages/utils/src/utils/network.utils.ts:42](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/utils/src/utils/network.utils.ts#L42)
 
 ***
 
@@ -424,7 +424,7 @@
 
 #### Defined in
 
-[packages/utils/src/utils/network.utils.ts:43](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/utils/src/utils/network.utils.ts#L43)
+[packages/utils/src/utils/network.utils.ts:43](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/utils/src/utils/network.utils.ts#L43)
 
 ***
 
@@ -434,7 +434,7 @@
 
 #### Defined in
 
-[packages/utils/src/utils/network.utils.ts:44](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/utils/src/utils/network.utils.ts#L44)
+[packages/utils/src/utils/network.utils.ts:44](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/utils/src/utils/network.utils.ts#L44)
 
 ***
 
@@ -444,7 +444,7 @@
 
 #### Defined in
 
-[packages/utils/src/utils/network.utils.ts:45](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/utils/src/utils/network.utils.ts#L45)
+[packages/utils/src/utils/network.utils.ts:45](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/utils/src/utils/network.utils.ts#L45)
 
 ***
 
@@ -454,7 +454,7 @@
 
 #### Defined in
 
-[packages/utils/src/utils/network.utils.ts:46](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/utils/src/utils/network.utils.ts#L46)
+[packages/utils/src/utils/network.utils.ts:46](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/utils/src/utils/network.utils.ts#L46)
 
 ***
 
@@ -464,7 +464,7 @@
 
 #### Defined in
 
-[packages/utils/src/utils/network.utils.ts:47](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/utils/src/utils/network.utils.ts#L47)
+[packages/utils/src/utils/network.utils.ts:47](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/utils/src/utils/network.utils.ts#L47)
 
 ***
 
@@ -474,7 +474,7 @@
 
 #### Defined in
 
-[packages/utils/src/utils/network.utils.ts:48](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/utils/src/utils/network.utils.ts#L48)
+[packages/utils/src/utils/network.utils.ts:48](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/utils/src/utils/network.utils.ts#L48)
 
 ***
 
@@ -484,7 +484,7 @@
 
 #### Defined in
 
-[packages/utils/src/utils/network.utils.ts:49](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/utils/src/utils/network.utils.ts#L49)
+[packages/utils/src/utils/network.utils.ts:49](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/utils/src/utils/network.utils.ts#L49)
 
 ***
 
@@ -494,7 +494,7 @@
 
 #### Defined in
 
-[packages/utils/src/utils/network.utils.ts:50](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/utils/src/utils/network.utils.ts#L50)
+[packages/utils/src/utils/network.utils.ts:50](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/utils/src/utils/network.utils.ts#L50)
 
 ***
 
@@ -504,7 +504,7 @@
 
 #### Defined in
 
-[packages/utils/src/utils/network.utils.ts:54](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/utils/src/utils/network.utils.ts#L54)
+[packages/utils/src/utils/network.utils.ts:54](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/utils/src/utils/network.utils.ts#L54)
 
 ***
 
@@ -514,7 +514,7 @@
 
 #### Defined in
 
-[packages/utils/src/utils/network.utils.ts:55](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/utils/src/utils/network.utils.ts#L55)
+[packages/utils/src/utils/network.utils.ts:55](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/utils/src/utils/network.utils.ts#L55)
 
 ***
 
@@ -524,7 +524,7 @@
 
 #### Defined in
 
-[packages/utils/src/utils/network.utils.ts:51](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/utils/src/utils/network.utils.ts#L51)
+[packages/utils/src/utils/network.utils.ts:51](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/utils/src/utils/network.utils.ts#L51)
 
 ***
 
@@ -534,7 +534,7 @@
 
 #### Defined in
 
-[packages/utils/src/utils/network.utils.ts:52](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/utils/src/utils/network.utils.ts#L52)
+[packages/utils/src/utils/network.utils.ts:52](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/utils/src/utils/network.utils.ts#L52)
 
 ***
 
@@ -544,7 +544,7 @@
 
 #### Defined in
 
-[packages/utils/src/utils/network.utils.ts:53](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/utils/src/utils/network.utils.ts#L53)
+[packages/utils/src/utils/network.utils.ts:53](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/utils/src/utils/network.utils.ts#L53)
 
 ***
 
@@ -554,7 +554,7 @@
 
 #### Defined in
 
-[packages/utils/src/utils/network.utils.ts:56](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/utils/src/utils/network.utils.ts#L56)
+[packages/utils/src/utils/network.utils.ts:56](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/utils/src/utils/network.utils.ts#L56)
 
 ***
 
@@ -564,7 +564,7 @@
 
 #### Defined in
 
-[packages/utils/src/utils/network.utils.ts:57](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/utils/src/utils/network.utils.ts#L57)
+[packages/utils/src/utils/network.utils.ts:57](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/utils/src/utils/network.utils.ts#L57)
 
 ***
 
@@ -574,7 +574,7 @@
 
 #### Defined in
 
-[packages/utils/src/utils/network.utils.ts:58](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/utils/src/utils/network.utils.ts#L58)
+[packages/utils/src/utils/network.utils.ts:58](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/utils/src/utils/network.utils.ts#L58)
 
 ***
 
@@ -584,7 +584,7 @@
 
 #### Defined in
 
-[packages/utils/src/utils/network.utils.ts:59](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/utils/src/utils/network.utils.ts#L59)
+[packages/utils/src/utils/network.utils.ts:59](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/utils/src/utils/network.utils.ts#L59)
 
 ***
 
@@ -594,7 +594,7 @@
 
 #### Defined in
 
-[packages/utils/src/utils/network.utils.ts:60](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/utils/src/utils/network.utils.ts#L60)
+[packages/utils/src/utils/network.utils.ts:60](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/utils/src/utils/network.utils.ts#L60)
 
 ***
 
@@ -604,7 +604,7 @@
 
 #### Defined in
 
-[packages/utils/src/utils/network.utils.ts:61](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/utils/src/utils/network.utils.ts#L61)
+[packages/utils/src/utils/network.utils.ts:61](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/utils/src/utils/network.utils.ts#L61)
 
 ***
 
@@ -614,7 +614,7 @@
 
 #### Defined in
 
-[packages/utils/src/utils/network.utils.ts:62](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/utils/src/utils/network.utils.ts#L62)
+[packages/utils/src/utils/network.utils.ts:62](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/utils/src/utils/network.utils.ts#L62)
 
 ***
 
@@ -624,7 +624,7 @@
 
 #### Defined in
 
-[packages/utils/src/utils/network.utils.ts:63](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/utils/src/utils/network.utils.ts#L63)
+[packages/utils/src/utils/network.utils.ts:63](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/utils/src/utils/network.utils.ts#L63)
 
 ***
 
@@ -634,7 +634,7 @@
 
 #### Defined in
 
-[packages/utils/src/utils/network.utils.ts:64](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/utils/src/utils/network.utils.ts#L64)
+[packages/utils/src/utils/network.utils.ts:64](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/utils/src/utils/network.utils.ts#L64)
 
 ***
 
@@ -644,7 +644,7 @@
 
 #### Defined in
 
-[packages/utils/src/utils/network.utils.ts:65](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/utils/src/utils/network.utils.ts#L65)
+[packages/utils/src/utils/network.utils.ts:65](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/utils/src/utils/network.utils.ts#L65)
 
 ***
 
@@ -654,7 +654,7 @@
 
 #### Defined in
 
-[packages/utils/src/utils/network.utils.ts:66](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/utils/src/utils/network.utils.ts#L66)
+[packages/utils/src/utils/network.utils.ts:66](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/utils/src/utils/network.utils.ts#L66)
 
 ***
 
@@ -664,7 +664,7 @@
 
 #### Defined in
 
-[packages/utils/src/utils/network.utils.ts:67](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/utils/src/utils/network.utils.ts#L67)
+[packages/utils/src/utils/network.utils.ts:67](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/utils/src/utils/network.utils.ts#L67)
 
 ***
 
@@ -674,7 +674,7 @@
 
 #### Defined in
 
-[packages/utils/src/utils/network.utils.ts:68](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/utils/src/utils/network.utils.ts#L68)
+[packages/utils/src/utils/network.utils.ts:68](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/utils/src/utils/network.utils.ts#L68)
 
 ***
 
@@ -684,7 +684,7 @@
 
 #### Defined in
 
-[packages/utils/src/utils/network.utils.ts:69](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/utils/src/utils/network.utils.ts#L69)
+[packages/utils/src/utils/network.utils.ts:69](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/utils/src/utils/network.utils.ts#L69)
 
 ***
 
@@ -694,7 +694,7 @@
 
 #### Defined in
 
-[packages/utils/src/utils/network.utils.ts:70](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/utils/src/utils/network.utils.ts#L70)
+[packages/utils/src/utils/network.utils.ts:70](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/utils/src/utils/network.utils.ts#L70)
 
 ***
 
@@ -704,7 +704,7 @@
 
 #### Defined in
 
-[packages/utils/src/utils/network.utils.ts:71](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/utils/src/utils/network.utils.ts#L71)
+[packages/utils/src/utils/network.utils.ts:71](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/utils/src/utils/network.utils.ts#L71)
 
 ***
 
@@ -714,7 +714,7 @@
 
 #### Defined in
 
-[packages/utils/src/utils/network.utils.ts:73](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/utils/src/utils/network.utils.ts#L73)
+[packages/utils/src/utils/network.utils.ts:73](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/utils/src/utils/network.utils.ts#L73)
 
 ***
 
@@ -724,7 +724,7 @@
 
 #### Defined in
 
-[packages/utils/src/utils/network.utils.ts:72](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/utils/src/utils/network.utils.ts#L72)
+[packages/utils/src/utils/network.utils.ts:72](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/utils/src/utils/network.utils.ts#L72)
 
 ***
 
@@ -734,7 +734,7 @@
 
 #### Defined in
 
-[packages/utils/src/utils/network.utils.ts:74](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/utils/src/utils/network.utils.ts#L74)
+[packages/utils/src/utils/network.utils.ts:74](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/utils/src/utils/network.utils.ts#L74)
 
 ***
 
@@ -744,7 +744,7 @@
 
 #### Defined in
 
-[packages/utils/src/utils/network.utils.ts:75](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/utils/src/utils/network.utils.ts#L75)
+[packages/utils/src/utils/network.utils.ts:75](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/utils/src/utils/network.utils.ts#L75)
 
 ***
 
@@ -754,7 +754,7 @@
 
 #### Defined in
 
-[packages/utils/src/utils/network.utils.ts:76](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/utils/src/utils/network.utils.ts#L76)
+[packages/utils/src/utils/network.utils.ts:76](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/utils/src/utils/network.utils.ts#L76)
 
 ***
 
@@ -764,7 +764,7 @@
 
 #### Defined in
 
-[packages/utils/src/utils/network.utils.ts:77](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/utils/src/utils/network.utils.ts#L77)
+[packages/utils/src/utils/network.utils.ts:77](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/utils/src/utils/network.utils.ts#L77)
 
 ***
 
@@ -774,4 +774,4 @@
 
 #### Defined in
 
-[packages/utils/src/utils/network.utils.ts:78](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/utils/src/utils/network.utils.ts#L78)
+[packages/utils/src/utils/network.utils.ts:78](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/utils/src/utils/network.utils.ts#L78)

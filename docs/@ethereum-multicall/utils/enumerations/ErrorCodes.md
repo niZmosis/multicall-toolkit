@@ -14,7 +14,7 @@
 
 #### Defined in
 
-[packages/utils/src/errors/error-codes.ts:8](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/utils/src/errors/error-codes.ts#L8)
+[packages/utils/src/errors/error-codes.ts:8](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/utils/src/errors/error-codes.ts#L8)
 
 ***
 
@@ -24,7 +24,7 @@
 
 #### Defined in
 
-[packages/utils/src/errors/error-codes.ts:15](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/utils/src/errors/error-codes.ts#L15)
+[packages/utils/src/errors/error-codes.ts:15](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/utils/src/errors/error-codes.ts#L15)
 
 ***
 
@@ -34,7 +34,7 @@
 
 #### Defined in
 
-[packages/utils/src/errors/error-codes.ts:14](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/utils/src/errors/error-codes.ts#L14)
+[packages/utils/src/errors/error-codes.ts:14](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/utils/src/errors/error-codes.ts#L14)
 
 ***
 
@@ -44,7 +44,7 @@
 
 #### Defined in
 
-[packages/utils/src/errors/error-codes.ts:4](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/utils/src/errors/error-codes.ts#L4)
+[packages/utils/src/errors/error-codes.ts:4](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/utils/src/errors/error-codes.ts#L4)
 
 ***
 
@@ -54,7 +54,7 @@
 
 #### Defined in
 
-[packages/utils/src/errors/error-codes.ts:3](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/utils/src/errors/error-codes.ts#L3)
+[packages/utils/src/errors/error-codes.ts:3](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/utils/src/errors/error-codes.ts#L3)
 
 ***
 
@@ -64,7 +64,7 @@
 
 #### Defined in
 
-[packages/utils/src/errors/error-codes.ts:11](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/utils/src/errors/error-codes.ts#L11)
+[packages/utils/src/errors/error-codes.ts:11](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/utils/src/errors/error-codes.ts#L11)
 
 ***
 
@@ -74,4 +74,4 @@
 
 #### Defined in
 
-[packages/utils/src/errors/error-codes.ts:5](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/utils/src/errors/error-codes.ts#L5)
+[packages/utils/src/errors/error-codes.ts:5](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/utils/src/errors/error-codes.ts#L5)

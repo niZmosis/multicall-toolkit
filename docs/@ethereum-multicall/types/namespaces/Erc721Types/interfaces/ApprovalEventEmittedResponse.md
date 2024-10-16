@@ -14,7 +14,7 @@
 
 #### Defined in
 
-abis/erc721.types.ts:66
+[abis/erc721.types.ts:66](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/abis/erc721.types.ts#L66)
 
 ***
 
@@ -24,7 +24,7 @@ abis/erc721.types.ts:66
 
 #### Defined in
 
-abis/erc721.types.ts:65
+[abis/erc721.types.ts:65](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/abis/erc721.types.ts#L65)
 
 ***
 
@@ -34,4 +34,4 @@ abis/erc721.types.ts:65
 
 #### Defined in
 
-abis/erc721.types.ts:67
+[abis/erc721.types.ts:67](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/abis/erc721.types.ts#L67)

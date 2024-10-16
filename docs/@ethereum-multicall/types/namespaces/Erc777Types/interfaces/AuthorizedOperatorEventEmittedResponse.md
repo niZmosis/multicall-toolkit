@@ -14,7 +14,7 @@
 
 #### Defined in
 
-abis/erc777.types.ts:60
+[abis/erc777.types.ts:60](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/abis/erc777.types.ts#L60)
 
 ***
 
@@ -24,4 +24,4 @@ abis/erc777.types.ts:60
 
 #### Defined in
 
-abis/erc777.types.ts:61
+[abis/erc777.types.ts:61](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/abis/erc777.types.ts#L61)

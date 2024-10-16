@@ -79,7 +79,7 @@ export const defaultErc1155MethodMap: Erc1155Types.MethodNameMap = {
 
 // Wrapped
 
-export const defaultWrappedTypesMethodMap: WrappedTypes.MethodNameMap = {
+export const defaultWrappedMethodMap: WrappedTypes.MethodNameMap = {
   name: 'name',
   approve: 'approve',
   totalSupply: 'totalSupply',

@@ -32,7 +32,7 @@ Will throw an error if the provided options don't match any of the expected inte
 
 #### Defined in
 
-[multicall.ts:45](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/core/src/multicall.ts#L45)
+[multicall.ts:45](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/core/src/multicall.ts#L45)
 
 ## Properties
 
@@ -44,7 +44,7 @@ The type of execution for this Multicall instance.
 
 #### Defined in
 
-[multicall.ts:35](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/core/src/multicall.ts#L35)
+[multicall.ts:35](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/core/src/multicall.ts#L35)
 
 ***
 
@@ -56,7 +56,7 @@ The options for this Multicall instance.
 
 #### Defined in
 
-[multicall.ts:38](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/core/src/multicall.ts#L38)
+[multicall.ts:38](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/core/src/multicall.ts#L38)
 
 ## Methods
 
@@ -86,7 +86,7 @@ An array of aggregate call contexts.
 
 #### Defined in
 
-[multicall.ts:225](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/core/src/multicall.ts#L225)
+[multicall.ts:225](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/core/src/multicall.ts#L225)
 
 ***
 
@@ -114,7 +114,7 @@ The built aggregate response.
 
 #### Defined in
 
-[multicall.ts:502](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/core/src/multicall.ts#L502)
+[multicall.ts:502](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/core/src/multicall.ts#L502)
 
 ***
 
@@ -148,7 +148,7 @@ A promise that resolves to the multicall results.
 
 #### Defined in
 
-[multicall.ts:97](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/core/src/multicall.ts#L97)
+[multicall.ts:97](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/core/src/multicall.ts#L97)
 
 ***
 
@@ -188,7 +188,7 @@ A function that creates a call context for the specified contract.
 
 #### Defined in
 
-[multicall.ts:74](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/core/src/multicall.ts#L74)
+[multicall.ts:74](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/core/src/multicall.ts#L74)
 
 ***
 
@@ -216,7 +216,7 @@ A promise that resolves to the aggregate response.
 
 #### Defined in
 
-[multicall.ts:353](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/core/src/multicall.ts#L353)
+[multicall.ts:353](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/core/src/multicall.ts#L353)
 
 ***
 
@@ -244,7 +244,7 @@ A promise that resolves to the aggregate response.
 
 #### Defined in
 
-[multicall.ts:429](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/core/src/multicall.ts#L429)
+[multicall.ts:429](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/core/src/multicall.ts#L429)
 
 ***
 
@@ -272,7 +272,7 @@ A promise that resolves to the aggregate response.
 
 #### Defined in
 
-[multicall.ts:374](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/core/src/multicall.ts#L374)
+[multicall.ts:374](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/core/src/multicall.ts#L374)
 
 ***
 
@@ -300,7 +300,7 @@ An array of ABI outputs or undefined if not found.
 
 #### Defined in
 
-[multicall.ts:305](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/core/src/multicall.ts#L305)
+[multicall.ts:305](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/core/src/multicall.ts#L305)
 
 ***
 
@@ -324,7 +324,7 @@ The formatted return values.
 
 #### Defined in
 
-[multicall.ts:286](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/core/src/multicall.ts#L286)
+[multicall.ts:286](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/core/src/multicall.ts#L286)
 
 ***
 
@@ -348,7 +348,7 @@ The return data.
 
 #### Defined in
 
-[multicall.ts:273](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/core/src/multicall.ts#L273)
+[multicall.ts:273](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/core/src/multicall.ts#L273)
 
 ***
 
@@ -372,4 +372,4 @@ An array of objects with target and callData properties.
 
 #### Defined in
 
-[multicall.ts:551](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/core/src/multicall.ts#L551)
+[multicall.ts:551](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/core/src/multicall.ts#L551)

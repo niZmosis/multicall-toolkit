@@ -14,7 +14,7 @@
 
 #### Defined in
 
-abis/multicall3.types.ts:53
+[abis/multicall3.types.ts:53](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/abis/multicall3.types.ts#L53)
 
 ***
 
@@ -24,7 +24,7 @@ abis/multicall3.types.ts:53
 
 #### Defined in
 
-abis/multicall3.types.ts:55
+[abis/multicall3.types.ts:55](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/abis/multicall3.types.ts#L55)
 
 ***
 
@@ -34,7 +34,7 @@ abis/multicall3.types.ts:55
 
 #### Defined in
 
-abis/multicall3.types.ts:54
+[abis/multicall3.types.ts:54](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/abis/multicall3.types.ts#L54)
 
 ***
 
@@ -44,4 +44,4 @@ abis/multicall3.types.ts:54
 
 #### Defined in
 
-abis/multicall3.types.ts:52
+[abis/multicall3.types.ts:52](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/abis/multicall3.types.ts#L52)

@@ -36,7 +36,7 @@
 
 #### Defined in
 
-contracts/src/token/erc777.contract.ts:37
+[contracts/src/token/erc777.contract.ts:37](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc777.contract.ts#L37)
 
 ## Properties
 
@@ -46,7 +46,7 @@ contracts/src/token/erc777.contract.ts:37
 
 #### Defined in
 
-contracts/src/token/erc777.contract.ts:33
+[contracts/src/token/erc777.contract.ts:33](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc777.contract.ts#L33)
 
 ***
 
@@ -56,7 +56,7 @@ contracts/src/token/erc777.contract.ts:33
 
 #### Defined in
 
-contracts/src/token/erc777.contract.ts:31
+[contracts/src/token/erc777.contract.ts:31](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc777.contract.ts#L31)
 
 ***
 
@@ -66,7 +66,7 @@ contracts/src/token/erc777.contract.ts:31
 
 #### Defined in
 
-contracts/src/token/erc777.contract.ts:35
+[contracts/src/token/erc777.contract.ts:35](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc777.contract.ts#L35)
 
 ***
 
@@ -100,7 +100,7 @@ Get the contract detail
 
 #### Defined in
 
-contracts/src/token/erc777.contract.ts:67
+[contracts/src/token/erc777.contract.ts:67](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc777.contract.ts#L67)
 
 ***
 
@@ -116,7 +116,7 @@ Get the ERC777 contract
 
 #### Defined in
 
-contracts/src/token/erc777.contract.ts:72
+[contracts/src/token/erc777.contract.ts:72](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc777.contract.ts#L72)
 
 ***
 
@@ -132,7 +132,7 @@ Get the method names
 
 #### Defined in
 
-contracts/src/token/erc777.contract.ts:77
+[contracts/src/token/erc777.contract.ts:77](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc777.contract.ts#L77)
 
 ***
 
@@ -186,7 +186,7 @@ A promise that resolves to a void.
 
 #### Defined in
 
-contracts/src/token/erc777.contract.ts:307
+[contracts/src/token/erc777.contract.ts:307](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc777.contract.ts#L307)
 
 ***
 
@@ -214,7 +214,7 @@ The balance of the specified address.
 
 #### Defined in
 
-contracts/src/token/erc777.contract.ts:257
+[contracts/src/token/erc777.contract.ts:257](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc777.contract.ts#L257)
 
 ***
 
@@ -238,7 +238,7 @@ The call context.
 
 #### Defined in
 
-contracts/src/token/erc777.contract.ts:266
+[contracts/src/token/erc777.contract.ts:266](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc777.contract.ts#L266)
 
 ***
 
@@ -291,7 +291,7 @@ The results are typed according to the return types of the called methods.
 
 #### Defined in
 
-contracts/src/token/erc777.contract.ts:163
+[contracts/src/token/erc777.contract.ts:163](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc777.contract.ts#L163)
 
 ***
 
@@ -323,7 +323,7 @@ The result of the contract method invocation with the appropriate return type.
 
 #### Defined in
 
-contracts/src/token/erc777.contract.ts:87
+[contracts/src/token/erc777.contract.ts:87](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc777.contract.ts#L87)
 
 ***
 
@@ -345,7 +345,7 @@ The list of default operators.
 
 #### Defined in
 
-contracts/src/token/erc777.contract.ts:237
+[contracts/src/token/erc777.contract.ts:237](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc777.contract.ts#L237)
 
 ***
 
@@ -363,7 +363,7 @@ The call context.
 
 #### Defined in
 
-contracts/src/token/erc777.contract.ts:245
+[contracts/src/token/erc777.contract.ts:245](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc777.contract.ts#L245)
 
 ***
 
@@ -385,7 +385,7 @@ A promise that resolves to void.
 
 #### Defined in
 
-contracts/src/token/erc777.contract.ts:330
+[contracts/src/token/erc777.contract.ts:330](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc777.contract.ts#L330)
 
 ***
 
@@ -403,7 +403,7 @@ The call context.
 
 #### Defined in
 
-contracts/src/token/erc777.contract.ts:338
+[contracts/src/token/erc777.contract.ts:338](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc777.contract.ts#L338)
 
 ***
 
@@ -427,7 +427,7 @@ The encoded function data.
 
 #### Defined in
 
-contracts/src/token/erc777.contract.ts:322
+[contracts/src/token/erc777.contract.ts:322](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc777.contract.ts#L322)
 
 ***
 
@@ -455,7 +455,7 @@ The encoded function data.
 
 #### Defined in
 
-contracts/src/token/erc777.contract.ts:111
+[contracts/src/token/erc777.contract.ts:111](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc777.contract.ts#L111)
 
 ***
 
@@ -495,7 +495,7 @@ The encoded function data.
 
 #### Defined in
 
-contracts/src/token/erc777.contract.ts:431
+[contracts/src/token/erc777.contract.ts:431](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc777.contract.ts#L431)
 
 ***
 
@@ -519,7 +519,7 @@ The encoded function data.
 
 #### Defined in
 
-contracts/src/token/erc777.contract.ts:468
+[contracts/src/token/erc777.contract.ts:468](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc777.contract.ts#L468)
 
 ***
 
@@ -543,7 +543,7 @@ The encoded function data.
 
 #### Defined in
 
-contracts/src/token/erc777.contract.ts:382
+[contracts/src/token/erc777.contract.ts:382](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc777.contract.ts#L382)
 
 ***
 
@@ -579,7 +579,7 @@ The encoded function data.
 
 #### Defined in
 
-contracts/src/token/erc777.contract.ts:507
+[contracts/src/token/erc777.contract.ts:507](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc777.contract.ts#L507)
 
 ***
 
@@ -603,113 +603,13 @@ The encoded function data.
 
 #### Defined in
 
-contracts/src/token/erc777.contract.ts:537
+[contracts/src/token/erc777.contract.ts:537](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc777.contract.ts#L537)
 
 ***
 
-### granularity()
+### executeCall()
 
-> **granularity**(): `Promise`\<`BigNumber`\>
-
-Returns the granularity of the token.
-
-#### Returns
-
-`Promise`\<`BigNumber`\>
-
-The granularity of the token.
-
-#### Implementation of
-
-`Erc777Types.Contract.granularity`
-
-#### Defined in
-
-contracts/src/token/erc777.contract.ts:218
-
-***
-
-### granularityCallContext()
-
-> **granularityCallContext**(): `MethodCall`\<`Contract`, `"granularity"`\>
-
-Returns the call context for the granularity method.
-
-#### Returns
-
-`MethodCall`\<`Contract`, `"granularity"`\>
-
-The call context.
-
-#### Defined in
-
-contracts/src/token/erc777.contract.ts:226
-
-***
-
-### isOperatorFor()
-
-> **isOperatorFor**(`_tokenHolder`, `_operator`): `Promise`\<`boolean`\>
-
-Checks if an operator is authorized for a given token holder.
-
-#### Parameters
-
-• **\_tokenHolder**: `string`
-
-The address of the token holder.
-
-• **\_operator**: `string`
-
-The address of the operator.
-
-#### Returns
-
-`Promise`\<`boolean`\>
-
-True if the operator is authorized, false otherwise.
-
-#### Implementation of
-
-`Erc777Types.Contract.isOperatorFor`
-
-#### Defined in
-
-contracts/src/token/erc777.contract.ts:278
-
-***
-
-### isOperatorForCallContext()
-
-> **isOperatorForCallContext**(`_tokenHolder`, `_operator`): `MethodCall`\<`Contract`, `"isOperatorFor"`\>
-
-Returns the call context for the isOperatorFor method.
-
-#### Parameters
-
-• **\_tokenHolder**: `string`
-
-The address of the token holder.
-
-• **\_operator**: `string`
-
-The address of the operator.
-
-#### Returns
-
-`MethodCall`\<`Contract`, `"isOperatorFor"`\>
-
-The call context.
-
-#### Defined in
-
-contracts/src/token/erc777.contract.ts:294
-
-***
-
-### multicall()
-
-> `protected` **multicall**\<`TContract`, `TCalls`\>(`calls`, `options`?): `Promise`\<`object`\>
+> `protected` **executeCall**\<`TContract`, `TCalls`\>(`calls`, `options`?): `Promise`\<`object`\>
 
 Executes a multicall for the given contract methods.
 
@@ -754,11 +654,111 @@ A promise that resolves to an object containing the block number,
 
 #### Inherited from
 
-`MulticallProviderBase.multicall`
+`MulticallProviderBase.executeCall`
 
 #### Defined in
 
 provider/dist/esm/multicall-provider-base.d.ts:30
+
+***
+
+### granularity()
+
+> **granularity**(): `Promise`\<`BigNumber`\>
+
+Returns the granularity of the token.
+
+#### Returns
+
+`Promise`\<`BigNumber`\>
+
+The granularity of the token.
+
+#### Implementation of
+
+`Erc777Types.Contract.granularity`
+
+#### Defined in
+
+[contracts/src/token/erc777.contract.ts:218](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc777.contract.ts#L218)
+
+***
+
+### granularityCallContext()
+
+> **granularityCallContext**(): `MethodCall`\<`Contract`, `"granularity"`\>
+
+Returns the call context for the granularity method.
+
+#### Returns
+
+`MethodCall`\<`Contract`, `"granularity"`\>
+
+The call context.
+
+#### Defined in
+
+[contracts/src/token/erc777.contract.ts:226](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc777.contract.ts#L226)
+
+***
+
+### isOperatorFor()
+
+> **isOperatorFor**(`_tokenHolder`, `_operator`): `Promise`\<`boolean`\>
+
+Checks if an operator is authorized for a given token holder.
+
+#### Parameters
+
+• **\_tokenHolder**: `string`
+
+The address of the token holder.
+
+• **\_operator**: `string`
+
+The address of the operator.
+
+#### Returns
+
+`Promise`\<`boolean`\>
+
+True if the operator is authorized, false otherwise.
+
+#### Implementation of
+
+`Erc777Types.Contract.isOperatorFor`
+
+#### Defined in
+
+[contracts/src/token/erc777.contract.ts:278](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc777.contract.ts#L278)
+
+***
+
+### isOperatorForCallContext()
+
+> **isOperatorForCallContext**(`_tokenHolder`, `_operator`): `MethodCall`\<`Contract`, `"isOperatorFor"`\>
+
+Returns the call context for the isOperatorFor method.
+
+#### Parameters
+
+• **\_tokenHolder**: `string`
+
+The address of the token holder.
+
+• **\_operator**: `string`
+
+The address of the operator.
+
+#### Returns
+
+`MethodCall`\<`Contract`, `"isOperatorFor"`\>
+
+The call context.
+
+#### Defined in
+
+[contracts/src/token/erc777.contract.ts:294](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc777.contract.ts#L294)
 
 ***
 
@@ -780,7 +780,7 @@ The name of the token.
 
 #### Defined in
 
-contracts/src/token/erc777.contract.ts:186
+[contracts/src/token/erc777.contract.ts:186](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc777.contract.ts#L186)
 
 ***
 
@@ -798,7 +798,7 @@ The call context.
 
 #### Defined in
 
-contracts/src/token/erc777.contract.ts:194
+[contracts/src/token/erc777.contract.ts:194](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc777.contract.ts#L194)
 
 ***
 
@@ -846,7 +846,7 @@ A promise that resolves to a contract transaction.
 
 #### Defined in
 
-contracts/src/token/erc777.contract.ts:404
+[contracts/src/token/erc777.contract.ts:404](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc777.contract.ts#L404)
 
 ***
 
@@ -878,7 +878,7 @@ The call context.
 
 #### Defined in
 
-contracts/src/token/erc777.contract.ts:127
+[contracts/src/token/erc777.contract.ts:127](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc777.contract.ts#L127)
 
 ***
 
@@ -910,7 +910,7 @@ A promise that resolves to a contract transaction.
 
 #### Defined in
 
-contracts/src/token/erc777.contract.ts:453
+[contracts/src/token/erc777.contract.ts:453](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc777.contract.ts#L453)
 
 ***
 
@@ -944,7 +944,7 @@ A promise that resolves to a contract transaction.
 
 ##### Defined in
 
-contracts/src/token/erc777.contract.ts:351
+[contracts/src/token/erc777.contract.ts:351](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc777.contract.ts#L351)
 
 #### revokeOperator(_newDefaultOperators, overrides)
 
@@ -974,7 +974,7 @@ A promise that resolves to a contract transaction.
 
 ##### Defined in
 
-contracts/src/token/erc777.contract.ts:362
+[contracts/src/token/erc777.contract.ts:362](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc777.contract.ts#L362)
 
 ***
 
@@ -1018,7 +1018,7 @@ A promise that resolves to a contract transaction.
 
 #### Defined in
 
-contracts/src/token/erc777.contract.ts:483
+[contracts/src/token/erc777.contract.ts:483](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc777.contract.ts#L483)
 
 ***
 
@@ -1050,7 +1050,7 @@ A promise that resolves to a contract transaction.
 
 #### Defined in
 
-contracts/src/token/erc777.contract.ts:522
+[contracts/src/token/erc777.contract.ts:522](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc777.contract.ts#L522)
 
 ***
 
@@ -1072,7 +1072,7 @@ The symbol of the token.
 
 #### Defined in
 
-contracts/src/token/erc777.contract.ts:202
+[contracts/src/token/erc777.contract.ts:202](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc777.contract.ts#L202)
 
 ***
 
@@ -1090,4 +1090,4 @@ The call context.
 
 #### Defined in
 
-contracts/src/token/erc777.contract.ts:210
+[contracts/src/token/erc777.contract.ts:210](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc777.contract.ts#L210)

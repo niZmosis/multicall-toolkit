@@ -36,7 +36,7 @@
 
 #### Defined in
 
-contracts/src/token/erc1155.contract.ts:37
+[contracts/src/token/erc1155.contract.ts:37](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc1155.contract.ts#L37)
 
 ## Properties
 
@@ -46,7 +46,7 @@ contracts/src/token/erc1155.contract.ts:37
 
 #### Defined in
 
-contracts/src/token/erc1155.contract.ts:33
+[contracts/src/token/erc1155.contract.ts:33](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc1155.contract.ts#L33)
 
 ***
 
@@ -56,7 +56,7 @@ contracts/src/token/erc1155.contract.ts:33
 
 #### Defined in
 
-contracts/src/token/erc1155.contract.ts:31
+[contracts/src/token/erc1155.contract.ts:31](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc1155.contract.ts#L31)
 
 ***
 
@@ -66,7 +66,7 @@ contracts/src/token/erc1155.contract.ts:31
 
 #### Defined in
 
-contracts/src/token/erc1155.contract.ts:35
+[contracts/src/token/erc1155.contract.ts:35](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc1155.contract.ts#L35)
 
 ***
 
@@ -100,7 +100,7 @@ Get the contract detail
 
 #### Defined in
 
-contracts/src/token/erc1155.contract.ts:67
+[contracts/src/token/erc1155.contract.ts:67](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc1155.contract.ts#L67)
 
 ***
 
@@ -116,7 +116,7 @@ Get the ERC1155 contract
 
 #### Defined in
 
-contracts/src/token/erc1155.contract.ts:72
+[contracts/src/token/erc1155.contract.ts:72](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc1155.contract.ts#L72)
 
 ***
 
@@ -132,7 +132,7 @@ Get the method names
 
 #### Defined in
 
-contracts/src/token/erc1155.contract.ts:77
+[contracts/src/token/erc1155.contract.ts:77](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc1155.contract.ts#L77)
 
 ***
 
@@ -186,7 +186,7 @@ The balance of the account for the token ID.
 
 #### Defined in
 
-contracts/src/token/erc1155.contract.ts:188
+[contracts/src/token/erc1155.contract.ts:188](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc1155.contract.ts#L188)
 
 ***
 
@@ -218,7 +218,7 @@ The array of balances.
 
 #### Defined in
 
-contracts/src/token/erc1155.contract.ts:214
+[contracts/src/token/erc1155.contract.ts:214](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc1155.contract.ts#L214)
 
 ***
 
@@ -246,7 +246,7 @@ The call context.
 
 #### Defined in
 
-contracts/src/token/erc1155.contract.ts:230
+[contracts/src/token/erc1155.contract.ts:230](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc1155.contract.ts#L230)
 
 ***
 
@@ -274,7 +274,7 @@ The call context.
 
 #### Defined in
 
-contracts/src/token/erc1155.contract.ts:201
+[contracts/src/token/erc1155.contract.ts:201](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc1155.contract.ts#L201)
 
 ***
 
@@ -327,7 +327,7 @@ The results are typed according to the return types of the called methods.
 
 #### Defined in
 
-contracts/src/token/erc1155.contract.ts:163
+[contracts/src/token/erc1155.contract.ts:163](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc1155.contract.ts#L163)
 
 ***
 
@@ -359,7 +359,7 @@ The result of the contract method invocation with the appropriate return type.
 
 #### Defined in
 
-contracts/src/token/erc1155.contract.ts:87
+[contracts/src/token/erc1155.contract.ts:87](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc1155.contract.ts#L87)
 
 ***
 
@@ -387,7 +387,7 @@ The encoded function data.
 
 #### Defined in
 
-contracts/src/token/erc1155.contract.ts:111
+[contracts/src/token/erc1155.contract.ts:111](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc1155.contract.ts#L111)
 
 ***
 
@@ -427,7 +427,7 @@ The encoded function data.
 
 #### Defined in
 
-contracts/src/token/erc1155.contract.ts:299
+[contracts/src/token/erc1155.contract.ts:299](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc1155.contract.ts#L299)
 
 ***
 
@@ -467,7 +467,7 @@ The encoded function data.
 
 #### Defined in
 
-contracts/src/token/erc1155.contract.ts:352
+[contracts/src/token/erc1155.contract.ts:352](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc1155.contract.ts#L352)
 
 ***
 
@@ -495,73 +495,13 @@ The encoded function data.
 
 #### Defined in
 
-contracts/src/token/erc1155.contract.ts:393
+[contracts/src/token/erc1155.contract.ts:393](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc1155.contract.ts#L393)
 
 ***
 
-### isApprovedForAll()
+### executeCall()
 
-> **isApprovedForAll**(`account`, `operator`): `Promise`\<`boolean`\>
-
-Checks if an operator is approved for all tokens of a given account.
-
-#### Parameters
-
-• **account**: `string`
-
-The address of the account.
-
-• **operator**: `string`
-
-The address of the operator.
-
-#### Returns
-
-`Promise`\<`boolean`\>
-
-True if the operator is approved for all tokens, false otherwise.
-
-#### Implementation of
-
-`Erc1155Types.Contract.isApprovedForAll`
-
-#### Defined in
-
-contracts/src/token/erc1155.contract.ts:243
-
-***
-
-### isApprovedForAllCallContext()
-
-> **isApprovedForAllCallContext**(`account`, `operator`): `MethodCall`\<`Contract`, `"isApprovedForAll"`\>
-
-Returns the call context for the isApprovedForAll method.
-
-#### Parameters
-
-• **account**: `string`
-
-The address of the account.
-
-• **operator**: `string`
-
-The address of the operator.
-
-#### Returns
-
-`MethodCall`\<`Contract`, `"isApprovedForAll"`\>
-
-The call context.
-
-#### Defined in
-
-contracts/src/token/erc1155.contract.ts:259
-
-***
-
-### multicall()
-
-> `protected` **multicall**\<`TContract`, `TCalls`\>(`calls`, `options`?): `Promise`\<`object`\>
+> `protected` **executeCall**\<`TContract`, `TCalls`\>(`calls`, `options`?): `Promise`\<`object`\>
 
 Executes a multicall for the given contract methods.
 
@@ -606,11 +546,71 @@ A promise that resolves to an object containing the block number,
 
 #### Inherited from
 
-`MulticallProviderBase.multicall`
+`MulticallProviderBase.executeCall`
 
 #### Defined in
 
 provider/dist/esm/multicall-provider-base.d.ts:30
+
+***
+
+### isApprovedForAll()
+
+> **isApprovedForAll**(`account`, `operator`): `Promise`\<`boolean`\>
+
+Checks if an operator is approved for all tokens of a given account.
+
+#### Parameters
+
+• **account**: `string`
+
+The address of the account.
+
+• **operator**: `string`
+
+The address of the operator.
+
+#### Returns
+
+`Promise`\<`boolean`\>
+
+True if the operator is approved for all tokens, false otherwise.
+
+#### Implementation of
+
+`Erc1155Types.Contract.isApprovedForAll`
+
+#### Defined in
+
+[contracts/src/token/erc1155.contract.ts:243](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc1155.contract.ts#L243)
+
+***
+
+### isApprovedForAllCallContext()
+
+> **isApprovedForAllCallContext**(`account`, `operator`): `MethodCall`\<`Contract`, `"isApprovedForAll"`\>
+
+Returns the call context for the isApprovedForAll method.
+
+#### Parameters
+
+• **account**: `string`
+
+The address of the account.
+
+• **operator**: `string`
+
+The address of the operator.
+
+#### Returns
+
+`MethodCall`\<`Contract`, `"isApprovedForAll"`\>
+
+The call context.
+
+#### Defined in
+
+[contracts/src/token/erc1155.contract.ts:259](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc1155.contract.ts#L259)
 
 ***
 
@@ -642,7 +642,7 @@ The call context.
 
 #### Defined in
 
-contracts/src/token/erc1155.contract.ts:127
+[contracts/src/token/erc1155.contract.ts:127](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc1155.contract.ts#L127)
 
 ***
 
@@ -690,7 +690,7 @@ A promise that resolves to a contract transaction.
 
 #### Defined in
 
-contracts/src/token/erc1155.contract.ts:276
+[contracts/src/token/erc1155.contract.ts:276](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc1155.contract.ts#L276)
 
 ***
 
@@ -738,7 +738,7 @@ A promise that resolves to a contract transaction.
 
 #### Defined in
 
-contracts/src/token/erc1155.contract.ts:325
+[contracts/src/token/erc1155.contract.ts:325](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc1155.contract.ts#L325)
 
 ***
 
@@ -774,7 +774,7 @@ A promise that resolves to a contract transaction.
 
 #### Defined in
 
-contracts/src/token/erc1155.contract.ts:375
+[contracts/src/token/erc1155.contract.ts:375](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc1155.contract.ts#L375)
 
 ***
 
@@ -802,7 +802,7 @@ True if the contract supports the interface, false otherwise.
 
 #### Defined in
 
-contracts/src/token/erc1155.contract.ts:402
+[contracts/src/token/erc1155.contract.ts:402](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc1155.contract.ts#L402)
 
 ***
 
@@ -826,7 +826,7 @@ The call context.
 
 #### Defined in
 
-contracts/src/token/erc1155.contract.ts:411
+[contracts/src/token/erc1155.contract.ts:411](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc1155.contract.ts#L411)
 
 ***
 
@@ -854,7 +854,7 @@ The URI of the token.
 
 #### Defined in
 
-contracts/src/token/erc1155.contract.ts:422
+[contracts/src/token/erc1155.contract.ts:422](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc1155.contract.ts#L422)
 
 ***
 
@@ -878,4 +878,4 @@ The call context.
 
 #### Defined in
 
-contracts/src/token/erc1155.contract.ts:431
+[contracts/src/token/erc1155.contract.ts:431](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc1155.contract.ts#L431)

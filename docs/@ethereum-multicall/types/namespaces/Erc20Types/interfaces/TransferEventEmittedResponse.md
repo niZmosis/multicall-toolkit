@@ -14,7 +14,7 @@
 
 #### Defined in
 
-abis/erc20.types.ts:40
+[abis/erc20.types.ts:40](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/abis/erc20.types.ts#L40)
 
 ***
 
@@ -24,7 +24,7 @@ abis/erc20.types.ts:40
 
 #### Defined in
 
-abis/erc20.types.ts:41
+[abis/erc20.types.ts:41](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/abis/erc20.types.ts#L41)
 
 ***
 
@@ -34,4 +34,4 @@ abis/erc20.types.ts:41
 
 #### Defined in
 
-abis/erc20.types.ts:42
+[abis/erc20.types.ts:42](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/abis/erc20.types.ts#L42)

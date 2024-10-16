@@ -36,7 +36,7 @@
 
 #### Defined in
 
-contracts/src/token/erc721.contract.ts:39
+[contracts/src/token/erc721.contract.ts:39](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc721.contract.ts#L39)
 
 ## Properties
 
@@ -46,7 +46,7 @@ contracts/src/token/erc721.contract.ts:39
 
 #### Defined in
 
-contracts/src/token/erc721.contract.ts:35
+[contracts/src/token/erc721.contract.ts:35](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc721.contract.ts#L35)
 
 ***
 
@@ -56,7 +56,7 @@ contracts/src/token/erc721.contract.ts:35
 
 #### Defined in
 
-contracts/src/token/erc721.contract.ts:33
+[contracts/src/token/erc721.contract.ts:33](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc721.contract.ts#L33)
 
 ***
 
@@ -66,7 +66,7 @@ contracts/src/token/erc721.contract.ts:33
 
 #### Defined in
 
-contracts/src/token/erc721.contract.ts:37
+[contracts/src/token/erc721.contract.ts:37](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc721.contract.ts#L37)
 
 ***
 
@@ -100,7 +100,7 @@ Get the contract detail
 
 #### Defined in
 
-contracts/src/token/erc721.contract.ts:69
+[contracts/src/token/erc721.contract.ts:69](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc721.contract.ts#L69)
 
 ***
 
@@ -116,7 +116,7 @@ Get the ERC721 contract
 
 #### Defined in
 
-contracts/src/token/erc721.contract.ts:74
+[contracts/src/token/erc721.contract.ts:74](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc721.contract.ts#L74)
 
 ***
 
@@ -132,7 +132,7 @@ Get the method names
 
 #### Defined in
 
-contracts/src/token/erc721.contract.ts:79
+[contracts/src/token/erc721.contract.ts:79](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc721.contract.ts#L79)
 
 ***
 
@@ -190,7 +190,7 @@ The contract transaction.
 
 #### Defined in
 
-contracts/src/token/erc721.contract.ts:211
+[contracts/src/token/erc721.contract.ts:211](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc721.contract.ts#L211)
 
 ***
 
@@ -218,7 +218,7 @@ The balance of tokens owned by the specified address.
 
 #### Defined in
 
-contracts/src/token/erc721.contract.ts:238
+[contracts/src/token/erc721.contract.ts:238](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc721.contract.ts#L238)
 
 ***
 
@@ -242,7 +242,7 @@ The call context.
 
 #### Defined in
 
-contracts/src/token/erc721.contract.ts:247
+[contracts/src/token/erc721.contract.ts:247](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc721.contract.ts#L247)
 
 ***
 
@@ -295,7 +295,7 @@ The results are typed according to the return types of the called methods.
 
 #### Defined in
 
-contracts/src/token/erc721.contract.ts:165
+[contracts/src/token/erc721.contract.ts:165](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc721.contract.ts#L165)
 
 ***
 
@@ -327,7 +327,7 @@ The result of the contract method invocation with the appropriate return type.
 
 #### Defined in
 
-contracts/src/token/erc721.contract.ts:89
+[contracts/src/token/erc721.contract.ts:89](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc721.contract.ts#L89)
 
 ***
 
@@ -355,7 +355,7 @@ The encoded function data.
 
 #### Defined in
 
-contracts/src/token/erc721.contract.ts:229
+[contracts/src/token/erc721.contract.ts:229](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc721.contract.ts#L229)
 
 ***
 
@@ -383,7 +383,7 @@ The encoded function data.
 
 #### Defined in
 
-contracts/src/token/erc721.contract.ts:113
+[contracts/src/token/erc721.contract.ts:113](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc721.contract.ts#L113)
 
 ***
 
@@ -411,7 +411,7 @@ The encoded function data.
 
 #### Defined in
 
-contracts/src/token/erc721.contract.ts:668
+[contracts/src/token/erc721.contract.ts:668](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc721.contract.ts#L668)
 
 ***
 
@@ -435,7 +435,7 @@ The encoded data as a string.
 
 #### Defined in
 
-contracts/src/token/erc721.contract.ts:404
+[contracts/src/token/erc721.contract.ts:404](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc721.contract.ts#L404)
 
 ***
 
@@ -475,7 +475,7 @@ The encoded function data as a string.
 
 #### Defined in
 
-contracts/src/token/erc721.contract.ts:481
+[contracts/src/token/erc721.contract.ts:481](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc721.contract.ts#L481)
 
 ***
 
@@ -503,7 +503,7 @@ The encoded function data.
 
 #### Defined in
 
-contracts/src/token/erc721.contract.ts:537
+[contracts/src/token/erc721.contract.ts:537](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc721.contract.ts#L537)
 
 ***
 
@@ -535,7 +535,7 @@ The encoded function data.
 
 #### Defined in
 
-contracts/src/token/erc721.contract.ts:610
+[contracts/src/token/erc721.contract.ts:610](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc721.contract.ts#L610)
 
 ***
 
@@ -559,161 +559,13 @@ The encoded function data.
 
 #### Defined in
 
-contracts/src/token/erc721.contract.ts:639
+[contracts/src/token/erc721.contract.ts:639](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc721.contract.ts#L639)
 
 ***
 
-### getApproved()
+### executeCall()
 
-> **getApproved**(`tokenId`): `Promise`\<`string`\>
-
-Returns the address approved for the specified token ID.
-
-#### Parameters
-
-• **tokenId**: `BigNumberish`
-
-The token ID to query.
-
-#### Returns
-
-`Promise`\<`string`\>
-
-The address approved for the specified token ID.
-
-#### Implementation of
-
-`Erc721Types.Contract.getApproved`
-
-#### Defined in
-
-contracts/src/token/erc721.contract.ts:258
-
-***
-
-### getApprovedCallContext()
-
-> **getApprovedCallContext**(`tokenId`): `MethodCall`\<`Contract`, `"getApproved"`\>
-
-Returns the call context for the getApproved method.
-
-#### Parameters
-
-• **tokenId**: `BigNumberish`
-
-The token ID to query.
-
-#### Returns
-
-`MethodCall`\<`Contract`, `"getApproved"`\>
-
-The call context.
-
-#### Defined in
-
-contracts/src/token/erc721.contract.ts:267
-
-***
-
-### isApprovedForAll()
-
-> **isApprovedForAll**(`owner`, `operator`): `Promise`\<`boolean`\>
-
-Checks if an operator is approved to manage all tokens of a specified owner.
-
-#### Parameters
-
-• **owner**: `string`
-
-The address of the owner.
-
-• **operator**: `string`
-
-The address of the operator.
-
-#### Returns
-
-`Promise`\<`boolean`\>
-
-True if the operator is approved for all tokens, false otherwise.
-
-#### Implementation of
-
-`Erc721Types.Contract.isApprovedForAll`
-
-#### Defined in
-
-contracts/src/token/erc721.contract.ts:279
-
-***
-
-### isApprovedForAllCallContext()
-
-> **isApprovedForAllCallContext**(`owner`, `operator`): `MethodCall`\<`Contract`, `"isApprovedForAll"`\>
-
-Returns the call context for the isApprovedForAll method.
-
-#### Parameters
-
-• **owner**: `string`
-
-The address of the owner.
-
-• **operator**: `string`
-
-The address of the operator.
-
-#### Returns
-
-`MethodCall`\<`Contract`, `"isApprovedForAll"`\>
-
-The call context.
-
-#### Defined in
-
-contracts/src/token/erc721.contract.ts:295
-
-***
-
-### mintNFT()
-
-> **mintNFT**(`recipient`, `tokenURI`, `overrides`?): `Promise`\<`ContractTransaction`\>
-
-Mints a new NFT and assigns it to the recipient.
-
-#### Parameters
-
-• **recipient**: `string`
-
-The address to receive the minted NFT.
-
-• **tokenURI**: `string`
-
-The URI for the minted NFT's metadata.
-
-• **overrides?**: `ContractTransactionOverrides`
-
-Optional transaction overrides.
-
-#### Returns
-
-`Promise`\<`ContractTransaction`\>
-
-The contract transaction.
-
-#### Implementation of
-
-`Erc721Types.Contract.mintNFT`
-
-#### Defined in
-
-contracts/src/token/erc721.contract.ts:650
-
-***
-
-### multicall()
-
-> `protected` **multicall**\<`TContract`, `TCalls`\>(`calls`, `options`?): `Promise`\<`object`\>
+> `protected` **executeCall**\<`TContract`, `TCalls`\>(`calls`, `options`?): `Promise`\<`object`\>
 
 Executes a multicall for the given contract methods.
 
@@ -758,11 +610,159 @@ A promise that resolves to an object containing the block number,
 
 #### Inherited from
 
-`MulticallProviderBase.multicall`
+`MulticallProviderBase.executeCall`
 
 #### Defined in
 
 provider/dist/esm/multicall-provider-base.d.ts:30
+
+***
+
+### getApproved()
+
+> **getApproved**(`tokenId`): `Promise`\<`string`\>
+
+Returns the address approved for the specified token ID.
+
+#### Parameters
+
+• **tokenId**: `BigNumberish`
+
+The token ID to query.
+
+#### Returns
+
+`Promise`\<`string`\>
+
+The address approved for the specified token ID.
+
+#### Implementation of
+
+`Erc721Types.Contract.getApproved`
+
+#### Defined in
+
+[contracts/src/token/erc721.contract.ts:258](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc721.contract.ts#L258)
+
+***
+
+### getApprovedCallContext()
+
+> **getApprovedCallContext**(`tokenId`): `MethodCall`\<`Contract`, `"getApproved"`\>
+
+Returns the call context for the getApproved method.
+
+#### Parameters
+
+• **tokenId**: `BigNumberish`
+
+The token ID to query.
+
+#### Returns
+
+`MethodCall`\<`Contract`, `"getApproved"`\>
+
+The call context.
+
+#### Defined in
+
+[contracts/src/token/erc721.contract.ts:267](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc721.contract.ts#L267)
+
+***
+
+### isApprovedForAll()
+
+> **isApprovedForAll**(`owner`, `operator`): `Promise`\<`boolean`\>
+
+Checks if an operator is approved to manage all tokens of a specified owner.
+
+#### Parameters
+
+• **owner**: `string`
+
+The address of the owner.
+
+• **operator**: `string`
+
+The address of the operator.
+
+#### Returns
+
+`Promise`\<`boolean`\>
+
+True if the operator is approved for all tokens, false otherwise.
+
+#### Implementation of
+
+`Erc721Types.Contract.isApprovedForAll`
+
+#### Defined in
+
+[contracts/src/token/erc721.contract.ts:279](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc721.contract.ts#L279)
+
+***
+
+### isApprovedForAllCallContext()
+
+> **isApprovedForAllCallContext**(`owner`, `operator`): `MethodCall`\<`Contract`, `"isApprovedForAll"`\>
+
+Returns the call context for the isApprovedForAll method.
+
+#### Parameters
+
+• **owner**: `string`
+
+The address of the owner.
+
+• **operator**: `string`
+
+The address of the operator.
+
+#### Returns
+
+`MethodCall`\<`Contract`, `"isApprovedForAll"`\>
+
+The call context.
+
+#### Defined in
+
+[contracts/src/token/erc721.contract.ts:295](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc721.contract.ts#L295)
+
+***
+
+### mintNFT()
+
+> **mintNFT**(`recipient`, `tokenURI`, `overrides`?): `Promise`\<`ContractTransaction`\>
+
+Mints a new NFT and assigns it to the recipient.
+
+#### Parameters
+
+• **recipient**: `string`
+
+The address to receive the minted NFT.
+
+• **tokenURI**: `string`
+
+The URI for the minted NFT's metadata.
+
+• **overrides?**: `ContractTransactionOverrides`
+
+Optional transaction overrides.
+
+#### Returns
+
+`Promise`\<`ContractTransaction`\>
+
+The contract transaction.
+
+#### Implementation of
+
+`Erc721Types.Contract.mintNFT`
+
+#### Defined in
+
+[contracts/src/token/erc721.contract.ts:650](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc721.contract.ts#L650)
 
 ***
 
@@ -784,7 +784,7 @@ The name of the token.
 
 #### Defined in
 
-contracts/src/token/erc721.contract.ts:306
+[contracts/src/token/erc721.contract.ts:306](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc721.contract.ts#L306)
 
 ***
 
@@ -802,7 +802,7 @@ The call context.
 
 #### Defined in
 
-contracts/src/token/erc721.contract.ts:314
+[contracts/src/token/erc721.contract.ts:314](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc721.contract.ts#L314)
 
 ***
 
@@ -824,7 +824,7 @@ The owner of the contract.
 
 #### Defined in
 
-contracts/src/token/erc721.contract.ts:354
+[contracts/src/token/erc721.contract.ts:354](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc721.contract.ts#L354)
 
 ***
 
@@ -842,7 +842,7 @@ The call context.
 
 #### Defined in
 
-contracts/src/token/erc721.contract.ts:362
+[contracts/src/token/erc721.contract.ts:362](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc721.contract.ts#L362)
 
 ***
 
@@ -870,7 +870,7 @@ The owner of the specified token ID.
 
 #### Defined in
 
-contracts/src/token/erc721.contract.ts:371
+[contracts/src/token/erc721.contract.ts:371](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc721.contract.ts#L371)
 
 ***
 
@@ -894,7 +894,7 @@ The call context.
 
 #### Defined in
 
-contracts/src/token/erc721.contract.ts:380
+[contracts/src/token/erc721.contract.ts:380](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc721.contract.ts#L380)
 
 ***
 
@@ -926,7 +926,7 @@ The call context.
 
 #### Defined in
 
-contracts/src/token/erc721.contract.ts:129
+[contracts/src/token/erc721.contract.ts:129](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc721.contract.ts#L129)
 
 ***
 
@@ -954,7 +954,7 @@ The contract transaction.
 
 #### Defined in
 
-contracts/src/token/erc721.contract.ts:391
+[contracts/src/token/erc721.contract.ts:391](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc721.contract.ts#L391)
 
 ***
 
@@ -996,7 +996,7 @@ The contract transaction.
 
 ##### Defined in
 
-contracts/src/token/erc721.contract.ts:418
+[contracts/src/token/erc721.contract.ts:418](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc721.contract.ts#L418)
 
 #### safeTransferFrom(from, to, tokenId, data, overrides)
 
@@ -1038,7 +1038,7 @@ The contract transaction.
 
 ##### Defined in
 
-contracts/src/token/erc721.contract.ts:434
+[contracts/src/token/erc721.contract.ts:434](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc721.contract.ts#L434)
 
 ***
 
@@ -1074,7 +1074,7 @@ The contract transaction.
 
 #### Defined in
 
-contracts/src/token/erc721.contract.ts:519
+[contracts/src/token/erc721.contract.ts:519](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc721.contract.ts#L519)
 
 ***
 
@@ -1102,7 +1102,7 @@ True if the contract implements the interface, false otherwise.
 
 #### Defined in
 
-contracts/src/token/erc721.contract.ts:546
+[contracts/src/token/erc721.contract.ts:546](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc721.contract.ts#L546)
 
 ***
 
@@ -1126,7 +1126,7 @@ The call context.
 
 #### Defined in
 
-contracts/src/token/erc721.contract.ts:555
+[contracts/src/token/erc721.contract.ts:555](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc721.contract.ts#L555)
 
 ***
 
@@ -1148,7 +1148,7 @@ The symbol of the token.
 
 #### Defined in
 
-contracts/src/token/erc721.contract.ts:322
+[contracts/src/token/erc721.contract.ts:322](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc721.contract.ts#L322)
 
 ***
 
@@ -1166,7 +1166,7 @@ The call context.
 
 #### Defined in
 
-contracts/src/token/erc721.contract.ts:330
+[contracts/src/token/erc721.contract.ts:330](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc721.contract.ts#L330)
 
 ***
 
@@ -1188,7 +1188,7 @@ The token ID as a BigNumber.
 
 #### Defined in
 
-contracts/src/token/erc721.contract.ts:338
+[contracts/src/token/erc721.contract.ts:338](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc721.contract.ts#L338)
 
 ***
 
@@ -1206,7 +1206,7 @@ The call context for the method.
 
 #### Defined in
 
-contracts/src/token/erc721.contract.ts:346
+[contracts/src/token/erc721.contract.ts:346](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc721.contract.ts#L346)
 
 ***
 
@@ -1234,7 +1234,7 @@ The token URI.
 
 #### Defined in
 
-contracts/src/token/erc721.contract.ts:566
+[contracts/src/token/erc721.contract.ts:566](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc721.contract.ts#L566)
 
 ***
 
@@ -1258,7 +1258,7 @@ The call context.
 
 #### Defined in
 
-contracts/src/token/erc721.contract.ts:575
+[contracts/src/token/erc721.contract.ts:575](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc721.contract.ts#L575)
 
 ***
 
@@ -1298,7 +1298,7 @@ The contract transaction.
 
 #### Defined in
 
-contracts/src/token/erc721.contract.ts:589
+[contracts/src/token/erc721.contract.ts:589](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc721.contract.ts#L589)
 
 ***
 
@@ -1330,4 +1330,4 @@ The contract transaction.
 
 #### Defined in
 
-contracts/src/token/erc721.contract.ts:624
+[contracts/src/token/erc721.contract.ts:624](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc721.contract.ts#L624)

@@ -31,7 +31,7 @@ Type: address, Indexed: false
 
 #### Defined in
 
-abis/erc777.types.ts:139
+[abis/erc777.types.ts:139](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/abis/erc777.types.ts#L139)
 
 ***
 
@@ -58,7 +58,7 @@ Type: address, Indexed: false
 
 #### Defined in
 
-abis/erc777.types.ts:115
+[abis/erc777.types.ts:115](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/abis/erc777.types.ts#L115)
 
 ***
 
@@ -81,7 +81,7 @@ Type: function
 
 #### Defined in
 
-abis/erc777.types.ts:107
+[abis/erc777.types.ts:107](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/abis/erc777.types.ts#L107)
 
 ***
 
@@ -104,7 +104,7 @@ Type: function
 
 #### Defined in
 
-abis/erc777.types.ts:149
+[abis/erc777.types.ts:149](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/abis/erc777.types.ts#L149)
 
 ***
 
@@ -127,7 +127,7 @@ Type: function
 
 #### Defined in
 
-abis/erc777.types.ts:100
+[abis/erc777.types.ts:100](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/abis/erc777.types.ts#L100)
 
 ***
 
@@ -158,7 +158,7 @@ Type: address, Indexed: false
 
 #### Defined in
 
-abis/erc777.types.ts:127
+[abis/erc777.types.ts:127](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/abis/erc777.types.ts#L127)
 
 ***
 
@@ -181,7 +181,7 @@ Type: function
 
 #### Defined in
 
-abis/erc777.types.ts:86
+[abis/erc777.types.ts:86](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/abis/erc777.types.ts#L86)
 
 ***
 
@@ -224,7 +224,7 @@ Type: bytes, Indexed: false
 
 #### Defined in
 
-abis/erc777.types.ts:172
+[abis/erc777.types.ts:172](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/abis/erc777.types.ts#L172)
 
 ***
 
@@ -251,7 +251,7 @@ Type: address[], Indexed: false
 
 #### Defined in
 
-abis/erc777.types.ts:187
+[abis/erc777.types.ts:187](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/abis/erc777.types.ts#L187)
 
 ***
 
@@ -280,7 +280,7 @@ Type: address, Indexed: false
 
 ##### Defined in
 
-abis/erc777.types.ts:157
+[abis/erc777.types.ts:157](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/abis/erc777.types.ts#L157)
 
 #### revokeOperator(_newDefaultOperators, overrides)
 
@@ -305,7 +305,7 @@ Type: address[], Indexed: false
 
 ##### Defined in
 
-abis/erc777.types.ts:198
+[abis/erc777.types.ts:198](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/abis/erc777.types.ts#L198)
 
 ***
 
@@ -344,7 +344,7 @@ Type: bytes, Indexed: false
 
 #### Defined in
 
-abis/erc777.types.ts:212
+[abis/erc777.types.ts:212](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/abis/erc777.types.ts#L212)
 
 ***
 
@@ -371,7 +371,7 @@ Type: address[], Indexed: false
 
 #### Defined in
 
-abis/erc777.types.ts:226
+[abis/erc777.types.ts:226](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/abis/erc777.types.ts#L226)
 
 ***
 
@@ -394,4 +394,4 @@ Type: function
 
 #### Defined in
 
-abis/erc777.types.ts:93
+[abis/erc777.types.ts:93](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/abis/erc777.types.ts#L93)

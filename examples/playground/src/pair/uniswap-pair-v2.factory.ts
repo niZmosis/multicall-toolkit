@@ -212,14 +212,17 @@ export class PairContractFactory
     >['originContext']
     results: ContractResults<UniswapPairV2Types.Contract, TCalls>['results']
   }> {
-    return super.multicall<UniswapPairV2Types.Contract, TCalls>(calls, options)
+    return super.executeCall<UniswapPairV2Types.Contract, TCalls>(
+      calls,
+      options,
+    )
   }
 
   // async call(
   //   calls: InferredReferencedMethodCalls<UniswapPairV2Types.Contract>,
   //   options: ContractContextOptions = {},
   // ) {
-  //   return super.multicall<UniswapPairV2Types.Contract>(calls, options)
+  //   return super.executeCall<UniswapPairV2Types.Contract>(calls, options)
   // }
 
   /**

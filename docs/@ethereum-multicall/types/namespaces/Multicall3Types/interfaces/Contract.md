@@ -31,7 +31,7 @@ Type: tuple[], Indexed: false
 
 #### Defined in
 
-abis/multicall3.types.ts:95
+[abis/multicall3.types.ts:95](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/abis/multicall3.types.ts#L95)
 
 ***
 
@@ -58,7 +58,7 @@ Type: tuple[], Indexed: false
 
 #### Defined in
 
-abis/multicall3.types.ts:106
+[abis/multicall3.types.ts:106](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/abis/multicall3.types.ts#L106)
 
 ***
 
@@ -85,7 +85,7 @@ Type: tuple[], Indexed: false
 
 #### Defined in
 
-abis/multicall3.types.ts:117
+[abis/multicall3.types.ts:117](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/abis/multicall3.types.ts#L117)
 
 ***
 
@@ -112,7 +112,7 @@ Type: tuple[], Indexed: false
 
 #### Defined in
 
-abis/multicall3.types.ts:128
+[abis/multicall3.types.ts:128](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/abis/multicall3.types.ts#L128)
 
 ***
 
@@ -135,7 +135,7 @@ Type: function
 
 #### Defined in
 
-abis/multicall3.types.ts:138
+[abis/multicall3.types.ts:138](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/abis/multicall3.types.ts#L138)
 
 ***
 
@@ -162,7 +162,7 @@ Type: uint256, Indexed: false
 
 #### Defined in
 
-abis/multicall3.types.ts:146
+[abis/multicall3.types.ts:146](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/abis/multicall3.types.ts#L146)
 
 ***
 
@@ -185,7 +185,7 @@ Type: function
 
 #### Defined in
 
-abis/multicall3.types.ts:156
+[abis/multicall3.types.ts:156](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/abis/multicall3.types.ts#L156)
 
 ***
 
@@ -208,7 +208,7 @@ Type: function
 
 #### Defined in
 
-abis/multicall3.types.ts:163
+[abis/multicall3.types.ts:163](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/abis/multicall3.types.ts#L163)
 
 ***
 
@@ -231,7 +231,7 @@ Type: function
 
 #### Defined in
 
-abis/multicall3.types.ts:170
+[abis/multicall3.types.ts:170](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/abis/multicall3.types.ts#L170)
 
 ***
 
@@ -254,7 +254,7 @@ Type: function
 
 #### Defined in
 
-abis/multicall3.types.ts:177
+[abis/multicall3.types.ts:177](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/abis/multicall3.types.ts#L177)
 
 ***
 
@@ -277,7 +277,7 @@ Type: function
 
 #### Defined in
 
-abis/multicall3.types.ts:186
+[abis/multicall3.types.ts:186](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/abis/multicall3.types.ts#L186)
 
 ***
 
@@ -300,7 +300,7 @@ Type: function
 
 #### Defined in
 
-abis/multicall3.types.ts:193
+[abis/multicall3.types.ts:193](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/abis/multicall3.types.ts#L193)
 
 ***
 
@@ -327,7 +327,7 @@ Type: address, Indexed: false
 
 #### Defined in
 
-abis/multicall3.types.ts:203
+[abis/multicall3.types.ts:203](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/abis/multicall3.types.ts#L203)
 
 ***
 
@@ -350,7 +350,7 @@ Type: function
 
 #### Defined in
 
-abis/multicall3.types.ts:213
+[abis/multicall3.types.ts:213](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/abis/multicall3.types.ts#L213)
 
 ***
 
@@ -381,7 +381,7 @@ Type: tuple[], Indexed: false
 
 #### Defined in
 
-abis/multicall3.types.ts:222
+[abis/multicall3.types.ts:222](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/abis/multicall3.types.ts#L222)
 
 ***
 
@@ -412,4 +412,4 @@ Type: tuple[], Indexed: false
 
 #### Defined in
 
-abis/multicall3.types.ts:235
+[abis/multicall3.types.ts:235](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/abis/multicall3.types.ts#L235)

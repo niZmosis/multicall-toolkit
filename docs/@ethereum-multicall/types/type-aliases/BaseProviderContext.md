@@ -25,4 +25,4 @@ Defaults to true.
 
 ## Defined in
 
-[multicall-provider.types.ts:16](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/types/src/multicall-provider.types.ts#L16)
+[multicall-provider.types.ts:16](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/multicall-provider.types.ts#L16)

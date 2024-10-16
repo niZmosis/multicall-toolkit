@@ -14,7 +14,7 @@
 
 #### Defined in
 
-abis/erc1155.types.ts:81
+[abis/erc1155.types.ts:81](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/abis/erc1155.types.ts#L81)
 
 ***
 
@@ -24,4 +24,4 @@ abis/erc1155.types.ts:81
 
 #### Defined in
 
-abis/erc1155.types.ts:80
+[abis/erc1155.types.ts:80](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/abis/erc1155.types.ts#L80)

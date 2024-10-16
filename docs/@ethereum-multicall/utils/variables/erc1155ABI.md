@@ -10,4 +10,4 @@
 
 ## Defined in
 
-packages/utils/src/abis/erc1155.abi.ts:1
+[packages/utils/src/abis/erc1155.abi.ts:1](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/utils/src/abis/erc1155.abi.ts#L1)

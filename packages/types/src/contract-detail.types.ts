@@ -30,14 +30,3 @@ export type ContractDetailToken<TMethods = Record<string, string>> = {
   /** Optional custom method names or overrides for the contract's methods. */
   methods?: Partial<TMethods>
 }
-
-/**
- * Represents the details of a contract, including its address, ABI, and optional method mappings.
- * @template T - A mapping of method names to custom names or overrides for contract methods.
- */
-export type ContractDetailUnknown<TMethods = Record<string, string>> = {
-  /** The ABI of the contract. */
-  abi: JsonFragment[]
-  /** Optional custom method names or overrides for the contract's methods. */
-  methods?: Partial<TMethods>
-}

@@ -35,7 +35,7 @@ Type: uint256, Indexed: false
 
 #### Defined in
 
-abis/erc1155.types.ts:92
+[abis/erc1155.types.ts:92](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/abis/erc1155.types.ts#L92)
 
 ***
 
@@ -66,7 +66,7 @@ Type: uint256[], Indexed: false
 
 #### Defined in
 
-abis/erc1155.types.ts:105
+[abis/erc1155.types.ts:105](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/abis/erc1155.types.ts#L105)
 
 ***
 
@@ -97,7 +97,7 @@ Type: address, Indexed: false
 
 #### Defined in
 
-abis/erc1155.types.ts:118
+[abis/erc1155.types.ts:118](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/abis/erc1155.types.ts#L118)
 
 ***
 
@@ -140,7 +140,7 @@ Type: bytes, Indexed: false
 
 #### Defined in
 
-abis/erc1155.types.ts:134
+[abis/erc1155.types.ts:134](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/abis/erc1155.types.ts#L134)
 
 ***
 
@@ -183,7 +183,7 @@ Type: bytes, Indexed: false
 
 #### Defined in
 
-abis/erc1155.types.ts:153
+[abis/erc1155.types.ts:153](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/abis/erc1155.types.ts#L153)
 
 ***
 
@@ -214,7 +214,7 @@ Type: bool, Indexed: false
 
 #### Defined in
 
-abis/erc1155.types.ts:169
+[abis/erc1155.types.ts:169](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/abis/erc1155.types.ts#L169)
 
 ***
 
@@ -241,7 +241,7 @@ Type: bytes4, Indexed: false
 
 #### Defined in
 
-abis/erc1155.types.ts:181
+[abis/erc1155.types.ts:181](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/abis/erc1155.types.ts#L181)
 
 ***
 
@@ -268,4 +268,4 @@ Type: uint256, Indexed: false
 
 #### Defined in
 
-abis/erc1155.types.ts:192
+[abis/erc1155.types.ts:192](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/abis/erc1155.types.ts#L192)

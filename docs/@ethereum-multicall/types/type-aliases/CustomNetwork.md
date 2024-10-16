@@ -26,4 +26,4 @@ The name of the custom network.
 
 ## Defined in
 
-[network.types.ts:6](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/types/src/network.types.ts#L6)
+[network.types.ts:6](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/network.types.ts#L6)

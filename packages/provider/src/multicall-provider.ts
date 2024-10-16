@@ -8,6 +8,7 @@ import type {
   ReferencedContracts,
   ContractContextOptions,
   MulticallResults,
+  IMulticallProvider,
 } from '@ethereum-multicall/types'
 import {
   ErrorCodes,
@@ -26,7 +27,7 @@ import {
 } from '@ethersproject/providers'
 import { Contract, BigNumber, utils } from 'ethers'
 
-export class MulticallProvider {
+export class MulticallProvider implements IMulticallProvider {
   _ethersProvider: EthersProvider
 
   _providerContext: ProviderContext

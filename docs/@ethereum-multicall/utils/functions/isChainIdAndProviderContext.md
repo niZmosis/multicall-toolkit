@@ -24,4 +24,4 @@ True if the context is a `ChainIdAndProviderContext`, otherwise false.
 
 ## Defined in
 
-[packages/utils/src/utils/provider.utils.ts:17](https://github.com/niZmosis/ethereum-multicall/blob/68ee699eca0cd184d8f0b7213bb6f4fe15a011a1/packages/utils/src/utils/provider.utils.ts#L17)
+[packages/utils/src/utils/provider.utils.ts:17](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/utils/src/utils/provider.utils.ts#L17)

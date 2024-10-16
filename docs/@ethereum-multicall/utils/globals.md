@@ -22,7 +22,7 @@
 - [defaultErc20MethodMap](variables/defaultErc20MethodMap.md)
 - [defaultErc721MethodMap](variables/defaultErc721MethodMap.md)
 - [defaultErc777MethodMap](variables/defaultErc777MethodMap.md)
-- [defaultWrappedTypesMethodMap](variables/defaultWrappedTypesMethodMap.md)
+- [defaultWrappedMethodMap](variables/defaultWrappedMethodMap.md)
 - [erc1155ABI](variables/erc1155ABI.md)
 - [erc20ABI](variables/erc20ABI.md)
 - [erc721ABI](variables/erc721ABI.md)
