@@ -1,4 +1,4 @@
-import type { ContractDetail } from '@ethereum-multicall/types'
+import type { ContractDetail } from '@multicall-toolkit/types'
 
 // ------------------------
 // Type Guards

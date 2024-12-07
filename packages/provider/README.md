@@ -9,27 +9,27 @@ This package provides a class that wraps an Ethers or Web3 provider and adds the
 ### npm
 
 ```bash
-npm install @ethereum-multicall/provider
+npm install @multicall-toolkit/provider
 ```
 
 ### yarn
 
 ```bash
-yarn add @ethereum-multicall/provider
+yarn add @multicall-toolkit/provider
 ```
 
 ### pnpm
 
 ```bash
-pnpm add @ethereum-multicall/provider
+pnpm add @multicall-toolkit/provider
 ```
 
 ### bun
 
 ```bash
-bun add @ethereum-multicall/provider
+bun add @multicall-toolkit/provider
 ```
 
 ## Links
 
-- [Github](https://github.com/joshstevens19/ethereum-multicall)
+- [Github](https://github.com/niZmosis/multicall-toolkit)

@@ -1,4 +1,4 @@
-import { MulticallProvider } from '@ethereum-multicall/provider'
+import { MulticallProvider } from '@multicall-toolkit/provider'
 import { BigNumber, ethers } from 'ethers'
 import { describe, it, expect } from 'vitest'
 
@@ -17,14 +17,14 @@ if (MockSklToken) {
   describe.skip('Erc777Contract', () => {
     const mockMulticallProvider = new MulticallProvider({
       chainId: MockChainId,
-      customRpcUrl: MockProviderUrl,
+      rpcUrl: MockProviderUrl,
     })
 
     if (!mockMulticallProvider) {
       throw new Error(`No dex provider found`)
     }
 
-    const contractFactory = new Erc777Contract(mockMulticallProvider, {
+    const contract = new Erc777Contract(mockMulticallProvider, {
       address: MockSklToken.contractAddress,
     })
 
@@ -33,34 +33,34 @@ if (MockSklToken) {
     // ------------------------
 
     it('should return the correct token name', async () => {
-      const result = await contractFactory.name()
+      const result = await contract.name()
       expect(result).toBe(MockSklToken.name)
     })
 
     it('should return the correct token symbol', async () => {
-      const result = await contractFactory.symbol()
+      const result = await contract.symbol()
       expect(result).toBe(MockSklToken.symbol)
     })
 
     it('should return the correct granularity', async () => {
-      const result = await contractFactory.granularity()
+      const result = await contract.granularity()
       expect(result).toBeInstanceOf(BigNumber)
       // expect(result.gt(0)).toBe(true)
     })
 
     it('should return the list of default operators', async () => {
-      const result = await contractFactory.defaultOperators()
+      const result = await contract.defaultOperators()
       expect(Array.isArray(result)).toBe(true)
     })
 
     it('should return the correct balanceOf a specified address', async () => {
-      const result = await contractFactory.balanceOf(MockWalletAddress)
+      const result = await contract.balanceOf(MockWalletAddress)
       expect(result).toBeInstanceOf(BigNumber)
       // expect(result.gt(0)).toBe(true)
     })
 
     it('should return boolean for is operator check', async () => {
-      const result = await contractFactory.isOperatorFor(
+      const result = await contract.isOperatorFor(
         MockWalletAddress,
         MockOperatorAddress,
       )
@@ -73,23 +73,23 @@ if (MockSklToken) {
 
     it('should correctly encode the authorizeOperator function', () => {
       const result =
-        contractFactory.encodeAuthorizeOperator(MockOperatorAddress)
+        contract.encodeAuthorizeOperator(MockOperatorAddress)
       expect(result).toMatch(/^0x[a-fA-F0-9]+$/)
     })
 
     it('should correctly encode the revokeOperator function for a single address', () => {
-      const result = contractFactory.encodeRevokeOperator(MockOperatorAddress)
+      const result = contract.encodeRevokeOperator(MockOperatorAddress)
       expect(result).toMatch(/^0x[a-fA-F0-9]+$/)
     })
 
     it('should correctly encode the revokeOperator function for multiple addresses', () => {
       const multipleOperators = [MockOperatorAddress, MockOperatorAddress2]
-      const result = contractFactory.encodeRevokeOperator(multipleOperators)
+      const result = contract.encodeRevokeOperator(multipleOperators)
       expect(result).toMatch(/^0x[a-fA-F0-9]+$/)
     })
 
     it('should correctly encode the operatorSend function', () => {
-      const result = contractFactory.encodeOperatorSend(
+      const result = contract.encodeOperatorSend(
         MockWalletAddress,
         MockRecipientAddress,
         BigNumber.from(1000),
@@ -100,7 +100,7 @@ if (MockSklToken) {
     })
 
     it('should correctly encode the send function', () => {
-      const result = contractFactory.encodeSend(
+      const result = contract.encodeSend(
         MockWalletAddress,
         MockRecipientAddress,
         BigNumber.from(1000),
@@ -110,15 +110,15 @@ if (MockSklToken) {
     })
 
     // ------------------------
-    // Testing CallContext with ethereum-multicall
+    // Testing Multicall
     // ------------------------
 
     it('should create valid CallContexts and retrieve results using multicall', async () => {
-      const { results } = await contractFactory.call({
-        name: contractFactory.nameCallContext(),
-        symbol: contractFactory.symbolCallContext(),
-        balanceOf: contractFactory.balanceOfCallContext(MockWalletAddress),
-        granularity: contractFactory.granularityCallContext(),
+      const { results } = await contract.call({
+        name: contract.nameCallContext(),
+        symbol: contract.symbolCallContext(),
+        balanceOf: contract.balanceOfCallContext(MockWalletAddress),
+        granularity: contract.granularityCallContext(),
       })
 
       expect(results).toBeDefined()

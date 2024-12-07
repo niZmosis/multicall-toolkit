@@ -1,8 +1,8 @@
-[**@ethereum-multicall/types v3.0.0**](../README.md) • **Docs**
+[**@ethereum-multicall/types v1.0.0**](../README.md) • **Docs**
 
 ***
 
-[Documentation v3.0.0](../../../packages.md) / [@ethereum-multicall/types](../README.md) / IMulticall
+[Documentation v1.0.0](../../../packages.md) / [@ethereum-multicall/types](../README.md) / IMulticall
 
 # Interface: IMulticall
 
@@ -19,7 +19,7 @@ The type of execution environment being used (web3, ethers, or custom JSON-RPC).
 
 #### Defined in
 
-[multicall.types.ts:81](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/multicall.types.ts#L81)
+[multicall.types.ts:106](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/types/src/multicall.types.ts#L106)
 
 ***
 
@@ -31,7 +31,7 @@ The options for the Multicall instance.
 
 #### Defined in
 
-[multicall.types.ts:86](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/multicall.types.ts#L86)
+[multicall.types.ts:111](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/types/src/multicall.types.ts#L111)
 
 ## Methods
 
@@ -59,13 +59,45 @@ An array of aggregate call contexts ready to be executed.
 
 #### Defined in
 
-[multicall.types.ts:151](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/multicall.types.ts#L151)
+[multicall.types.ts:224](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/types/src/multicall.types.ts#L224)
 
 ***
 
-### buildUpAggregateResponse()
+### buildFailureAggregateResponse()
 
-> **buildUpAggregateResponse**(`contractResponse`, `calls`): [`AggregateResponse`](../type-aliases/AggregateResponse.md)
+> **buildFailureAggregateResponse**(`calls`, `error`): [`AggregateResponse`](../type-aliases/AggregateResponse.md)
+
+Builds a failure aggregate response for a batch that failed entirely.
+
+#### Parameters
+
+• **calls**: [`AggregateCallContext`](../type-aliases/AggregateCallContext.md)[]
+
+The calls that failed.
+
+• **error**
+
+The error details.
+
+• **error.code**: `string`
+
+• **error.message**: `string`
+
+#### Returns
+
+[`AggregateResponse`](../type-aliases/AggregateResponse.md)
+
+The aggregate response.
+
+#### Defined in
+
+[multicall.types.ts:312](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/types/src/multicall.types.ts#L312)
+
+***
+
+### buildSuccessfulAggregateResponse()
+
+> **buildSuccessfulAggregateResponse**(`contractResponse`, `calls`): [`AggregateResponse`](../type-aliases/AggregateResponse.md)
 
 Builds the final aggregated response by mapping contract call results to their respective contexts.
 
@@ -87,7 +119,7 @@ An aggregated response containing the results for all contract calls.
 
 #### Defined in
 
-[multicall.types.ts:210](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/multicall.types.ts#L210)
+[multicall.types.ts:301](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/types/src/multicall.types.ts#L301)
 
 ***
 
@@ -119,13 +151,64 @@ A promise that resolves to the aggregated results of the contract calls.
 
 #### Defined in
 
-[multicall.types.ts:99](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/multicall.types.ts#L99)
+[multicall.types.ts:143](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/types/src/multicall.types.ts#L143)
+
+***
+
+### combineResponses()
+
+> **combineResponses**(`responses`): [`AggregateResponse`](../type-aliases/AggregateResponse.md)
+
+Combines the results from multiple batch responses into a single aggregated response.
+This method merges the block number and results from each batch to produce a consolidated output.
+
+#### Parameters
+
+• **responses**: [`AggregateResponse`](../type-aliases/AggregateResponse.md)[]
+
+An array of `AggregateResponse` from each executed batch.
+
+#### Returns
+
+[`AggregateResponse`](../type-aliases/AggregateResponse.md)
+
+A single `AggregateResponse` that combines data from all the provided batch responses.
+
+#### Defined in
+
+[multicall.types.ts:178](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/types/src/multicall.types.ts#L178)
+
+***
+
+### createBatches()
+
+> **createBatches**(`calls`): [`AggregateCallContext`](../type-aliases/AggregateCallContext.md)[][]
+
+Splits the provided calls into multiple batches based on configured size limits.
+Batches are created to ensure that each batch stays within the byte size limit
+and adheres to the maximum batch size.
+
+#### Parameters
+
+• **calls**: [`AggregateCallContext`](../type-aliases/AggregateCallContext.md)[]
+
+An array of `AggregateCallContext` representing the individual contract calls.
+
+#### Returns
+
+[`AggregateCallContext`](../type-aliases/AggregateCallContext.md)[][]
+
+An array of call batches, where each batch is an array of `AggregateCallContext` objects.
+
+#### Defined in
+
+[multicall.types.ts:156](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/types/src/multicall.types.ts#L156)
 
 ***
 
 ### createCallContext()
 
-> **createCallContext**\<`TContract`, `TCustomData`\>(): (`context`) => [`ContractContext`](../type-aliases/ContractContext.md)\<`TContract`, `Record`\<`string`, [`DiscriminatedMethodCalls`](../type-aliases/DiscriminatedMethodCalls.md)\<`TContract`\>\[[`MethodNames`](../type-aliases/MethodNames.md)\<`TContract`\>\]\>, `TCustomData`\>
+> **createCallContext**\<`TContract`, `TCustomData`\>(): \<`TCalls`\>(`context`) => [`ContractContext`](../type-aliases/ContractContext.md)\<`TContract`, `TCalls`, `TCustomData`\>
 
 Creates and returns a contract call context to be used in multicall executions.
 
@@ -145,17 +228,49 @@ Custom data to be associated with the call context.
 
 A function that creates the contract call context.
 
+##### Type Parameters
+
+• **TCalls** *extends* `Record`\<`string`, [`DiscriminatedMethodCalls`](../type-aliases/DiscriminatedMethodCalls.md)\<`TContract`\>\[[`MethodNames`](../type-aliases/MethodNames.md)\<`TContract`\>\]\>
+
 ##### Parameters
 
-• **context**: [`ContractContext`](../type-aliases/ContractContext.md)\<`TContract`, `Record`\<`string`, [`DiscriminatedMethodCalls`](../type-aliases/DiscriminatedMethodCalls.md)\<`TContract`\>\[[`MethodNames`](../type-aliases/MethodNames.md)\<`TContract`\>\]\>, `TCustomData`\>
+• **context**: [`ContractContext`](../type-aliases/ContractContext.md)\<`TContract`, `TCalls`, `TCustomData`\>
 
 ##### Returns
 
-[`ContractContext`](../type-aliases/ContractContext.md)\<`TContract`, `Record`\<`string`, [`DiscriminatedMethodCalls`](../type-aliases/DiscriminatedMethodCalls.md)\<`TContract`\>\[[`MethodNames`](../type-aliases/MethodNames.md)\<`TContract`\>\]\>, `TCustomData`\>
+[`ContractContext`](../type-aliases/ContractContext.md)\<`TContract`, `TCalls`, `TCustomData`\>
 
 #### Defined in
 
-[multicall.types.ts:111](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/multicall.types.ts#L111)
+[multicall.types.ts:123](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/types/src/multicall.types.ts#L123)
+
+***
+
+### decodeBytes32IfNecessary()
+
+> **decodeBytes32IfNecessary**(`returnData`, `outputTypes`): `any`
+
+Attempts to decode a value as `bytes32` if standard decoding fails.
+
+#### Parameters
+
+• **returnData**: `any`
+
+The raw return data from the contract call.
+
+• **outputTypes**: `AbiOutput`[]
+
+The expected output types from the ABI.
+
+#### Returns
+
+`any`
+
+The decoded value or `undefined` if decoding fails.
+
+#### Defined in
+
+[multicall.types.ts:216](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/types/src/multicall.types.ts#L216)
 
 ***
 
@@ -183,7 +298,71 @@ A promise that resolves to the aggregated response from the contract calls.
 
 #### Defined in
 
-[multicall.types.ts:174](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/multicall.types.ts#L174)
+[multicall.types.ts:247](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/types/src/multicall.types.ts#L247)
+
+***
+
+### executeBatchesSequentially()
+
+> **executeBatchesSequentially**(`batches`, `contractCallOptions`): `Promise`\<[`AggregateResponse`](../type-aliases/AggregateResponse.md)[]\>
+
+Executes batches of contract calls sequentially, stopping if an error occurs (unless `tryAggregate` is enabled).
+Each batch is processed one after the other to maintain sequential order and error handling.
+
+#### Parameters
+
+• **batches**: [`AggregateCallContext`](../type-aliases/AggregateCallContext.md)[][]
+
+An array of call batches to be executed, each batch containing multiple `AggregateCallContext` items.
+
+• **contractCallOptions**: [`ContractContextOptions`](../type-aliases/ContractContextOptions.md)
+
+Options for each contract call execution, such as block number and aggregation settings.
+
+#### Returns
+
+`Promise`\<[`AggregateResponse`](../type-aliases/AggregateResponse.md)[]\>
+
+A promise that resolves to an array of `AggregateResponse`, containing responses from each successful batch.
+
+#### Defined in
+
+[multicall.types.ts:166](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/types/src/multicall.types.ts#L166)
+
+***
+
+### executeOnChain()
+
+> **executeOnChain**(`calls`, `options`): `Promise`\<[`AggregateResponse`](../type-aliases/AggregateResponse.md)\>
+
+Executes the multicall using Ethers, Web3, or a custom JSON-RPC provider.
+
+#### Parameters
+
+• **calls**: [`AggregateCallContext`](../type-aliases/AggregateCallContext.md)[]
+
+The aggregated call contexts to be executed.
+
+• **options**: [`ContractContextOptions`](../type-aliases/ContractContextOptions.md)
+
+Optional configuration for the contract call.
+
+#### Returns
+
+`Promise`\<[`AggregateResponse`](../type-aliases/AggregateResponse.md)\>
+
+A promise that resolves to an object containing the block number,
+         origin context, and the results of each method call.
+
+#### Remarks
+
+This method allows batch calling of multiple contract methods in a single transaction.
+It uses the multicall provider to execute all calls efficiently.
+The results are typed according to the return types of the called methods.
+
+#### Defined in
+
+[multicall.types.ts:265](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/types/src/multicall.types.ts#L265)
 
 ***
 
@@ -211,7 +390,7 @@ A promise that resolves to the aggregated response.
 
 #### Defined in
 
-[multicall.types.ts:198](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/multicall.types.ts#L198)
+[multicall.types.ts:289](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/types/src/multicall.types.ts#L289)
 
 ***
 
@@ -239,7 +418,7 @@ A promise that resolves to the aggregated response.
 
 #### Defined in
 
-[multicall.types.ts:186](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/multicall.types.ts#L186)
+[multicall.types.ts:277](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/types/src/multicall.types.ts#L277)
 
 ***
 
@@ -267,7 +446,7 @@ An array of output types, or undefined if the method is not found.
 
 #### Defined in
 
-[multicall.types.ts:162](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/multicall.types.ts#L162)
+[multicall.types.ts:235](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/types/src/multicall.types.ts#L235)
 
 ***
 
@@ -291,7 +470,7 @@ The formatted return values, always in array form.
 
 #### Defined in
 
-[multicall.types.ts:143](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/multicall.types.ts#L143)
+[multicall.types.ts:208](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/types/src/multicall.types.ts#L208)
 
 ***
 
@@ -315,7 +494,7 @@ The extracted return data.
 
 #### Defined in
 
-[multicall.types.ts:135](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/multicall.types.ts#L135)
+[multicall.types.ts:200](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/types/src/multicall.types.ts#L200)
 
 ***
 
@@ -339,4 +518,39 @@ An array of target contracts and encoded data for each call.
 
 #### Defined in
 
-[multicall.types.ts:221](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/multicall.types.ts#L221)
+[multicall.types.ts:323](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/types/src/multicall.types.ts#L323)
+
+***
+
+### processResponse()
+
+> **processResponse**\<`TContractContexts`\>(`response`, `contextArray`): [`MulticallResults`](../type-aliases/MulticallResults.md)\<`TContractContexts`\>
+
+Maps aggregated responses from contract calls back to their original context,
+ensuring results are structured according to the input call contexts.
+
+#### Type Parameters
+
+• **TContractContexts** *extends* [`ReferencedContracts`](../type-aliases/ReferencedContracts.md)
+
+The types of the referenced contracts, used to type the returned results.
+
+#### Parameters
+
+• **response**: [`AggregateResponse`](../type-aliases/AggregateResponse.md)
+
+The aggregated response containing results for all contract calls.
+
+• **contextArray**: [`string`, [`ContractContext`](../type-aliases/ContractContext.md)\<`any`, `any`, `any`\>][]
+
+An array of contract context entries, where each entry contains the contract name and its call context.
+
+#### Returns
+
+[`MulticallResults`](../type-aliases/MulticallResults.md)\<`TContractContexts`\>
+
+A `MulticallResults` object that contains the structured responses for each referenced contract.
+
+#### Defined in
+
+[multicall.types.ts:189](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/types/src/multicall.types.ts#L189)

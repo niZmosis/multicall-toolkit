@@ -1,8 +1,8 @@
-[**@ethereum-multicall/types v3.0.0**](../../../README.md) • **Docs**
+[**@ethereum-multicall/types v1.0.0**](../../../README.md) • **Docs**
 
 ***
 
-[Documentation v3.0.0](../../../../../packages.md) / [@ethereum-multicall/types](../../../README.md) / [WrappedTypes](../README.md) / Contract
+[Documentation v1.0.0](../../../../../packages.md) / [@ethereum-multicall/types](../../../README.md) / [WrappedTypes](../README.md) / Contract
 
 # Interface: Contract
 
@@ -35,7 +35,7 @@ Type: address, Indexed: false
 
 #### Defined in
 
-[abis/wrapped.types.ts:165](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/abis/wrapped.types.ts#L165)
+[abis/wrapped.types.ts:165](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/types/src/abis/wrapped.types.ts#L165)
 
 ***
 
@@ -66,7 +66,7 @@ Type: uint256, Indexed: false
 
 #### Defined in
 
-[abis/wrapped.types.ts:72](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/abis/wrapped.types.ts#L72)
+[abis/wrapped.types.ts:72](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/types/src/abis/wrapped.types.ts#L72)
 
 ***
 
@@ -93,7 +93,7 @@ Type: address, Indexed: false
 
 #### Defined in
 
-[abis/wrapped.types.ts:124](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/abis/wrapped.types.ts#L124)
+[abis/wrapped.types.ts:124](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/types/src/abis/wrapped.types.ts#L124)
 
 ***
 
@@ -116,7 +116,7 @@ Type: function
 
 #### Defined in
 
-[abis/wrapped.types.ts:116](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/abis/wrapped.types.ts#L116)
+[abis/wrapped.types.ts:116](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/types/src/abis/wrapped.types.ts#L116)
 
 ***
 
@@ -139,7 +139,7 @@ Type: function
 
 #### Defined in
 
-[abis/wrapped.types.ts:154](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/abis/wrapped.types.ts#L154)
+[abis/wrapped.types.ts:154](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/types/src/abis/wrapped.types.ts#L154)
 
 ***
 
@@ -162,7 +162,7 @@ Type: function
 
 #### Defined in
 
-[abis/wrapped.types.ts:63](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/abis/wrapped.types.ts#L63)
+[abis/wrapped.types.ts:63](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/types/src/abis/wrapped.types.ts#L63)
 
 ***
 
@@ -185,7 +185,7 @@ Type: function
 
 #### Defined in
 
-[abis/wrapped.types.ts:134](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/abis/wrapped.types.ts#L134)
+[abis/wrapped.types.ts:134](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/types/src/abis/wrapped.types.ts#L134)
 
 ***
 
@@ -208,7 +208,7 @@ Type: function
 
 #### Defined in
 
-[abis/wrapped.types.ts:83](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/abis/wrapped.types.ts#L83)
+[abis/wrapped.types.ts:83](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/types/src/abis/wrapped.types.ts#L83)
 
 ***
 
@@ -239,7 +239,7 @@ Type: uint256, Indexed: false
 
 #### Defined in
 
-[abis/wrapped.types.ts:143](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/abis/wrapped.types.ts#L143)
+[abis/wrapped.types.ts:143](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/types/src/abis/wrapped.types.ts#L143)
 
 ***
 
@@ -274,7 +274,7 @@ Type: uint256, Indexed: false
 
 #### Defined in
 
-[abis/wrapped.types.ts:93](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/abis/wrapped.types.ts#L93)
+[abis/wrapped.types.ts:93](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/types/src/abis/wrapped.types.ts#L93)
 
 ***
 
@@ -301,4 +301,4 @@ Type: uint256, Indexed: false
 
 #### Defined in
 
-[abis/wrapped.types.ts:106](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/abis/wrapped.types.ts#L106)
+[abis/wrapped.types.ts:106](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/types/src/abis/wrapped.types.ts#L106)

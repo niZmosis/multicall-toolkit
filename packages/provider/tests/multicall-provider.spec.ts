@@ -1,5 +1,5 @@
-import type { Erc20Types } from '@ethereum-multicall/types'
-import { erc20ABI, ErrorCodes, MulticallError } from '@ethereum-multicall/utils'
+import type { Erc20Types } from '@multicall-toolkit/types'
+import { erc20ABI, ErrorCodes, MulticallError } from '@multicall-toolkit/utils'
 import { describe, it, expect } from 'vitest'
 
 import { MockProviderUrl, MockChainId, MockUniToken } from '../../../test/mocks'
@@ -9,7 +9,7 @@ describe('MulticallProvider', () => {
   describe('with chain id', () => {
     const multicallProvider = new MulticallProvider({
       chainId: MockChainId,
-      customRpcUrl: MockProviderUrl,
+      rpcUrl: MockProviderUrl,
     })
     const address = '0x2906D377Cc622FD63fb888aDeCD39a433a89E0DA'
 
@@ -35,31 +35,31 @@ describe('MulticallProvider', () => {
     })
   })
 
-  describe('with chain id and customRpcUrl', () => {
+  describe('with chain id and rpcUrl', () => {
     it('should throw error if chainId is not found', () => {
       expect(() => {
         new MulticallProvider({
           // @ts-ignore
           chainId: undefined,
-          customRpcUrl: MockProviderUrl,
+          rpcUrl: MockProviderUrl,
         })
       }).toThrowError(
         new MulticallError(
-          `Can not find a Chain ID, provide a 'chainId' along with the 'customRpcUrl'`,
+          `Can not find a Chain ID, provide a 'chainId' along with the 'rpcUrl'`,
           ErrorCodes.chainIdNotSupported,
         ),
       )
     })
-    it('should throw error if customRpcUrl is not found', () => {
+    it('should throw error if rpcUrl is not found', () => {
       expect(() => {
         new MulticallProvider({
           chainId: MockChainId,
           // @ts-ignore
-          customRpcUrl: undefined,
+          rpcUrl: undefined,
         })
       }).toThrowError(
         new MulticallError(
-          `Can not find a RPC URL for ${MockChainId}, provide a 'customRpcUrl' along with the 'chainId'`,
+          `Can not find a RPC URL for ${MockChainId}, provide a 'rpcUrl' along with the 'chainId'`,
           ErrorCodes.chainIdNotSupported,
         ),
       )
@@ -67,7 +67,7 @@ describe('MulticallProvider', () => {
 
     const multicallProvider = new MulticallProvider({
       chainId: MockChainId,
-      customRpcUrl: MockProviderUrl,
+      rpcUrl: MockProviderUrl,
     })
 
     it('getContract', () => {

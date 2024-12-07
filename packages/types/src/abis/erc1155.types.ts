@@ -1,7 +1,7 @@
 import type { EthersContractContextV5 } from '@abi-toolkit/converter-typescript'
 import type {
   ContractTransaction,
-  BytesLike as Arrayish,
+  BytesLike,
   BigNumber,
   BigNumberish,
 } from 'ethers'
@@ -136,7 +136,7 @@ export interface Contract {
     to: string,
     ids: BigNumberish[],
     amounts: BigNumberish[],
-    data: Arrayish,
+    data: BytesLike,
     overrides?: ContractTransactionOverrides,
   ): Promise<ContractTransaction>
   /**
@@ -155,7 +155,7 @@ export interface Contract {
     to: string,
     id: BigNumberish,
     amount: BigNumberish,
-    data: Arrayish,
+    data: BytesLike,
     overrides?: ContractTransactionOverrides,
   ): Promise<ContractTransaction>
   /**
@@ -179,7 +179,7 @@ export interface Contract {
    * @param interfaceId Type: bytes4, Indexed: false
    */
   supportsInterface(
-    interfaceId: Arrayish,
+    interfaceId: BytesLike,
     overrides?: ContractCallOverrides,
   ): Promise<boolean>
   /**

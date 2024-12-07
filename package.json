@@ -1,21 +1,21 @@
 {
   "private": true,
-  "name": "ethereum-multicall",
-  "version": "3.0.0",
+  "name": "multicall-toolkit",
+  "version": "1.0.0",
   "description": "Multicall allows multiple smart contract constant function calls to be grouped into a single call and the results aggregated into a single result",
   "keywords": [
     "ethereum",
     "blockchain",
     "JSONRPC",
     "multicall",
-    "ethereum-multicall",
+    "multicall-toolkit",
     "typescript"
   ],
   "bugs": {
-    "url": "https://github.com/joshstevens19/ethereum-multicall/issues"
+    "url": "https://github.com/niZmosis/multicall-toolkit/issues"
   },
-  "homepage": "https://github.com/joshstevens19/ethereum-multicall#readme",
-  "author": "joshstevens19@hotmail.co.uk",
+  "homepage": "https://github.com/niZmosis/multicall-toolkit#readme",
+  "author": "niZmosis",
   "license": "ISC",
   "type": "module",
   "scripts": {
@@ -33,8 +33,8 @@
     "test:coverage": "vitest run --coverage",
     "clean": "lerna clean -y",
     "build": "lerna run build",
-    "build:multicall": "lerna run build --scope @ethereum-multicall/contracts  --scope @ethereum-multicall/core --scope @ethereum-multicall/provider --scope @ethereum-multicall/types --scope @ethereum-multicall/utils",
-    "build:single": "lerna run build --scope @ethereum-multicall/contracts",
+    "build:multicall": "lerna run build --scope @multicall-toolkit/contracts  --scope @multicall-toolkit/core --scope @multicall-toolkit/provider --scope @multicall-toolkit/types --scope @multicall-toolkit/utils",
+    "build:single": "lerna run build --scope @multicall-toolkit/contracts",
     "build:esm": "lerna run build:esm",
     "build:cjs": "lerna run build:cjs",
     "rebuild": "pnpm clean && pnpm build",

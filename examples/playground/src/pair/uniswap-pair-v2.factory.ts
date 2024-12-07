@@ -1,16 +1,15 @@
-import { MulticallProviderBase } from '@ethereum-multicall/provider'
+import { MulticallProviderBase } from '@multicall-toolkit/provider'
 import type {
   ContractTransactionOverrides,
   MethodCall,
-  ContractDetail,
   MulticallProviderContext,
   ContractDetailToken,
   ContractContextOptions,
   ContractResults,
   DiscriminatedMethodCalls,
   MethodNames,
-} from '@ethereum-multicall/types'
-import { ErrorCodes, MulticallError } from '@ethereum-multicall/utils'
+} from '@multicall-toolkit/types'
+import { ErrorCodes, MulticallError } from '@multicall-toolkit/utils'
 import type {
   BigNumberish,
   BytesLike,
@@ -55,8 +54,6 @@ export class PairContractFactory
   extends MulticallProviderBase
   implements UniswapPairV2Types.Contract
 {
-  protected _contractDetail: ContractDetail
-
   protected _contract: UniswapPairV2Types.ContractContext
 
   protected _methodNames: UniswapPairV2Types.MethodNameMap
@@ -95,11 +92,6 @@ export class PairContractFactory
       ...defaultPairMethodMapV2,
       ...this._contractDetail.methods,
     }
-  }
-
-  /** Get the contract detail */
-  public get contractDetail(): ContractDetail {
-    return this._contractDetail
   }
 
   /** Get the pair contract */
@@ -170,12 +162,12 @@ export class PairContractFactory
 
     if (typeof this._contract[contractMethodName] === 'function') {
       return {
-        methodName,
+        methodName: contractMethodName,
         methodParameters: methodParameters ?? [],
       } as MethodCall<UniswapPairV2Types.Contract, TMethod>
     } else {
       throw new MulticallError(
-        `Method ${methodName} does not exist on the contract`,
+        `Method ${String(contractMethodName)} does not exist on the contract`,
         ErrorCodes.functionArgumentError,
       )
     }
@@ -292,7 +284,6 @@ export class PairContractFactory
 
   /**
    * Returns the call context for the PERMIT_TYPEHASH method.
-   * @param overrides - Optional overrides.
    * @returns The call context.
    */
   public PERMIT_TYPEHASHCallContext(): MethodCall<
@@ -306,7 +297,6 @@ export class PairContractFactory
    * Returns the allowance for a given owner and spender.
    * @param owner - The address of the token owner.
    * @param spender - The address of the spender.
-   * @param overrides - Optional overrides.
    * @returns The allowance.
    */
   public async allowance(owner: string, spender: string): Promise<BigNumber> {
@@ -377,7 +367,6 @@ export class PairContractFactory
 
   /**
    * Returns the call context for the kLast method.
-   * @param overrides - Optional overrides.
    * @returns The call context.
    */
   public kLastCallContext(): MethodCall<UniswapPairV2Types.Contract, 'kLast'> {

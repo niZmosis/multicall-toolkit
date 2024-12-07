@@ -9,27 +9,27 @@ This package provides TypeScript types and interfaces.
 ### npm
 
 ```bash
-npm install @ethereum-multicall/types
+npm install @multicall-toolkit/types
 ```
 
 ### yarn
 
 ```bash
-yarn add @ethereum-multicall/types
+yarn add @multicall-toolkit/types
 ```
 
 ### pnpm
 
 ```bash
-pnpm add @ethereum-multicall/types
+pnpm add @multicall-toolkit/types
 ```
 
 ### bun
 
 ```bash
-bun add @ethereum-multicall/types
+bun add @multicall-toolkit/types
 ```
 
 ## Links
 
-- [Github](https://github.com/joshstevens19/ethereum-multicall)
+- [Github](https://github.com/niZmosis/multicall-toolkit)

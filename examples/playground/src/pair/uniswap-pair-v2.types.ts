@@ -3,10 +3,10 @@ import type {
   EventFilter,
   ContractTransactionOverrides,
   ContractCallOverrides,
-} from '@ethereum-multicall/types'
+} from '@multicall-toolkit/types'
 import type {
   ContractTransaction,
-  BytesLike as Arrayish,
+  BytesLike,
   BigNumber,
   BigNumberish,
 } from 'ethers'
@@ -282,8 +282,8 @@ export interface Contract {
     value: BigNumberish,
     deadline: BigNumberish,
     v: BigNumberish,
-    r: Arrayish,
-    s: Arrayish,
+    r: BytesLike,
+    s: BytesLike,
     overrides?: ContractTransactionOverrides,
   ): Promise<ContractTransaction>
   /**
@@ -325,7 +325,7 @@ export interface Contract {
     amount0Out: BigNumberish,
     amount1Out: BigNumberish,
     to: string,
-    data: Arrayish,
+    data: BytesLike,
     overrides?: ContractTransactionOverrides,
   ): Promise<ContractTransaction>
   /**

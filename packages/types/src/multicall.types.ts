@@ -30,10 +30,35 @@ export type MulticallExecutionType = 'web3' | 'ethers' | 'nodeUrl'
  * Base options for Multicall configuration.
  */
 export type MulticallOptionsBase = {
-  /** Custom address for the Multicall contract */
-  multicallCustomContractAddress?: string
-  /** Whether to use the tryAggregate function */
+  /**
+   * Custom address for the Multicall contract.
+   * If not specified, the default contract address is used.
+   */
+  customMulticallContractAddress?: string
+  /**
+   * Whether to use the `tryAggregate` function for error handling.
+   * If `true`, individual call failures do not cause the entire batch to fail.
+   * Defaults to `false`.
+   */
   tryAggregate?: boolean
+  /**
+   * Whether to enable batching when calls exceed configured size or count limits.
+   * When enabled, calls that exceed `maxCallDataSize` or `maxCallsPerBatch` are split into multiple batches, resulting in multiple calls to the blockchain.
+   * Defaults to `true`.
+   */
+  enableBatching?: boolean
+  /**
+   * Maximum allowed call data size (in bytes) for a single batch of calls.
+   * Batches are split if the combined return data size exceeds this limit.
+   * Defaults to `100000` bytes.
+   */
+  maxCallDataSize?: number
+  /**
+   * Maximum number of calls allowed in a single batch.
+   * Ensures that each batch stays within a manageable number of calls.
+   * Defaults to `500` calls.
+   */
+  maxCallsPerBatch?: number
 }
 
 /**
@@ -89,6 +114,25 @@ export interface IMulticall {
     | MulticallOptionsCustomJsonRpcProvider
 
   /**
+   * Creates and returns a contract call context to be used in multicall executions.
+   *
+   * @template TContract - The type of the contract being interacted with.
+   * @template TCustomData - Custom data to be associated with the call context.
+   * @returns A function that creates the contract call context.
+   */
+  createCallContext<
+    TContract extends Record<string, any>,
+    TCustomData = unknown,
+  >(): <
+    TCalls extends Record<
+      string,
+      DiscriminatedMethodCalls<TContract>[MethodNames<TContract>]
+    >,
+  >(
+    context: ContractContext<TContract, TCalls, TCustomData>,
+  ) => ContractContext<TContract, TCalls, TCustomData>
+
+  /**
    * Executes multiple contract calls and aggregates the results into a single response.
    *
    * @typeParam TResult - The structure of the result object.
@@ -102,29 +146,50 @@ export interface IMulticall {
   ): Promise<MulticallResults<TContractContexts>>
 
   /**
-   * Creates and returns a contract call context to be used in multicall executions.
+   * Splits the provided calls into multiple batches based on configured size limits.
+   * Batches are created to ensure that each batch stays within the byte size limit
+   * and adheres to the maximum batch size.
    *
-   * @template TContract - The type of the contract being interacted with.
-   * @template TCustomData - Custom data to be associated with the call context.
-   * @returns A function that creates the contract call context.
+   * @param calls - An array of `AggregateCallContext` representing the individual contract calls.
+   * @returns An array of call batches, where each batch is an array of `AggregateCallContext` objects.
    */
-  createCallContext<
-    TContract extends Record<string, any>,
-    TCustomData = unknown,
-  >(): (
-    context: ContractContext<
-      TContract,
-      Record<
-        string,
-        DiscriminatedMethodCalls<TContract>[MethodNames<TContract>]
-      >,
-      TCustomData
-    >,
-  ) => ContractContext<
-    TContract,
-    Record<string, DiscriminatedMethodCalls<TContract>[MethodNames<TContract>]>,
-    TCustomData
-  >
+  createBatches(calls: AggregateCallContext[]): AggregateCallContext[][]
+
+  /**
+   * Executes batches of contract calls sequentially, stopping if an error occurs (unless `tryAggregate` is enabled).
+   * Each batch is processed one after the other to maintain sequential order and error handling.
+   *
+   * @param batches - An array of call batches to be executed, each batch containing multiple `AggregateCallContext` items.
+   * @param contractCallOptions - Options for each contract call execution, such as block number and aggregation settings.
+   * @returns A promise that resolves to an array of `AggregateResponse`, containing responses from each successful batch.
+   */
+  executeBatchesSequentially(
+    batches: AggregateCallContext[][],
+    contractCallOptions: ContractContextOptions,
+  ): Promise<AggregateResponse[]>
+
+  /**
+   * Combines the results from multiple batch responses into a single aggregated response.
+   * This method merges the block number and results from each batch to produce a consolidated output.
+   *
+   * @param responses - An array of `AggregateResponse` from each executed batch.
+   * @returns A single `AggregateResponse` that combines data from all the provided batch responses.
+   */
+  combineResponses(responses: AggregateResponse[]): AggregateResponse
+
+  /**
+   * Maps aggregated responses from contract calls back to their original context,
+   * ensuring results are structured according to the input call contexts.
+   *
+   * @typeParam TContractContexts - The types of the referenced contracts, used to type the returned results.
+   * @param response - The aggregated response containing results for all contract calls.
+   * @param contextArray - An array of contract context entries, where each entry contains the contract name and its call context.
+   * @returns A `MulticallResults` object that contains the structured responses for each referenced contract.
+   */
+  processResponse<TContractContexts extends ReferencedContracts>(
+    response: AggregateResponse,
+    contextArray: [string, ContractContext<any, any, any>][],
+  ): MulticallResults<TContractContexts>
 
   /**
    * Extracts the return data from a given result.
@@ -141,6 +206,14 @@ export interface IMulticall {
    * @returns The formatted return values, always in array form.
    */
   formatReturnValues(decodedReturnValues: any): any
+
+  /**
+   * Attempts to decode a value as `bytes32` if standard decoding fails.
+   * @param returnData The raw return data from the contract call.
+   * @param outputTypes The expected output types from the ABI.
+   * @returns The decoded value or `undefined` if decoding fails.
+   */
+  decodeBytes32IfNecessary(returnData: any, outputTypes: AbiOutput[]): any
 
   /**
    * Builds the aggregate call context, which prepares the contract call details for execution.
@@ -177,6 +250,24 @@ export interface IMulticall {
   ): Promise<AggregateResponse>
 
   /**
+   * Executes the multicall using Ethers, Web3, or a custom JSON-RPC provider.
+   *
+   * @param calls - The aggregated call contexts to be executed.
+   * @param options - Optional configuration for the contract call.
+   * @returns A promise that resolves to an object containing the block number,
+   *          origin context, and the results of each method call.
+   *
+   * @remarks
+   * This method allows batch calling of multiple contract methods in a single transaction.
+   * It uses the multicall provider to execute all calls efficiently.
+   * The results are typed according to the return types of the called methods.
+   */
+  executeOnChain(
+    calls: AggregateCallContext[],
+    options: ContractContextOptions,
+  ): Promise<AggregateResponse>
+
+  /**
    * Executes the contract calls using a Web3 provider.
    *
    * @param calls - The aggregated call contexts to be executed.
@@ -207,9 +298,20 @@ export interface IMulticall {
    * @param calls - The original call contexts used for the contract call.
    * @returns An aggregated response containing the results for all contract calls.
    */
-  buildUpAggregateResponse(
+  buildSuccessfulAggregateResponse(
     contractResponse: AggregateContractResponse,
     calls: AggregateCallContext[],
+  ): AggregateResponse
+
+  /**
+   * Builds a failure aggregate response for a batch that failed entirely.
+   * @param calls - The calls that failed.
+   * @param error - The error details.
+   * @returns The aggregate response.
+   */
+  buildFailureAggregateResponse(
+    calls: AggregateCallContext[],
+    error: { code: string; message: string },
   ): AggregateResponse
 
   /**

@@ -1,8 +1,8 @@
-**@ethereum-multicall/utils v3.0.0** • [**Docs**](globals.md)
+**@ethereum-multicall/utils v1.0.0** • [**Docs**](globals.md)
 
 ***
 
-[Documentation v3.0.0](../../packages.md) / @ethereum-multicall/utils
+[Documentation v1.0.0](../../packages.md) / @ethereum-multicall/utils
 
 # Utils Package
 
@@ -38,4 +38,4 @@ bun add @ethereum-multicall/utils
 
 ## Links
 
-- [Github](https://github.com/joshstevens19/ethereum-multicall)
+- [Github](https://github.com/niZmosis/ethereum-multicall)

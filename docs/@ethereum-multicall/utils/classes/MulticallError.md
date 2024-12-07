@@ -1,10 +1,12 @@
-[**@ethereum-multicall/utils v3.0.0**](../README.md) • **Docs**
+[**@ethereum-multicall/utils v1.0.0**](../README.md) • **Docs**
 
 ***
 
-[Documentation v3.0.0](../../../packages.md) / [@ethereum-multicall/utils](../README.md) / MulticallError
+[Documentation v1.0.0](../../../packages.md) / [@ethereum-multicall/utils](../README.md) / MulticallError
 
 # Class: MulticallError
+
+Custom error class for DEX-related errors with additional context and typing
 
 ## Extends
 
@@ -14,13 +16,17 @@
 
 ### new MulticallError()
 
-> **new MulticallError**(`message`, `code`): [`MulticallError`](MulticallError.md)
+> **new MulticallError**(`message`, `code`, `context`?, `originalError`?): [`MulticallError`](MulticallError.md)
 
 #### Parameters
 
 • **message**: `string`
 
 • **code**: [`ErrorCodes`](../enumerations/ErrorCodes.md)
+
+• **context?**: `Error` \| [`MulticallErrorContext`](../type-aliases/MulticallErrorContext.md)
+
+• **originalError?**: `Error`
 
 #### Returns
 
@@ -32,7 +38,7 @@
 
 #### Defined in
 
-[packages/utils/src/errors/multicall-error.ts:7](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/utils/src/errors/multicall-error.ts#L7)
+[packages/utils/src/errors/multicall-error.ts:34](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/utils/src/errors/multicall-error.ts#L34)
 
 ## Properties
 
@@ -52,11 +58,25 @@ node\_modules/.pnpm/typescript@5.5.4/node\_modules/typescript/lib/lib.es2022.err
 
 ### code
 
-> **code**: [`ErrorCodes`](../enumerations/ErrorCodes.md)
+> `readonly` **code**: [`ErrorCodes`](../enumerations/ErrorCodes.md)
+
+Error code identifying the type of error
 
 #### Defined in
 
-[packages/utils/src/errors/multicall-error.ts:5](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/utils/src/errors/multicall-error.ts#L5)
+[packages/utils/src/errors/multicall-error.ts:17](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/utils/src/errors/multicall-error.ts#L17)
+
+***
+
+### context?
+
+> `readonly` `optional` **context**: [`MulticallErrorContext`](../type-aliases/MulticallErrorContext.md)
+
+Additional context about the error
+
+#### Defined in
+
+[packages/utils/src/errors/multicall-error.ts:22](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/utils/src/errors/multicall-error.ts#L22)
 
 ***
 
@@ -64,19 +84,19 @@ node\_modules/.pnpm/typescript@5.5.4/node\_modules/typescript/lib/lib.es2022.err
 
 > **message**: `string`
 
-#### Overrides
+#### Inherited from
 
 `Error.message`
 
 #### Defined in
 
-[packages/utils/src/errors/multicall-error.ts:6](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/utils/src/errors/multicall-error.ts#L6)
+node\_modules/.pnpm/typescript@5.5.4/node\_modules/typescript/lib/lib.es5.d.ts:1077
 
 ***
 
 ### name
 
-> **name**: `string` = `'MulticallError'`
+> `readonly` **name**: `"MulticallError"` = `'MulticallError'`
 
 #### Overrides
 
@@ -84,7 +104,31 @@ node\_modules/.pnpm/typescript@5.5.4/node\_modules/typescript/lib/lib.es2022.err
 
 #### Defined in
 
-[packages/utils/src/errors/multicall-error.ts:4](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/utils/src/errors/multicall-error.ts#L4)
+[packages/utils/src/errors/multicall-error.ts:12](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/utils/src/errors/multicall-error.ts#L12)
+
+***
+
+### originalError?
+
+> `readonly` `optional` **originalError**: `Error`
+
+Original error if this error wrapped another error
+
+#### Defined in
+
+[packages/utils/src/errors/multicall-error.ts:32](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/utils/src/errors/multicall-error.ts#L32)
+
+***
+
+### originalStack?
+
+> `readonly` `optional` **originalStack**: `string`
+
+Stack trace if available
+
+#### Defined in
+
+[packages/utils/src/errors/multicall-error.ts:27](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/utils/src/errors/multicall-error.ts#L27)
 
 ***
 
@@ -146,6 +190,58 @@ node\_modules/.pnpm/@types+node@22.6.1/node\_modules/@types/node/globals.d.ts:14
 
 ## Methods
 
+### toJSON()
+
+> **toJSON**(): `Record`\<`string`, `unknown`\>
+
+Creates a plain object representation of the error
+
+#### Returns
+
+`Record`\<`string`, `unknown`\>
+
+#### Defined in
+
+[packages/utils/src/errors/multicall-error.ts:88](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/utils/src/errors/multicall-error.ts#L88)
+
+***
+
+### toString()
+
+> **toString**(): `string`
+
+Creates a string representation of the error including context
+
+#### Returns
+
+`string`
+
+#### Defined in
+
+[packages/utils/src/errors/multicall-error.ts:71](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/utils/src/errors/multicall-error.ts#L71)
+
+***
+
+### withContext()
+
+> **withContext**(`additionalContext`): [`MulticallError`](MulticallError.md)
+
+Adds additional context to an existing error
+
+#### Parameters
+
+• **additionalContext**: [`MulticallErrorContext`](../type-aliases/MulticallErrorContext.md)
+
+#### Returns
+
+[`MulticallError`](MulticallError.md)
+
+#### Defined in
+
+[packages/utils/src/errors/multicall-error.ts:109](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/utils/src/errors/multicall-error.ts#L109)
+
+***
+
 ### captureStackTrace()
 
 > `static` **captureStackTrace**(`targetObject`, `constructorOpt`?): `void`
@@ -169,3 +265,23 @@ Create .stack property on a target object
 #### Defined in
 
 node\_modules/.pnpm/@types+node@22.6.1/node\_modules/@types/node/globals.d.ts:136
+
+***
+
+### isMulticallError()
+
+> `static` **isMulticallError**(`error`): `error is MulticallError`
+
+Helper method to determine if an unknown error is a MulticallError
+
+#### Parameters
+
+• **error**: `unknown`
+
+#### Returns
+
+`error is MulticallError`
+
+#### Defined in
+
+[packages/utils/src/errors/multicall-error.ts:121](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/utils/src/errors/multicall-error.ts#L121)

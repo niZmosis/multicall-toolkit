@@ -1,4 +1,4 @@
-export type Address = string
+export type Address = string // & `0x${string}`
 
 // type AddressBrand = { readonly Address: unique symbol }
 

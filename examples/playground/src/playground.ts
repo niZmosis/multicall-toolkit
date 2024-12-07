@@ -1,10 +1,10 @@
-import { Erc20Contract } from '@ethereum-multicall/contracts'
-import { Multicall } from '@ethereum-multicall/core'
-import { MulticallProvider } from '@ethereum-multicall/provider'
+import { Erc20Contract } from '@multicall-toolkit/contracts'
+import { Multicall } from '@multicall-toolkit/core'
+import { MulticallProvider } from '@multicall-toolkit/provider'
 import type {
   ContractCallOverrides,
   Erc20Types,
-} from '@ethereum-multicall/types'
+} from '@multicall-toolkit/types'
 import { ethers } from 'ethers'
 
 import type { UniswapPairV2Types } from './pair'
@@ -292,10 +292,10 @@ export async function multicallProviderExample() {
     ethersProvider: provider,
   })
 
-  // You can also pass in a custom RPC URL
+  // You can also pass in a chainId and RPC URL
   // const multicallProvider = new MulticallProvider({
   //   chainId: 943,
-  //   customRpcUrl: 'https://rpc.v4.testnet.pulsechain.com',
+  //   rpcUrl: 'https://rpc.v4.testnet.pulsechain.com',
   // })
 
   // Setup our token
@@ -472,7 +472,7 @@ export async function multicallCompact() {
   const tokenContractFactory = new Erc20Contract(
     {
       chainId: 943,
-      customRpcUrl: 'https://rpc.v4.testnet.pulsechain.com',
+      rpcUrl: 'https://rpc.v4.testnet.pulsechain.com',
     },
     {
       address: uniswapTokenAddress,

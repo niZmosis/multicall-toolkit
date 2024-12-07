@@ -1,8 +1,8 @@
-[**@ethereum-multicall/types v3.0.0**](../README.md) • **Docs**
+[**@ethereum-multicall/types v1.0.0**](../README.md) • **Docs**
 
 ***
 
-[Documentation v3.0.0](../../../packages.md) / [@ethereum-multicall/types](../README.md) / MulticallOptions
+[Documentation v1.0.0](../../../packages.md) / [@ethereum-multicall/types](../README.md) / MulticallOptions
 
 # Type Alias: MulticallOptions
 
@@ -12,4 +12,4 @@ Multicall options for all supported execution environments.
 
 ## Defined in
 
-[multicall.types.ts:68](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/multicall.types.ts#L68)
+[multicall.types.ts:93](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/types/src/multicall.types.ts#L93)

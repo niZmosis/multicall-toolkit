@@ -9,27 +9,27 @@ This package provides a set of utility functions.
 ### npm
 
 ```bash
-npm install @ethereum-multicall/utils
+npm install @multicall-toolkit/utils
 ```
 
 ### yarn
 
 ```bash
-yarn add @ethereum-multicall/utils
+yarn add @multicall-toolkit/utils
 ```
 
 ### pnpm
 
 ```bash
-pnpm add @ethereum-multicall/utils
+pnpm add @multicall-toolkit/utils
 ```
 
 ### bun
 
 ```bash
-bun add @ethereum-multicall/utils
+bun add @multicall-toolkit/utils
 ```
 
 ## Links
 
-- [Github](https://github.com/joshstevens19/ethereum-multicall)
+- [Github](https://github.com/niZmosis/multicall-toolkit)

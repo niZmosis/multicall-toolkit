@@ -1,8 +1,8 @@
-[**@ethereum-multicall/types v3.0.0**](../../../README.md) • **Docs**
+[**@ethereum-multicall/types v1.0.0**](../../../README.md) • **Docs**
 
 ***
 
-[Documentation v3.0.0](../../../../../packages.md) / [@ethereum-multicall/types](../../../README.md) / [Erc20Types](../README.md) / Contract
+[Documentation v1.0.0](../../../../../packages.md) / [@ethereum-multicall/types](../../../README.md) / [Erc20Types](../README.md) / Contract
 
 # Interface: Contract
 
@@ -35,7 +35,7 @@ Type: address, Indexed: false
 
 #### Defined in
 
-[abis/erc20.types.ts:133](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/abis/erc20.types.ts#L133)
+[abis/erc20.types.ts:133](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/types/src/abis/erc20.types.ts#L133)
 
 ***
 
@@ -66,7 +66,7 @@ Type: uint256, Indexed: false
 
 #### Defined in
 
-[abis/erc20.types.ts:60](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/abis/erc20.types.ts#L60)
+[abis/erc20.types.ts:60](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/types/src/abis/erc20.types.ts#L60)
 
 ***
 
@@ -93,7 +93,7 @@ Type: address, Indexed: false
 
 #### Defined in
 
-[abis/erc20.types.ts:101](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/abis/erc20.types.ts#L101)
+[abis/erc20.types.ts:101](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/types/src/abis/erc20.types.ts#L101)
 
 ***
 
@@ -116,7 +116,7 @@ Type: function
 
 #### Defined in
 
-[abis/erc20.types.ts:93](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/abis/erc20.types.ts#L93)
+[abis/erc20.types.ts:93](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/types/src/abis/erc20.types.ts#L93)
 
 ***
 
@@ -139,7 +139,7 @@ Type: function
 
 #### Defined in
 
-[abis/erc20.types.ts:51](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/abis/erc20.types.ts#L51)
+[abis/erc20.types.ts:51](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/types/src/abis/erc20.types.ts#L51)
 
 ***
 
@@ -162,7 +162,7 @@ Type: function
 
 #### Defined in
 
-[abis/erc20.types.ts:111](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/abis/erc20.types.ts#L111)
+[abis/erc20.types.ts:111](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/types/src/abis/erc20.types.ts#L111)
 
 ***
 
@@ -185,7 +185,7 @@ Type: function
 
 #### Defined in
 
-[abis/erc20.types.ts:71](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/abis/erc20.types.ts#L71)
+[abis/erc20.types.ts:71](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/types/src/abis/erc20.types.ts#L71)
 
 ***
 
@@ -216,7 +216,7 @@ Type: uint256, Indexed: false
 
 #### Defined in
 
-[abis/erc20.types.ts:120](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/abis/erc20.types.ts#L120)
+[abis/erc20.types.ts:120](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/types/src/abis/erc20.types.ts#L120)
 
 ***
 
@@ -251,4 +251,4 @@ Type: uint256, Indexed: false
 
 #### Defined in
 
-[abis/erc20.types.ts:81](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/abis/erc20.types.ts#L81)
+[abis/erc20.types.ts:81](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/types/src/abis/erc20.types.ts#L81)

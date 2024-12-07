@@ -1,12 +1,15 @@
-[**@ethereum-multicall/types v3.0.0**](../README.md) • **Docs**
+[**@ethereum-multicall/types v1.0.0**](../README.md) • **Docs**
 
 ***
 
-[Documentation v3.0.0](../../../packages.md) / [@ethereum-multicall/types](../README.md) / BaseProviderContext
+[Documentation v1.0.0](../../../packages.md) / [@ethereum-multicall/types](../README.md) / BaseProviderContext
 
 # Type Alias: BaseProviderContext
 
-> **BaseProviderContext**: `object`
+> **BaseProviderContext**: `Omit`\<[`MulticallOptionsBase`](MulticallOptionsBase.md), `"customMulticallContractAddress"`\> & `object`
+
+Base context for all provider contexts.
+This extends the `MulticallOptionsBase` type and includes an optional `customNetwork` property in place of the `multicallCustomContractAddress` property.
 
 ## Type declaration
 
@@ -16,13 +19,6 @@
 
 (Optional) The custom network details.
 
-### tryAggregate?
-
-> `optional` **tryAggregate**: `boolean`
-
-When true, allows the multicall to continue even if individual calls fail, returning partial results instead of reverting the entire transaction.
-Defaults to true.
-
 ## Defined in
 
-[multicall-provider.types.ts:16](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/multicall-provider.types.ts#L16)
+[multicall-provider.types.ts:23](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/types/src/multicall-provider.types.ts#L23)

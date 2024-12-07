@@ -1,7 +1,7 @@
 import type { EthersContractContextV5 } from '@abi-toolkit/converter-typescript'
 import type {
   ContractTransaction,
-  BytesLike as Arrayish,
+  BytesLike,
   BigNumber,
   BigNumberish,
 } from 'ethers'
@@ -30,8 +30,8 @@ export interface EventsContext {
     from: string,
     to: string,
     value: BigNumberish,
-    data: Arrayish,
-    operatorData: Arrayish,
+    data: BytesLike,
+    operatorData: BytesLike,
   ): EventFilter
   DefaultOperatorsSet(
     operator: string,
@@ -68,8 +68,8 @@ export interface SentEventEmittedResponse {
   from: string
   to: string
   value: BigNumberish
-  data: Arrayish
-  operatorData: Arrayish
+  data: BytesLike
+  operatorData: BytesLike
 }
 export interface DefaultOperatorsSetEventEmittedResponse {
   operator: string
@@ -173,8 +173,8 @@ export interface Contract {
     _from: string,
     _to: string,
     _value: BigNumberish,
-    _data: Arrayish,
-    _operatorData: Arrayish,
+    _data: BytesLike,
+    _operatorData: BytesLike,
     overrides?: ContractTransactionOverrides,
   ): Promise<ContractTransaction>
   /**
@@ -213,7 +213,7 @@ export interface Contract {
     _from: string,
     _to: string,
     _value: BigNumberish,
-    _data: Arrayish,
+    _data: BytesLike,
     overrides?: ContractTransactionOverrides,
   ): Promise<ContractTransaction>
   /**

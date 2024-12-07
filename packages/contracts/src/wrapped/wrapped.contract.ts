@@ -1,30 +1,29 @@
-import { MulticallProviderBase } from '@ethereum-multicall/provider'
+import { MulticallProviderBase } from '@multicall-toolkit/provider'
 import type {
   WrappedTypes,
-  ContractDetail,
   MulticallProviderContext,
   ContractTransactionOverrides,
   ContractDetailToken,
   DiscriminatedMethodCalls,
   MethodNames,
   ContractContextOptions,
-  ContractResults,
   MethodCall,
-} from '@ethereum-multicall/types'
+  ExecutionResult,
+  ContractContext,
+} from '@multicall-toolkit/types'
 import {
   MulticallError,
   ErrorCodes,
   wrappedABI,
   defaultWrappedMethodMap,
-} from '@ethereum-multicall/utils'
+} from '@multicall-toolkit/utils'
 import type { BigNumber, BigNumberish, ContractTransaction } from 'ethers'
+import { getAddress } from 'ethers/lib/utils'
 
 export class WrappedContract
   extends MulticallProviderBase
   implements WrappedTypes.Contract
 {
-  protected _contractDetail: ContractDetail
-
   protected _contract: WrappedTypes.ContractContext
 
   protected _methodNames: WrappedTypes.MethodNameMap
@@ -33,26 +32,10 @@ export class WrappedContract
     multicallProviderContext: MulticallProviderContext,
     contractDetail: ContractDetailToken,
   ) {
-    super(multicallProviderContext)
-
-    if (!contractDetail) {
-      throw new MulticallError(
-        'contractDetail is required',
-        ErrorCodes.functionArgumentError,
-      )
-    }
-
-    if (!contractDetail.address) {
-      throw new MulticallError(
-        'Contract address not found',
-        ErrorCodes.contractAddressNotFound,
-      )
-    }
-
-    this._contractDetail = {
+    super(multicallProviderContext, {
       ...contractDetail,
       abi: contractDetail.abi || wrappedABI,
-    }
+    })
 
     this._contract =
       this._multicallProvider.getContract<WrappedTypes.ContractContext>(
@@ -63,11 +46,6 @@ export class WrappedContract
       ...defaultWrappedMethodMap,
       ...this._contractDetail.methods,
     }
-  }
-
-  /** Get the contract detail */
-  public get contractDetail(): ContractDetail {
-    return this._contractDetail
   }
 
   /** Get the wrapped contract */
@@ -136,15 +114,46 @@ export class WrappedContract
 
     if (typeof this._contract[contractMethodName] === 'function') {
       return {
-        methodName,
+        methodName: contractMethodName,
         methodParameters: methodParameters ?? [],
       } as MethodCall<WrappedTypes.Contract, TMethod>
     } else {
       throw new MulticallError(
-        `Method ${methodName} does not exist on the contract`,
+        `Method ${String(contractMethodName)} does not exist on the contract`,
         ErrorCodes.functionArgumentError,
       )
     }
+  }
+
+  /**
+   * Helper function to dynamically prepare a contract context based on custom or default method names.
+   * @param calls - An object containing method calls, each mapped to its parameters.
+   * @param customData - Optional custom data to include in the context.
+   * @returns The contract context, including the address, ABI, calls, and optional custom data.
+   */
+  prepareContractContext<
+    TCalls extends Record<
+      string,
+      DiscriminatedMethodCalls<WrappedTypes.Contract>[MethodNames<WrappedTypes.Contract>]
+    >,
+    TCustomData = unknown,
+  >(
+    calls: TCalls,
+    customData?: TCustomData,
+  ): ContractContext<WrappedTypes.Contract, TCalls, TCustomData> {
+    const context: ContractContext<WrappedTypes.Contract, TCalls, TCustomData> =
+      {
+        contractAddress: getAddress(this._contractDetail.address),
+        abi: this._contractDetail.abi,
+        calls,
+        ...((customData !== undefined
+          ? { customData }
+          : {}) as TCustomData extends Record<string, any>
+          ? { customData: TCustomData }
+          : { customData?: TCustomData }),
+      }
+
+    return context
   }
 
   /**
@@ -170,14 +179,7 @@ export class WrappedContract
   >(
     calls: TCalls,
     options: ContractContextOptions = {},
-  ): Promise<{
-    blockNumber: number
-    originContext: ContractResults<
-      WrappedTypes.Contract,
-      TCalls
-    >['originContext']
-    results: ContractResults<WrappedTypes.Contract, TCalls>['results']
-  }> {
+  ): Promise<ExecutionResult<WrappedTypes.Contract, TCalls>> {
     return super.executeCall<WrappedTypes.Contract, TCalls>(calls, options)
   }
 

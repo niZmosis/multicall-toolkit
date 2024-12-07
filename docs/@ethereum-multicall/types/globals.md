@@ -1,8 +1,8 @@
-[**@ethereum-multicall/types v3.0.0**](README.md) • **Docs**
+[**@ethereum-multicall/types v1.0.0**](README.md) • **Docs**
 
 ***
 
-[Documentation v3.0.0](../../packages.md) / @ethereum-multicall/types
+[Documentation v1.0.0](../../packages.md) / @ethereum-multicall/types
 
 # @ethereum-multicall/types
 
@@ -35,7 +35,6 @@
 - [ContractContextOptions](type-aliases/ContractContextOptions.md)
 - [ContractDetail](type-aliases/ContractDetail.md)
 - [ContractDetailToken](type-aliases/ContractDetailToken.md)
-- [ContractMethodResult](type-aliases/ContractMethodResult.md)
 - [ContractResults](type-aliases/ContractResults.md)
 - [ContractTransactionOverrides](type-aliases/ContractTransactionOverrides.md)
 - [CustomNetwork](type-aliases/CustomNetwork.md)
@@ -43,13 +42,17 @@
 - [EthersProvider](type-aliases/EthersProvider.md)
 - [EthersProviderContext](type-aliases/EthersProviderContext.md)
 - [EventFilter](type-aliases/EventFilter.md)
+- [ExecutionResult](type-aliases/ExecutionResult.md)
 - [ExtractMethodName](type-aliases/ExtractMethodName.md)
-- [ExtractParams](type-aliases/ExtractParams.md)
+- [ExtractMethodParameters](type-aliases/ExtractMethodParameters.md)
 - [GetReturnType](type-aliases/GetReturnType.md)
-- [HasParameters](type-aliases/HasParameters.md)
+- [HasMethodParameters](type-aliases/HasMethodParameters.md)
 - [MethodCall](type-aliases/MethodCall.md)
+- [MethodCallError](type-aliases/MethodCallError.md)
+- [MethodCallUnion](type-aliases/MethodCallUnion.md)
 - [MethodNames](type-aliases/MethodNames.md)
-- [MethodParameterTypes](type-aliases/MethodParameterTypes.md)
+- [MethodParameter](type-aliases/MethodParameter.md)
+- [MethodResult](type-aliases/MethodResult.md)
 - [MulticallExecutionType](type-aliases/MulticallExecutionType.md)
 - [MulticallOptions](type-aliases/MulticallOptions.md)
 - [MulticallOptionsBase](type-aliases/MulticallOptionsBase.md)
@@ -60,3 +63,5 @@
 - [MulticallResults](type-aliases/MulticallResults.md)
 - [ProviderContext](type-aliases/ProviderContext.md)
 - [ReferencedContracts](type-aliases/ReferencedContracts.md)
+- [ReferencedMethodCallUnion](type-aliases/ReferencedMethodCallUnion.md)
+- [ReferencedMethodResult](type-aliases/ReferencedMethodResult.md)

@@ -1,11 +1,11 @@
 {
   "name": "playground",
   "keywords": [
-    "ethereum-multicall"
+    "multicall-toolkit"
   ],
   "author": "niZmosis",
-  "license": "MIT",
-  "repository": "github:niZmosis/ethereum-multicall",
+  "license": "ISC",
+  "repository": "github:niZmosis/multicall-toolkit",
   "publishConfig": {
     "access": "public"
   },
@@ -24,14 +24,14 @@
     "dev": "node ./dist/index.js"
   },
   "dependencies": {
-    "@ethereum-multicall/contracts": "workspace:*",
-    "@ethereum-multicall/core": "workspace:*",
-    "@ethereum-multicall/provider": "workspace:*",
-    "@ethereum-multicall/utils": "workspace:*",
+    "@multicall-toolkit/contracts": "workspace:*",
+    "@multicall-toolkit/core": "workspace:*",
+    "@multicall-toolkit/provider": "workspace:*",
+    "@multicall-toolkit/utils": "workspace:*",
     "ethers": "5.7.2"
   },
   "devDependencies": {
     "@abi-toolkit/converter-typescript": "workspace:*",
-    "@ethereum-multicall/types": "workspace:*"
+    "@multicall-toolkit/types": "workspace:*"
   }
 }

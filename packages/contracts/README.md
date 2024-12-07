@@ -9,27 +9,27 @@ This package provides classes implementing their respective typings and the abil
 ### npm
 
 ```bash
-npm install @ethereum-multicall/contracts
+npm install @multicall-toolkit/contracts
 ```
 
 ### yarn
 
 ```bash
-yarn add @ethereum-multicall/contracts
+yarn add @multicall-toolkit/contracts
 ```
 
 ### pnpm
 
 ```bash
-pnpm add @ethereum-multicall/contracts
+pnpm add @multicall-toolkit/contracts
 ```
 
 ### bun
 
 ```bash
-bun add @ethereum-multicall/contracts
+bun add @multicall-toolkit/contracts
 ```
 
 ## Links
 
-- [Github](https://github.com/joshstevens19/ethereum-multicall)
+- [Github](https://github.com/niZmosis/multicall-toolkit)

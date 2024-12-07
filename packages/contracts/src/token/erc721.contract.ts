@@ -1,6 +1,5 @@
-import { MulticallProviderBase } from '@ethereum-multicall/provider'
+import { MulticallProviderBase } from '@multicall-toolkit/provider'
 import type {
-  ContractDetail,
   ContractTransactionOverrides,
   MulticallProviderContext,
   Erc721Types,
@@ -9,50 +8,39 @@ import type {
   DiscriminatedMethodCalls,
   MethodNames,
   ContractContextOptions,
-  ContractResults,
-} from '@ethereum-multicall/types'
+  ExecutionResult,
+  ContractContext,
+} from '@multicall-toolkit/types'
 import {
   MulticallError,
   ErrorCodes,
   defaultErc721MethodMap,
   erc721ABI,
-} from '@ethereum-multicall/utils'
+} from '@multicall-toolkit/utils'
 import type {
   BigNumber,
   BigNumberish,
   BytesLike,
-  BytesLike as Arrayish,
   ContractTransaction,
 } from 'ethers'
-import { isBytesLike } from 'ethers/lib/utils'
+import { getAddress, isBytesLike } from 'ethers/lib/utils'
 
 export class Erc721Contract
   extends MulticallProviderBase
   implements Erc721Types.Contract
 {
-  protected _contractDetail: ContractDetail
-
   protected _contract: Erc721Types.ContractContext
 
   protected _methodNames: Erc721Types.MethodNameMap
 
   constructor(
-    dexProviderContext: MulticallProviderContext,
+    multicallProviderContext: MulticallProviderContext,
     contractDetail: ContractDetailToken,
   ) {
-    super(dexProviderContext)
-
-    if (!contractDetail) {
-      throw new MulticallError(
-        'contractDetail is required',
-        ErrorCodes.functionArgumentError,
-      )
-    }
-
-    this._contractDetail = {
+    super(multicallProviderContext, {
       ...contractDetail,
       abi: contractDetail.abi || erc721ABI,
-    }
+    })
 
     this._contract =
       this._multicallProvider.getContract<Erc721Types.ContractContext>(
@@ -63,11 +51,6 @@ export class Erc721Contract
       ...defaultErc721MethodMap,
       ...this._contractDetail.methods,
     }
-  }
-
-  /** Get the contract detail */
-  public get contractDetail(): ContractDetail {
-    return this._contractDetail
   }
 
   /** Get the ERC721 contract */
@@ -136,15 +119,46 @@ export class Erc721Contract
 
     if (typeof this._contract[contractMethodName] === 'function') {
       return {
-        methodName,
+        methodName: contractMethodName,
         methodParameters: methodParameters ?? [],
       } as MethodCall<Erc721Types.Contract, TMethod>
     } else {
       throw new MulticallError(
-        `Method ${String(methodName)} does not exist on the contract`,
+        `Method ${String(contractMethodName)} does not exist on the contract`,
         ErrorCodes.functionArgumentError,
       )
     }
+  }
+
+  /**
+   * Helper function to dynamically prepare a contract context based on custom or default method names.
+   * @param calls - An object containing method calls, each mapped to its parameters.
+   * @param customData - Optional custom data to include in the context.
+   * @returns The contract context, including the address, ABI, calls, and optional custom data.
+   */
+  prepareContractContext<
+    TCalls extends Record<
+      string,
+      DiscriminatedMethodCalls<Erc721Types.Contract>[MethodNames<Erc721Types.Contract>]
+    >,
+    TCustomData = unknown,
+  >(
+    calls: TCalls,
+    customData?: TCustomData,
+  ): ContractContext<Erc721Types.Contract, TCalls, TCustomData> {
+    const context: ContractContext<Erc721Types.Contract, TCalls, TCustomData> =
+      {
+        contractAddress: getAddress(this._contractDetail.address),
+        abi: this._contractDetail.abi,
+        calls,
+        ...((customData !== undefined
+          ? { customData }
+          : {}) as TCustomData extends Record<string, any>
+          ? { customData: TCustomData }
+          : { customData?: TCustomData }),
+      }
+
+    return context
   }
 
   /**
@@ -170,14 +184,7 @@ export class Erc721Contract
   >(
     calls: TCalls,
     options: ContractContextOptions = {},
-  ): Promise<{
-    blockNumber: number
-    originContext: ContractResults<
-      Erc721Types.Contract,
-      TCalls
-    >['originContext']
-    results: ContractResults<Erc721Types.Contract, TCalls>['results']
-  }> {
+  ): Promise<ExecutionResult<Erc721Types.Contract, TCalls>> {
     return super.executeCall<Erc721Types.Contract, TCalls>(calls, options)
   }
 
@@ -435,7 +442,7 @@ export class Erc721Contract
     from: string,
     to: string,
     tokenId: BigNumberish,
-    data: Arrayish,
+    data: BytesLike,
     overrides?: ContractTransactionOverrides,
   ): Promise<ContractTransaction>
 
@@ -443,7 +450,7 @@ export class Erc721Contract
     from: string,
     to: string,
     tokenId: BigNumberish,
-    dataOrOverrides?: Arrayish | ContractTransactionOverrides,
+    dataOrOverrides?: BytesLike | ContractTransactionOverrides,
     overrides?: ContractTransactionOverrides,
   ): Promise<ContractTransaction> {
     if (
@@ -482,7 +489,7 @@ export class Erc721Contract
     from: string,
     to: string,
     tokenId: BigNumberish,
-    dataOrOverrides?: Arrayish | ContractTransactionOverrides,
+    dataOrOverrides?: BytesLike | ContractTransactionOverrides,
     overrides?: ContractTransactionOverrides,
   ): string {
     if (

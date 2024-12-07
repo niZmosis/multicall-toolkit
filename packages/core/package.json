@@ -1,20 +1,20 @@
 {
-  "name": "@ethereum-multicall/core",
-  "version": "3.0.0",
-  "author": "joshstevens19@hotmail.co.uk",
+  "name": "@multicall-toolkit/core",
+  "version": "1.0.0",
+  "author": "niZmosis",
   "license": "ISC",
   "keywords": [
     "ethereum",
     "blockchain",
     "JSONRPC",
     "multicall",
-    "ethereum-multicall",
+    "multicall-toolkit",
     "typescript"
   ],
   "bugs": {
-    "url": "https://github.com/joshstevens19/ethereum-multicall/issues"
+    "url": "https://github.com/niZmosis/multicall-toolkit/issues"
   },
-  "homepage": "https://github.com/joshstevens19/ethereum-multicall#readme",
+  "homepage": "https://github.com/niZmosis/multicall-toolkit#readme",
   "files": [
     "dist",
     "README.md",
@@ -35,13 +35,13 @@
     "start": "tsc -p tsconfig.esm.json --watch"
   },
   "dependencies": {
-    "@ethereum-multicall/utils": "workspace:*",
+    "@multicall-toolkit/utils": "workspace:*",
     "@ethersproject/providers": "5.7.2",
     "ethers": "5.7.2"
   },
   "devDependencies": {
     "@abi-toolkit/types": "workspace:*",
-    "@ethereum-multicall/types": "workspace:*",
+    "@multicall-toolkit/types": "workspace:*",
     "@ethersproject/abi": "5.7.0"
   }
 }
