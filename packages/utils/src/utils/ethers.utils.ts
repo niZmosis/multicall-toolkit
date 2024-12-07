@@ -1,4 +1,4 @@
-import type { EthersProvider } from '@ethereum-multicall/types'
+import type { EthersProvider } from '@multicall-toolkit/types'
 import {
   type ExternalProvider,
   JsonRpcProvider,

@@ -6,13 +6,13 @@ import type {
   MethodNames,
   MulticallProviderContext,
   ExecutionResult,
-} from '@ethereum-multicall/types'
+} from '@multicall-toolkit/types'
 import {
   ErrorCodes,
   isContractDetail,
   mapAbiFunctionNames,
   MulticallError,
-} from '@ethereum-multicall/utils'
+} from '@multicall-toolkit/utils'
 
 import {
   MulticallProvider,

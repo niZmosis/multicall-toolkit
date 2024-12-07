@@ -2,8 +2,8 @@ import type {
   Erc20Types,
   EthersProviderContext,
   MulticallOptionsEthers,
-} from '@ethereum-multicall/types'
-import { erc20ABI, ErrorCodes } from '@ethereum-multicall/utils'
+} from '@multicall-toolkit/types'
+import { erc20ABI, ErrorCodes } from '@multicall-toolkit/utils'
 import { ethers } from 'ethers'
 import { describe, it, expect } from 'vitest'
 

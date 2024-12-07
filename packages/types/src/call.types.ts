@@ -1,4 +1,4 @@
-import type { AbiItem } from '@ethereum-abi-types-generator/types'
+import type { AbiItem } from '@abi-toolkit/types'
 import type { JsonFragment } from '@ethersproject/abi'
 
 import type { ContractCallOverrides } from './abis'

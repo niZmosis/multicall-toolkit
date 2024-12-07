@@ -1,4 +1,4 @@
-import { MulticallProviderBase } from '@ethereum-multicall/provider'
+import { MulticallProviderBase } from '@multicall-toolkit/provider'
 import type {
   ContractTransactionOverrides,
   MulticallProviderContext,
@@ -10,13 +10,13 @@ import type {
   ContractContextOptions,
   ExecutionResult,
   ContractContext,
-} from '@ethereum-multicall/types'
+} from '@multicall-toolkit/types'
 import {
   MulticallError,
   ErrorCodes,
   defaultErc721MethodMap,
   erc721ABI,
-} from '@ethereum-multicall/utils'
+} from '@multicall-toolkit/utils'
 import type {
   BigNumber,
   BigNumberish,

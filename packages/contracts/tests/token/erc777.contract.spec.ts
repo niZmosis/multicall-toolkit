@@ -1,4 +1,4 @@
-import { MulticallProvider } from '@ethereum-multicall/provider'
+import { MulticallProvider } from '@multicall-toolkit/provider'
 import { BigNumber, ethers } from 'ethers'
 import { describe, it, expect } from 'vitest'
 

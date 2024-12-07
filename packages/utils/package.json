@@ -1,5 +1,5 @@
 {
-  "name": "@ethereum-multicall/utils",
+  "name": "@multicall-toolkit/utils",
   "version": "1.0.0",
   "author": "niZmosis",
   "license": "ISC",
@@ -8,13 +8,13 @@
     "blockchain",
     "JSONRPC",
     "multicall",
-    "ethereum-multicall",
+    "multicall-toolkit",
     "typescript"
   ],
   "bugs": {
-    "url": "https://github.com/niZmosis/ethereum-multicall/issues"
+    "url": "https://github.com/niZmosis/multicall-toolkit/issues"
   },
-  "homepage": "https://github.com/niZmosis/ethereum-multicall#readme",
+  "homepage": "https://github.com/niZmosis/multicall-toolkit#readme",
   "files": [
     "dist",
     "README.md"
@@ -35,10 +35,10 @@
     "gen:abis": "abi-types-generator generate"
   },
   "devDependencies": {
-    "@ethereum-multicall/types": "workspace:*",
-    "@ethereum-abi-types-generator/converter-typescript": "workspace:*",
-    "@ethereum-abi-types-generator/core": "workspace:*",
-    "@ethereum-abi-types-generator/types": "workspace:*",
+    "@multicall-toolkit/types": "workspace:*",
+    "@abi-toolkit/converter-typescript": "workspace:*",
+    "@abi-toolkit/core": "workspace:*",
+    "@abi-toolkit/types": "workspace:*",
     "@ethersproject/abi": "5.7.0",
     "@ethersproject/providers": "5.7.2",
     "ethers": "5.7.2"

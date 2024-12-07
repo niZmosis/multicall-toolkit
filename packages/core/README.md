@@ -9,27 +9,27 @@ This package provides the core Multicall class. It is used to batch calls to mul
 ### npm
 
 ```bash
-npm install @ethereum-multicall/core
+npm install @multicall-toolkit/core
 ```
 
 ### yarn
 
 ```bash
-yarn add @ethereum-multicall/core
+yarn add @multicall-toolkit/core
 ```
 
 ### pnpm
 
 ```bash
-pnpm add @ethereum-multicall/core
+pnpm add @multicall-toolkit/core
 ```
 
 ### bun
 
 ```bash
-bun add @ethereum-multicall/core
+bun add @multicall-toolkit/core
 ```
 
 ## Links
 
-- [Github](https://github.com/niZmosis/ethereum-multicall)
+- [Github](https://github.com/niZmosis/multicall-toolkit)

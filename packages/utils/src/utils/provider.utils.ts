@@ -1,9 +1,9 @@
-import type { AbiItem } from '@ethereum-abi-types-generator/types'
+import type { AbiItem } from '@abi-toolkit/types'
 import type {
   ChainIdAndProviderContext,
   EthersProviderContext,
   IMulticallProvider,
-} from '@ethereum-multicall/types'
+} from '@multicall-toolkit/types'
 import type { JsonFragment } from '@ethersproject/abi'
 
 /**

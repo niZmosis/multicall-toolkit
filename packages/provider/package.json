@@ -1,5 +1,5 @@
 {
-  "name": "@ethereum-multicall/provider",
+  "name": "@multicall-toolkit/provider",
   "version": "1.0.0",
   "author": "niZmosis",
   "license": "ISC",
@@ -8,13 +8,13 @@
     "blockchain",
     "JSONRPC",
     "multicall",
-    "ethereum-multicall",
+    "multicall-toolkit",
     "typescript"
   ],
   "bugs": {
-    "url": "https://github.com/niZmosis/ethereum-multicall/issues"
+    "url": "https://github.com/niZmosis/multicall-toolkit/issues"
   },
-  "homepage": "https://github.com/niZmosis/ethereum-multicall#readme",
+  "homepage": "https://github.com/niZmosis/multicall-toolkit#readme",
   "files": [
     "dist",
     "README.md"
@@ -34,12 +34,12 @@
     "start": "tsc -p tsconfig.esm.json --watch"
   },
   "dependencies": {
-    "@ethereum-multicall/core": "workspace:*",
-    "@ethereum-multicall/utils": "workspace:*",
+    "@multicall-toolkit/core": "workspace:*",
+    "@multicall-toolkit/utils": "workspace:*",
     "@ethersproject/providers": "5.7.2",
     "ethers": "5.7.2"
   },
   "devDependencies": {
-    "@ethereum-multicall/types": "workspace:*"
+    "@multicall-toolkit/types": "workspace:*"
   }
 }

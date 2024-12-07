@@ -1,4 +1,4 @@
-import { Multicall } from '@ethereum-multicall/core'
+import { Multicall } from '@multicall-toolkit/core'
 import type {
   ProviderContext,
   MulticallProviderContext,
@@ -9,7 +9,7 @@ import type {
   ContractContextOptions,
   MulticallResults,
   IMulticallProvider,
-} from '@ethereum-multicall/types'
+} from '@multicall-toolkit/types'
 import {
   ErrorCodes,
   isExternalProvider,
@@ -22,7 +22,7 @@ import {
   DEFAULT_CALL_SIZE_LIMIT,
   DEFAULT_MAX_BATCH_SIZE,
   mapAbiFunctionNames,
-} from '@ethereum-multicall/utils'
+} from '@multicall-toolkit/utils'
 import {
   StaticJsonRpcProvider,
   Web3Provider,

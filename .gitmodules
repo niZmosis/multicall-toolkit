@@ -1,3 +1,0 @@
-[submodule "submodules/ethereum-abi-types-generator"]
-	path = submodules/ethereum-abi-types-generator
-	url = git@github.com:niZmosis/ethereum-abi-types-generator.git

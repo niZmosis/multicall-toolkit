@@ -1,5 +1,5 @@
-import type { Erc20Types } from '@ethereum-multicall/types'
-import { erc20ABI, ErrorCodes, MulticallError } from '@ethereum-multicall/utils'
+import type { Erc20Types } from '@multicall-toolkit/types'
+import { erc20ABI, ErrorCodes, MulticallError } from '@multicall-toolkit/utils'
 import { describe, it, expect } from 'vitest'
 
 import { MockProviderUrl, MockChainId, MockUniToken } from '../../../test/mocks'

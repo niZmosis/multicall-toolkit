@@ -5,7 +5,7 @@ import type {
   MulticallOptionsCustomJsonRpcProvider,
   MulticallOptionsEthers,
   MulticallOptionsWeb3,
-} from '@ethereum-multicall/types'
+} from '@multicall-toolkit/types'
 
 export const defaultMulticall2MethodMap: Multicall2Types.MethodNameMap = {
   aggregate: 'aggregate',

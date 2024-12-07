@@ -1,7 +1,7 @@
-# ethereum-multicall
+# multicall-toolkit
 
-[![npm version](https://badge.fury.io/js/ethereum-multicall.svg)](https://badge.fury.io/js/ethereum-multicall)
-![downloads](https://img.shields.io/npm/dw/ethereum-multicall)
+[![npm version](https://badge.fury.io/js/multicall-toolkit.svg)](https://badge.fury.io/js/multicall-toolkit)
+![downloads](https://img.shields.io/npm/dw/multicall-toolkit)
 
 A lightweight library for interacting with the [`Multicall3`](https://github.com/mds1/multicall) smart contract, allowing multiple smart contract constant function calls to be grouped into a single call and the results aggregated into a single result. This reduces the number of separate JSON RPC requests that need to be sent over the network if using a remote node like Infura, and provides the guarantee that all values returned are from the same block. The block number which the multicall was executed on is also returned along with the aggregated results.
 
@@ -72,11 +72,11 @@ A lightweight library for interacting with the [`Multicall3`](https://github.com
 
 | Package | Description |
 | --- | --- |
-| [`@ethereum-multicall/core`](/packages/core) | Core module for interacting with the Multicall contract. |
-| [`@ethereum-multicall/types`](/packages/types) | Type definitions for the entire toolkit. |
-| [`@ethereum-multicall/utils`](/packages/utils) | A collection of helper functions and utilities. |
-| [`@ethereum-multicall/provider`](/packages/provider) | A wrapper around a provider that allows for multicall requests. |
-| [`@ethereum-multicall/contracts`](/packages/contracts) | A set of classes of common ABIs for seamless Multicall interaction, including ERC20, ERC777, ERC721, ERC1155, and Wrapped contracts. |
+| [`@multicall-toolkit/core`](/packages/core) | Core module for interacting with the Multicall contract. |
+| [`@multicall-toolkit/types`](/packages/types) | Type definitions for the entire toolkit. |
+| [`@multicall-toolkit/utils`](/packages/utils) | A collection of helper functions and utilities. |
+| [`@multicall-toolkit/provider`](/packages/provider) | A wrapper around a provider that allows for multicall requests. |
+| [`@multicall-toolkit/contracts`](/packages/contracts) | A set of classes of common ABIs for seamless Multicall interaction, including ERC20, ERC777, ERC721, ERC1155, and Wrapped contracts. |
 
 ## Installation
 
@@ -87,13 +87,13 @@ Choose the package that best fits your needs. Dependencies will be installed aut
 If you only want to use the Multicall class directly:
 
 ```bash
-npm install @ethereum-multicall/core
+npm install @multicall-toolkit/core
 # or
-yarn add @ethereum-multicall/core
+yarn add @multicall-toolkit/core
 # or
-pnpm add @ethereum-multicall/core
+pnpm add @multicall-toolkit/core
 # or
-bun add @ethereum-multicall/core
+bun add @multicall-toolkit/core
 ```
 
 ### For using MulticallProvider
@@ -101,13 +101,13 @@ bun add @ethereum-multicall/core
 If you want the MulticallProvider to wrap your existing provider:
 
 ```bash
-npm install @ethereum-multicall/provider
+npm install @multicall-toolkit/provider
 # or
-yarn add @ethereum-multicall/provider
+yarn add @multicall-toolkit/provider
 # or
-pnpm add @ethereum-multicall/provider
+pnpm add @multicall-toolkit/provider
 # or
-bun add @ethereum-multicall/provider
+bun add @multicall-toolkit/provider
 ```
 
 ### For using Multicall Contracts (e.g., Erc20Contract)
@@ -115,20 +115,20 @@ bun add @ethereum-multicall/provider
 If you want to use the Multicall Contracts for seamless Multicall interaction:
 
 ```bash
-npm install @ethereum-multicall/contracts
+npm install @multicall-toolkit/contracts
 # or
-yarn add @ethereum-multicall/contracts
+yarn add @multicall-toolkit/contracts
 # or
-pnpm add @ethereum-multicall/contracts
+pnpm add @multicall-toolkit/contracts
 # or
-bun add @ethereum-multicall/contracts
+bun add @multicall-toolkit/contracts
 ```
 
 Note: Installing any of these packages will automatically install the necessary dependencies. For example:
 
-- Installing `@ethereum-multicall/contracts` will also install `core`, `provider`, `utils`, and `types`.
-- Installing `@ethereum-multicall/provider` will install `core`, `utils`, and `types`.
-- Installing `@ethereum-multicall/core` will install `utils` and `types`.
+- Installing `@multicall-toolkit/contracts` will also install `core`, `provider`, `utils`, and `types`.
+- Installing `@multicall-toolkit/provider` will install `core`, `utils`, and `types`.
+- Installing `@multicall-toolkit/core` will install `utils` and `types`.
 
 Choose the installation method that best suits your project's needs and package manager preference.
 
@@ -137,23 +137,23 @@ Choose the installation method that best suits your project's needs and package 
 ### JavaScript (ES3)
 
 ```js
-var ethereumMulticall = require('@ethereum-multicall/core')
+var ethereumMulticall = require('@multicall-toolkit/core')
 ```
 
 ### JavaScript (ES5 or ES6)
 
 ```js
-const ethereumMulticall = require('@ethereum-multicall/core')
+const ethereumMulticall = require('@multicall-toolkit/core')
 ```
 
 ### JavaScript (ES6) / TypeScript
 
 ```js
-import { Multicall } from '@ethereum-multicall/core'
+import { Multicall } from '@multicall-toolkit/core'
 import type {
   Results,
   ContractContext,
-} from '@ethereum-multicall/types'
+} from '@multicall-toolkit/types'
 ```
 
 ## Initialization
@@ -163,7 +163,7 @@ There are multiple ways to initialize the library
 ### Ethers
 
 ```typescript
-import { Multicall } from '@ethereum-multicall/core';
+import { Multicall } from '@multicall-toolkit/core';
 
 const provider = new ethers.providers.JsonRpcProvider(
   'https://some.local-or-remote.node:8546',
@@ -178,7 +178,7 @@ const multicall = new Multicall({
 ### Web3
 
 ```typescript
-import { Multicall } from '@ethereum-multicall/core';
+import { Multicall } from '@multicall-toolkit/core';
 
 const web3 = new Web3('https://some.local-or-remote.node:8546');
 
@@ -192,7 +192,7 @@ const multicall = new Multicall({
 Will use Ethers.js behind the scenes
 
 ```typescript
-import { Multicall } from '@ethereum-multicall/core';
+import { Multicall } from '@multicall-toolkit/core';
 
 const multicall = new Multicall({
   chainId: 1,
@@ -205,7 +205,7 @@ const multicall = new Multicall({
 By default, the library uses the known multicall contract address `0xcA11bde05977b3631167028862bE2a173976CA11`.
 
 ```typescript
-import { Multicall } from '@ethereum-multicall/core';
+import { Multicall } from '@multicall-toolkit/core';
 
 const multicall = new Multicall({
   // You could pass an Ethers or Web3 provider here as well
@@ -224,7 +224,7 @@ Enabling `tryAggregate` will allow the multicall to continue even if individual 
 `tryAggregate` is `false` by default.
 
 ```typescript
-import { Multicall } from '@ethereum-multicall/core';
+import { Multicall } from '@multicall-toolkit/core';
 
 const provider = new ethers.providers.JsonRpcProvider(
   'https://some.local-or-remote.node:8546',
@@ -269,7 +269,7 @@ export type MulticallOptionsBase = {
 ```
 
 ```typescript
-import { Multicall } from '@ethereum-multicall/core';
+import { Multicall } from '@multicall-toolkit/core';
 
 const provider = new ethers.providers.JsonRpcProvider(
   'https://some.local-or-remote.node:8546',
@@ -292,14 +292,14 @@ See [examples](./examples/playground/src/playground.ts) for more usage examples.
 ### Ethers Usage Example
 
 ```typescript
-import { Multicall, Results, ContractContext } from '@ethereum-multicall/core';
+import { Multicall, Results, ContractContext } from '@multicall-toolkit/core';
 import { ethers } from 'ethers';
 
 const provider = ethers.getDefaultProvider();
 const multicall = new Multicall({ ethersProvider: provider, tryAggregate: true });
 
 // Passing in the TContract generic will allow for full typings and autocomplete
-// You can make typings for your ABI's using `ethereum-abi-types-generator`
+// You can make typings for your ABI's using `abi-toolkit`
 const uniswapCallContext =
     multicallProvider.createCallContext<Erc20Types.Contract>()({
       contractAddress: '0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984',
@@ -569,7 +569,7 @@ const { results } = await multicallProvider.call({
 By default, the library uses the known multicall contract address `0xcA11bde05977b3631167028862bE2a173976CA11`.
 
 ```typescript
-import { MulticallProvider } from '@ethereum-multicall/provider';
+import { MulticallProvider } from '@multicall-toolkit/provider';
 
 const multicallProvider = new MulticallProvider({
   ethersProvider: provider,
@@ -789,7 +789,7 @@ Check out my other projects and forks for blockchain development!
 
 ## Issues
 
-Please raise any issues in the [GitHub repository](https://github.com/niZmosis/ethereum-multicall/issues).
+Please raise any issues in the [GitHub repository](https://github.com/niZmosis/multicall-toolkit/issues).
 
 ## Contributing
 

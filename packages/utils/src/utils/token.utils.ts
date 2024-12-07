@@ -4,7 +4,7 @@ import type {
   Erc777Types,
   Erc20Types,
   WrappedTypes,
-} from '@ethereum-multicall/types'
+} from '@multicall-toolkit/types'
 
 // ------------------------
 // Method Names

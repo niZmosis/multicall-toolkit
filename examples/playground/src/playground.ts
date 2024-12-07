@@ -1,10 +1,10 @@
-import { Erc20Contract } from '@ethereum-multicall/contracts'
-import { Multicall } from '@ethereum-multicall/core'
-import { MulticallProvider } from '@ethereum-multicall/provider'
+import { Erc20Contract } from '@multicall-toolkit/contracts'
+import { Multicall } from '@multicall-toolkit/core'
+import { MulticallProvider } from '@multicall-toolkit/provider'
 import type {
   ContractCallOverrides,
   Erc20Types,
-} from '@ethereum-multicall/types'
+} from '@multicall-toolkit/types'
 import { ethers } from 'ethers'
 
 import type { UniswapPairV2Types } from './pair'
@@ -139,7 +139,7 @@ const GlobalPositionABI = [
   },
 ]
 
-// Mock type definition for the contract. You can generate a typings file for your ABI using the `ethereum-abi-types-generator` package.
+// Mock type definition for the contract. You can generate a typings file for your ABI using the `abi-toolkit` package.
 type GlobalPositionContract = {
   globalPositionData(overrides?: ContractCallOverrides): Promise<{
     totalTokensOutstanding: {

@@ -1,4 +1,4 @@
-import { MulticallProviderBase } from '@ethereum-multicall/provider'
+import { MulticallProviderBase } from '@multicall-toolkit/provider'
 import type {
   MulticallProviderContext,
   ContractTransactionOverrides,
@@ -11,13 +11,13 @@ import type {
   ExecutionResult,
   ContractContext,
   Multicall3Types,
-} from '@ethereum-multicall/types'
+} from '@multicall-toolkit/types'
 import {
   MulticallError,
   ErrorCodes,
   multicall3ABI,
   defaultMulticall3MethodMap,
-} from '@ethereum-multicall/utils'
+} from '@multicall-toolkit/utils'
 import type { ContractTransaction, BigNumber, BigNumberish } from 'ethers'
 import { getAddress } from 'ethers/lib/utils'
 

@@ -1,4 +1,4 @@
-import { MulticallProviderBase } from '@ethereum-multicall/provider'
+import { MulticallProviderBase } from '@multicall-toolkit/provider'
 import type {
   ContractTransactionOverrides,
   MethodCall,
@@ -8,8 +8,8 @@ import type {
   ContractResults,
   DiscriminatedMethodCalls,
   MethodNames,
-} from '@ethereum-multicall/types'
-import { ErrorCodes, MulticallError } from '@ethereum-multicall/utils'
+} from '@multicall-toolkit/types'
+import { ErrorCodes, MulticallError } from '@multicall-toolkit/utils'
 import type {
   BigNumberish,
   BytesLike,

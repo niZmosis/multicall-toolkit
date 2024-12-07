@@ -1,4 +1,4 @@
-import type { AbiItem, AbiOutput } from '@ethereum-abi-types-generator/types'
+import type { AbiItem, AbiOutput } from '@abi-toolkit/types'
 import type {
   AggregateCallContext,
   AggregateContractResponse,
@@ -12,7 +12,7 @@ import type {
   MulticallOptions,
   ReferencedContracts,
   MethodResult,
-} from '@ethereum-multicall/types'
+} from '@multicall-toolkit/types'
 import {
   DEFAULT_CALL_SIZE_LIMIT,
   DEFAULT_MAX_BATCH_SIZE,
@@ -23,7 +23,7 @@ import {
   isMulticallOptionsCustomJsonRpcProvider,
   multicall3ABI,
   MulticallError,
-} from '@ethereum-multicall/utils'
+} from '@multicall-toolkit/utils'
 import type { JsonFragment } from '@ethersproject/abi'
 import type { Provider } from '@ethersproject/providers'
 import { BigNumber, ethers } from 'ethers'
