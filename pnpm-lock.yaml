@@ -171,9 +171,15 @@ importers:
       '@ethereum-abi-types-generator/core':
         specifier: workspace:*
         version: link:../../submodules/ethereum-abi-types-generator/packages/core
+      '@ethereum-abi-types-generator/types':
+        specifier: workspace:*
+        version: link:../../submodules/ethereum-abi-types-generator/packages/types
       '@ethereum-multicall/types':
         specifier: workspace:*
         version: link:../types
+      '@ethersproject/abi':
+        specifier: 5.7.0
+        version: 5.7.0
       '@ethersproject/providers':
         specifier: 5.7.2
         version: 5.7.2

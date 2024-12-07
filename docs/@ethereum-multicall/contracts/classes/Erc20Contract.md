@@ -1,8 +1,8 @@
-[**@ethereum-multicall/contracts v3.0.0**](../README.md) • **Docs**
+[**@ethereum-multicall/contracts v1.0.0**](../README.md) • **Docs**
 
 ***
 
-[Documentation v3.0.0](../../../packages.md) / [@ethereum-multicall/contracts](../README.md) / Erc20Contract
+[Documentation v1.0.0](../../../packages.md) / [@ethereum-multicall/contracts](../README.md) / Erc20Contract
 
 # Class: Erc20Contract
 
@@ -36,7 +36,7 @@
 
 #### Defined in
 
-[contracts/src/token/erc20.contract.ts:32](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc20.contract.ts#L32)
+[contracts/src/token/erc20.contract.ts:31](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/contracts/src/token/erc20.contract.ts#L31)
 
 ## Properties
 
@@ -46,7 +46,7 @@
 
 #### Defined in
 
-[contracts/src/token/erc20.contract.ts:28](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc20.contract.ts#L28)
+[contracts/src/token/erc20.contract.ts:27](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/contracts/src/token/erc20.contract.ts#L27)
 
 ***
 
@@ -54,9 +54,13 @@
 
 > `protected` **\_contractDetail**: `ContractDetail`
 
+#### Inherited from
+
+`MulticallProviderBase._contractDetail`
+
 #### Defined in
 
-[contracts/src/token/erc20.contract.ts:26](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc20.contract.ts#L26)
+provider/dist/esm/multicall-provider-base.d.ts:4
 
 ***
 
@@ -66,7 +70,7 @@
 
 #### Defined in
 
-[contracts/src/token/erc20.contract.ts:30](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc20.contract.ts#L30)
+[contracts/src/token/erc20.contract.ts:29](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/contracts/src/token/erc20.contract.ts#L29)
 
 ***
 
@@ -80,7 +84,7 @@
 
 #### Defined in
 
-provider/dist/esm/multicall-provider-base.d.ts:4
+provider/dist/esm/multicall-provider-base.d.ts:5
 
 ## Accessors
 
@@ -88,19 +92,21 @@ provider/dist/esm/multicall-provider-base.d.ts:4
 
 > `get` **contractDetail**(): `ContractDetail`
 
-Get the contract detail
+Returns the contract details.
 
 #### Returns
 
 `ContractDetail`
 
-#### Overrides
+The contract details of the concrete class.
+
+#### Inherited from
 
 `MulticallProviderBase.contractDetail`
 
 #### Defined in
 
-[contracts/src/token/erc20.contract.ts:69](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc20.contract.ts#L69)
+provider/dist/esm/multicall-provider-base.d.ts:18
 
 ***
 
@@ -116,7 +122,7 @@ Get the ERC20 contract
 
 #### Defined in
 
-[contracts/src/token/erc20.contract.ts:74](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc20.contract.ts#L74)
+[contracts/src/token/erc20.contract.ts:52](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/contracts/src/token/erc20.contract.ts#L52)
 
 ***
 
@@ -132,7 +138,7 @@ Get the method names
 
 #### Defined in
 
-[contracts/src/token/erc20.contract.ts:79](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc20.contract.ts#L79)
+[contracts/src/token/erc20.contract.ts:57](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/contracts/src/token/erc20.contract.ts#L57)
 
 ***
 
@@ -154,7 +160,7 @@ The `MulticallProvider` instance used by this class.
 
 #### Defined in
 
-provider/dist/esm/multicall-provider-base.d.ts:11
+provider/dist/esm/multicall-provider-base.d.ts:12
 
 ## Methods
 
@@ -186,7 +192,7 @@ The amount of tokens that are allowed to be spent.
 
 #### Defined in
 
-[contracts/src/token/erc20.contract.ts:369](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc20.contract.ts#L369)
+[contracts/src/token/erc20.contract.ts:373](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/contracts/src/token/erc20.contract.ts#L373)
 
 ***
 
@@ -214,7 +220,7 @@ The call context.
 
 #### Defined in
 
-[contracts/src/token/erc20.contract.ts:379](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc20.contract.ts#L379)
+[contracts/src/token/erc20.contract.ts:383](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/contracts/src/token/erc20.contract.ts#L383)
 
 ***
 
@@ -250,7 +256,7 @@ The contract transaction.
 
 #### Defined in
 
-[contracts/src/token/erc20.contract.ts:204](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc20.contract.ts#L204)
+[contracts/src/token/erc20.contract.ts:208](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/contracts/src/token/erc20.contract.ts#L208)
 
 ***
 
@@ -278,7 +284,7 @@ The balance of the specified address.
 
 #### Defined in
 
-[contracts/src/token/erc20.contract.ts:303](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc20.contract.ts#L303)
+[contracts/src/token/erc20.contract.ts:307](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/contracts/src/token/erc20.contract.ts#L307)
 
 ***
 
@@ -302,13 +308,13 @@ The call context.
 
 #### Defined in
 
-[contracts/src/token/erc20.contract.ts:312](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc20.contract.ts#L312)
+[contracts/src/token/erc20.contract.ts:316](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/contracts/src/token/erc20.contract.ts#L316)
 
 ***
 
 ### call()
 
-> **call**\<`TCalls`\>(`calls`, `options`): `Promise`\<`object`\>
+> **call**\<`TCalls`\>(`calls`, `options`): `Promise`\<`ExecutionResult`\<`Contract`, `TCalls`\>\>
 
 Executes a multicall for the given contract methods.
 
@@ -330,22 +336,10 @@ Optional configuration for the contract call.
 
 #### Returns
 
-`Promise`\<`object`\>
+`Promise`\<`ExecutionResult`\<`Contract`, `TCalls`\>\>
 
 A promise that resolves to an object containing the block number,
          origin context, and the results of each method call.
-
-##### blockNumber
-
-> **blockNumber**: `number`
-
-##### originContext
-
-> **originContext**: `ContractContext`\<`Contract`, `TCalls`, `unknown`\>
-
-##### results
-
-> **results**: `ContractMethodResult`\<`Contract`, `TCalls`\>
 
 #### Remarks
 
@@ -355,7 +349,7 @@ The results are typed according to the return types of the called methods.
 
 #### Defined in
 
-[contracts/src/token/erc20.contract.ts:165](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc20.contract.ts#L165)
+[contracts/src/token/erc20.contract.ts:173](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/contracts/src/token/erc20.contract.ts#L173)
 
 ***
 
@@ -387,7 +381,7 @@ The result of the contract method invocation with the appropriate return type.
 
 #### Defined in
 
-[contracts/src/token/erc20.contract.ts:89](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc20.contract.ts#L89)
+[contracts/src/token/erc20.contract.ts:67](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/contracts/src/token/erc20.contract.ts#L67)
 
 ***
 
@@ -409,7 +403,7 @@ The number of decimals.
 
 #### Defined in
 
-[contracts/src/token/erc20.contract.ts:286](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc20.contract.ts#L286)
+[contracts/src/token/erc20.contract.ts:290](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/contracts/src/token/erc20.contract.ts#L290)
 
 ***
 
@@ -427,7 +421,7 @@ The call context.
 
 #### Defined in
 
-[contracts/src/token/erc20.contract.ts:294](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc20.contract.ts#L294)
+[contracts/src/token/erc20.contract.ts:298](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/contracts/src/token/erc20.contract.ts#L298)
 
 ***
 
@@ -455,7 +449,7 @@ The encoded function data.
 
 #### Defined in
 
-[contracts/src/token/erc20.contract.ts:222](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc20.contract.ts#L222)
+[contracts/src/token/erc20.contract.ts:226](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/contracts/src/token/erc20.contract.ts#L226)
 
 ***
 
@@ -483,7 +477,7 @@ The encoded function data.
 
 #### Defined in
 
-[contracts/src/token/erc20.contract.ts:113](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc20.contract.ts#L113)
+[contracts/src/token/erc20.contract.ts:91](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/contracts/src/token/erc20.contract.ts#L91)
 
 ***
 
@@ -511,7 +505,7 @@ The encoded function data.
 
 #### Defined in
 
-[contracts/src/token/erc20.contract.ts:359](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc20.contract.ts#L359)
+[contracts/src/token/erc20.contract.ts:363](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/contracts/src/token/erc20.contract.ts#L363)
 
 ***
 
@@ -543,13 +537,13 @@ The encoded function data.
 
 #### Defined in
 
-[contracts/src/token/erc20.contract.ts:274](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc20.contract.ts#L274)
+[contracts/src/token/erc20.contract.ts:278](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/contracts/src/token/erc20.contract.ts#L278)
 
 ***
 
 ### executeCall()
 
-> `protected` **executeCall**\<`TContract`, `TCalls`\>(`calls`, `options`?): `Promise`\<`object`\>
+> `protected` **executeCall**\<`TContract`, `TCalls`\>(`calls`, `options`?): `Promise`\<`ExecutionResult`\<`TContract`, `TCalls`\>\>
 
 Executes a multicall for the given contract methods.
 
@@ -575,22 +569,10 @@ Optional configuration for the contract call.
 
 #### Returns
 
-`Promise`\<`object`\>
+`Promise`\<`ExecutionResult`\<`TContract`, `TCalls`\>\>
 
 A promise that resolves to an object containing the block number,
          origin context, and the results of each method call.
-
-##### blockNumber
-
-> **blockNumber**: `number`
-
-##### originContext
-
-> **originContext**: `ContractContext`\<`TContract`, `TCalls`, `unknown`\>
-
-##### results
-
-> **results**: `ContractMethodResult`\<`TContract`, `TCalls`\>
 
 #### Inherited from
 
@@ -598,7 +580,7 @@ A promise that resolves to an object containing the block number,
 
 #### Defined in
 
-provider/dist/esm/multicall-provider-base.d.ts:30
+provider/dist/esm/multicall-provider-base.d.ts:31
 
 ***
 
@@ -620,7 +602,7 @@ The name of the token.
 
 #### Defined in
 
-[contracts/src/token/erc20.contract.ts:185](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc20.contract.ts#L185)
+[contracts/src/token/erc20.contract.ts:189](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/contracts/src/token/erc20.contract.ts#L189)
 
 ***
 
@@ -638,7 +620,7 @@ The call context.
 
 #### Defined in
 
-[contracts/src/token/erc20.contract.ts:193](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc20.contract.ts#L193)
+[contracts/src/token/erc20.contract.ts:197](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/contracts/src/token/erc20.contract.ts#L197)
 
 ***
 
@@ -670,7 +652,41 @@ The call context.
 
 #### Defined in
 
-[contracts/src/token/erc20.contract.ts:129](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc20.contract.ts#L129)
+[contracts/src/token/erc20.contract.ts:107](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/contracts/src/token/erc20.contract.ts#L107)
+
+***
+
+### prepareContractContext()
+
+> **prepareContractContext**\<`TCalls`, `TCustomData`\>(`calls`, `customData`?): `ContractContext`\<`Contract`, `TCalls`, `TCustomData`\>
+
+Helper function to dynamically prepare a contract context based on custom or default method names.
+
+#### Type Parameters
+
+• **TCalls** *extends* `Record`\<`string`, `MethodCall`\<`Contract`, `"symbol"`\> \| `MethodCall`\<`Contract`, `"name"`\> \| `MethodCall`\<`Contract`, `"balanceOf"`\> \| `MethodCall`\<`Contract`, `"approve"`\> \| `MethodCall`\<`Contract`, `"totalSupply"`\> \| `MethodCall`\<`Contract`, `"transferFrom"`\> \| `MethodCall`\<`Contract`, `"decimals"`\> \| `MethodCall`\<`Contract`, `"transfer"`\> \| `MethodCall`\<`Contract`, `"allowance"`\>\>
+
+• **TCustomData** = `unknown`
+
+#### Parameters
+
+• **calls**: `TCalls`
+
+An object containing method calls, each mapped to its parameters.
+
+• **customData?**: `TCustomData`
+
+Optional custom data to include in the context.
+
+#### Returns
+
+`ContractContext`\<`Contract`, `TCalls`, `TCustomData`\>
+
+The contract context, including the address, ABI, calls, and optional custom data.
+
+#### Defined in
+
+[contracts/src/token/erc20.contract.ts:134](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/contracts/src/token/erc20.contract.ts#L134)
 
 ***
 
@@ -692,7 +708,7 @@ The symbol of the token.
 
 #### Defined in
 
-[contracts/src/token/erc20.contract.ts:322](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc20.contract.ts#L322)
+[contracts/src/token/erc20.contract.ts:326](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/contracts/src/token/erc20.contract.ts#L326)
 
 ***
 
@@ -710,7 +726,7 @@ The call context.
 
 #### Defined in
 
-[contracts/src/token/erc20.contract.ts:330](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc20.contract.ts#L330)
+[contracts/src/token/erc20.contract.ts:334](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/contracts/src/token/erc20.contract.ts#L334)
 
 ***
 
@@ -732,7 +748,7 @@ The total supply of the token.
 
 #### Defined in
 
-[contracts/src/token/erc20.contract.ts:230](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc20.contract.ts#L230)
+[contracts/src/token/erc20.contract.ts:234](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/contracts/src/token/erc20.contract.ts#L234)
 
 ***
 
@@ -750,7 +766,7 @@ The call context.
 
 #### Defined in
 
-[contracts/src/token/erc20.contract.ts:238](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc20.contract.ts#L238)
+[contracts/src/token/erc20.contract.ts:242](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/contracts/src/token/erc20.contract.ts#L242)
 
 ***
 
@@ -786,7 +802,7 @@ The contract transaction.
 
 #### Defined in
 
-[contracts/src/token/erc20.contract.ts:341](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc20.contract.ts#L341)
+[contracts/src/token/erc20.contract.ts:345](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/contracts/src/token/erc20.contract.ts#L345)
 
 ***
 
@@ -826,4 +842,4 @@ The contract transaction.
 
 #### Defined in
 
-[contracts/src/token/erc20.contract.ts:253](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/contracts/src/token/erc20.contract.ts#L253)
+[contracts/src/token/erc20.contract.ts:257](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/contracts/src/token/erc20.contract.ts#L257)

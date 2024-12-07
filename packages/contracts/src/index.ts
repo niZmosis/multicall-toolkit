@@ -1,3 +1,7 @@
+// Multicall
+export { Multicall2Contract } from './multicall/multicall2.contract'
+export { Multicall3Contract } from './multicall/multicall3.contract'
+
 // Token
 export { Erc20Contract } from './token/erc20.contract'
 export { Erc777Contract } from './token/erc777.contract'

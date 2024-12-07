@@ -4,7 +4,7 @@
     "ethereum-multicall"
   ],
   "author": "niZmosis",
-  "license": "MIT",
+  "license": "ISC",
   "repository": "github:niZmosis/ethereum-multicall",
   "publishConfig": {
     "access": "public"

@@ -1,0 +1,2 @@
+export const DEFAULT_CALL_SIZE_LIMIT = 100000
+export const DEFAULT_MAX_BATCH_SIZE = 500

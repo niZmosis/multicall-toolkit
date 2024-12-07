@@ -14,14 +14,14 @@ import { WrappedContract } from '../../src/wrapped/wrapped.contract'
 describe('WrappedContract', () => {
   const mockMulticallProvider = new MulticallProvider({
     chainId: MockChainId,
-    customRpcUrl: MockProviderUrl,
+    rpcUrl: MockProviderUrl,
   })
 
   if (!mockMulticallProvider) {
     throw new Error(`No dex provider found`)
   }
 
-  const contractFactory = new WrappedContract(mockMulticallProvider, {
+  const contract = new WrappedContract(mockMulticallProvider, {
     address: MockWrapped.contractAddress,
   })
 
@@ -32,32 +32,32 @@ describe('WrappedContract', () => {
   // ------------------------
 
   it('should return the correct token name', async () => {
-    const result = await contractFactory.name()
+    const result = await contract.name()
     expect(result).toBe(MockWrapped.name)
   })
 
   it('should return the correct total supply', async () => {
-    const result = await contractFactory.totalSupply()
+    const result = await contract.totalSupply()
     expect(result._isBigNumber).toEqual(true)
   })
 
   it('should return the correct number of decimals', async () => {
-    const result = await contractFactory.decimals()
+    const result = await contract.decimals()
     expect(result).toBe(MockWrapped.decimals)
   })
 
   it('should return the correct symbol', async () => {
-    const result = await contractFactory.symbol()
+    const result = await contract.symbol()
     expect(result).toBe(MockWrapped.symbol)
   })
 
   it('should return the correct balanceOf address', async () => {
-    const result = await contractFactory.balanceOf(MockWalletAddress)
+    const result = await contract.balanceOf(MockWalletAddress)
     expect(result._isBigNumber).toEqual(true)
   })
 
   it('should return the correct allowance', async () => {
-    const result = await contractFactory.allowance(
+    const result = await contract.allowance(
       MockWalletAddress,
       spenderAddress,
     )
@@ -69,7 +69,7 @@ describe('WrappedContract', () => {
   // ------------------------
 
   it('should correctly encode the approve function', () => {
-    const result = contractFactory.encodeApprove(
+    const result = contract.encodeApprove(
       spenderAddress,
       '1000000000000000000',
     )
@@ -77,7 +77,7 @@ describe('WrappedContract', () => {
   })
 
   it('should correctly encode the transferFrom function', () => {
-    const result = contractFactory.encodeTransferFrom(
+    const result = contract.encodeTransferFrom(
       MockWalletAddress,
       MockRecipientAddress,
       '1000000000000000000',
@@ -86,17 +86,17 @@ describe('WrappedContract', () => {
   })
 
   it('should correctly encode the withdraw function', () => {
-    const result = contractFactory.encodeWithdraw('1000000000000000000')
+    const result = contract.encodeWithdraw('1000000000000000000')
     expect(result).toMatch(/^0x[a-fA-F0-9]+$/)
   })
 
   it('should correctly encode the deposit function', () => {
-    const result = contractFactory.encodeDeposit()
+    const result = contract.encodeDeposit()
     expect(result).toMatch(/^0x[a-fA-F0-9]+$/)
   })
 
   it('should correctly encode the transfer function', () => {
-    const result = contractFactory.encodeTransfer(
+    const result = contract.encodeTransfer(
       MockRecipientAddress,
       '1000000000000000000',
     )
@@ -104,17 +104,17 @@ describe('WrappedContract', () => {
   })
 
   // ------------------------
-  // Testing CallContext with ethereum-multicall
+  // Testing Multicall
   // ------------------------
 
   it('should create valid CallContexts and retrieve results using multicall', async () => {
-    const { results } = await contractFactory.call({
-      name: contractFactory.nameCallContext(),
-      decimals: contractFactory.decimalsCallContext(),
-      symbol: contractFactory.symbolCallContext(),
-      totalSupply: contractFactory.totalSupplyCallContext(),
-      balanceOf: contractFactory.balanceOfCallContext(MockWalletAddress),
-      allowance: contractFactory.allowanceCallContext(
+    const { results } = await contract.call({
+      name: contract.nameCallContext(),
+      decimals: contract.decimalsCallContext(),
+      symbol: contract.symbolCallContext(),
+      totalSupply: contract.totalSupplyCallContext(),
+      balanceOf: contract.balanceOfCallContext(MockWalletAddress),
+      allowance: contract.allowanceCallContext(
         MockWalletAddress,
         spenderAddress,
       ),

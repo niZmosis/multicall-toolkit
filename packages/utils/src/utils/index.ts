@@ -1,3 +1,4 @@
+export * from './constants'
 export * from './contract-detail.utils'
 export * from './ethers.utils'
 export * from './multicall.utils'

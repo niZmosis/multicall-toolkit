@@ -1,8 +1,8 @@
-[**@ethereum-multicall/types v3.0.0**](../../../README.md) • **Docs**
+[**@ethereum-multicall/types v1.0.0**](../../../README.md) • **Docs**
 
 ***
 
-[Documentation v3.0.0](../../../../../packages.md) / [@ethereum-multicall/types](../../../README.md) / [Multicall3Types](../README.md) / Aggregate3ReturnDataResponse
+[Documentation v1.0.0](../../../../../packages.md) / [@ethereum-multicall/types](../../../README.md) / [Multicall3Types](../README.md) / Aggregate3ReturnDataResponse
 
 # Interface: Aggregate3ReturnDataResponse
 
@@ -14,7 +14,7 @@
 
 #### Defined in
 
-[abis/multicall3.types.ts:53](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/abis/multicall3.types.ts#L53)
+[abis/multicall3.types.ts:53](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/types/src/abis/multicall3.types.ts#L53)
 
 ***
 
@@ -24,7 +24,7 @@
 
 #### Defined in
 
-[abis/multicall3.types.ts:55](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/abis/multicall3.types.ts#L55)
+[abis/multicall3.types.ts:55](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/types/src/abis/multicall3.types.ts#L55)
 
 ***
 
@@ -34,7 +34,7 @@
 
 #### Defined in
 
-[abis/multicall3.types.ts:54](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/abis/multicall3.types.ts#L54)
+[abis/multicall3.types.ts:54](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/types/src/abis/multicall3.types.ts#L54)
 
 ***
 
@@ -44,4 +44,4 @@
 
 #### Defined in
 
-[abis/multicall3.types.ts:52](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/abis/multicall3.types.ts#L52)
+[abis/multicall3.types.ts:52](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/types/src/abis/multicall3.types.ts#L52)

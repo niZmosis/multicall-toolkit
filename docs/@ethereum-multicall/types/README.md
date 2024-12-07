@@ -1,8 +1,8 @@
-**@ethereum-multicall/types v3.0.0** • [**Docs**](globals.md)
+**@ethereum-multicall/types v1.0.0** • [**Docs**](globals.md)
 
 ***
 
-[Documentation v3.0.0](../../packages.md) / @ethereum-multicall/types
+[Documentation v1.0.0](../../packages.md) / @ethereum-multicall/types
 
 # Types Package
 
@@ -38,4 +38,4 @@ bun add @ethereum-multicall/types
 
 ## Links
 
-- [Github](https://github.com/joshstevens19/ethereum-multicall)
+- [Github](https://github.com/niZmosis/ethereum-multicall)

@@ -1,8 +1,8 @@
-[**@ethereum-multicall/provider v3.0.0**](../README.md) • **Docs**
+[**@ethereum-multicall/provider v1.0.0**](../README.md) • **Docs**
 
 ***
 
-[Documentation v3.0.0](../../../packages.md) / [@ethereum-multicall/provider](../README.md) / parseMulticallProviderFromContext
+[Documentation v1.0.0](../../../packages.md) / [@ethereum-multicall/provider](../README.md) / parseMulticallProviderFromContext
 
 # Function: parseMulticallProviderFromContext()
 
@@ -32,4 +32,4 @@ MulticallError - Throws an error if the `dexContext` is not supported, or if the
 
 ## Defined in
 
-[provider/src/multicall-provider.ts:198](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/provider/src/multicall-provider.ts#L198)
+[provider/src/multicall-provider.ts:211](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/provider/src/multicall-provider.ts#L211)

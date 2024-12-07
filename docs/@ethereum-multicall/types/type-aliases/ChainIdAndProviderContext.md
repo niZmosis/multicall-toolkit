@@ -1,14 +1,14 @@
-[**@ethereum-multicall/types v3.0.0**](../README.md) • **Docs**
+[**@ethereum-multicall/types v1.0.0**](../README.md) • **Docs**
 
 ***
 
-[Documentation v3.0.0](../../../packages.md) / [@ethereum-multicall/types](../README.md) / ChainIdAndProviderContext
+[Documentation v1.0.0](../../../packages.md) / [@ethereum-multicall/types](../README.md) / ChainIdAndProviderContext
 
 # Type Alias: ChainIdAndProviderContext
 
 > **ChainIdAndProviderContext**: [`BaseProviderContext`](BaseProviderContext.md) & `object`
 
-Context for a chain and its provider, including optional custom RPC URL and network details.
+Context for a Provider using a chain ID and RPC URL.
 
 ## Type declaration
 
@@ -18,12 +18,12 @@ Context for a chain and its provider, including optional custom RPC URL and netw
 
 The chain ID of the network.
 
-### customRpcUrl?
+### rpcUrl
 
-> `optional` **customRpcUrl**: `string`
+> **rpcUrl**: `string`
 
-(Optional) The custom RPC URL for the chain.
+The custom RPC URL for the chain.
 
 ## Defined in
 
-[multicall-provider.types.ts:30](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/multicall-provider.types.ts#L30)
+[multicall-provider.types.ts:32](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/types/src/multicall-provider.types.ts#L32)

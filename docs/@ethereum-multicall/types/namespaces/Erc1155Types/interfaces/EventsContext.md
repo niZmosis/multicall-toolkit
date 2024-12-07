@@ -1,8 +1,8 @@
-[**@ethereum-multicall/types v3.0.0**](../../../README.md) • **Docs**
+[**@ethereum-multicall/types v1.0.0**](../../../README.md) • **Docs**
 
 ***
 
-[Documentation v3.0.0](../../../../../packages.md) / [@ethereum-multicall/types](../../../README.md) / [Erc1155Types](../README.md) / EventsContext
+[Documentation v1.0.0](../../../../../packages.md) / [@ethereum-multicall/types](../../../README.md) / [Erc1155Types](../README.md) / EventsContext
 
 # Interface: EventsContext
 
@@ -26,7 +26,7 @@
 
 #### Defined in
 
-[abis/erc1155.types.ts:27](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/abis/erc1155.types.ts#L27)
+[abis/erc1155.types.ts:27](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/types/src/abis/erc1155.types.ts#L27)
 
 ***
 
@@ -52,7 +52,7 @@
 
 #### Defined in
 
-[abis/erc1155.types.ts:32](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/abis/erc1155.types.ts#L32)
+[abis/erc1155.types.ts:32](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/types/src/abis/erc1155.types.ts#L32)
 
 ***
 
@@ -78,7 +78,7 @@
 
 #### Defined in
 
-[abis/erc1155.types.ts:39](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/abis/erc1155.types.ts#L39)
+[abis/erc1155.types.ts:39](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/types/src/abis/erc1155.types.ts#L39)
 
 ***
 
@@ -98,4 +98,4 @@
 
 #### Defined in
 
-[abis/erc1155.types.ts:46](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/abis/erc1155.types.ts#L46)
+[abis/erc1155.types.ts:46](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/types/src/abis/erc1155.types.ts#L46)

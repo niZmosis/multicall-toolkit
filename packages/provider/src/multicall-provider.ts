@@ -19,6 +19,9 @@ import {
   isChainIdAndProviderContext,
   isEthersProviderContext,
   isMulticallProvider,
+  DEFAULT_CALL_SIZE_LIMIT,
+  DEFAULT_MAX_BATCH_SIZE,
+  mapAbiFunctionNames,
 } from '@ethereum-multicall/utils'
 import {
   StaticJsonRpcProvider,
@@ -26,6 +29,7 @@ import {
   type Network,
 } from '@ethersproject/providers'
 import { Contract, BigNumber, utils } from 'ethers'
+import { isAddress } from 'ethers/lib/utils'
 
 export class MulticallProvider implements IMulticallProvider {
   _ethersProvider: EthersProvider
@@ -45,23 +49,23 @@ export class MulticallProvider implements IMulticallProvider {
     this._providerContext = _providerContext
 
     if (isChainIdAndProviderContext(this._providerContext)) {
-      const { chainId, customRpcUrl } = this._providerContext ?? {}
+      const { chainId, rpcUrl } = this._providerContext ?? {}
 
       if (!chainId) {
         throw new MulticallError(
-          `Can not find a Chain ID, provide a 'chainId' along with the 'customRpcUrl'`,
+          `Can not find a Chain ID, provide a 'chainId' along with the 'rpcUrl'`,
           ErrorCodes.chainIdNotSupported,
         )
       }
 
-      if (!customRpcUrl) {
+      if (!rpcUrl) {
         throw new MulticallError(
-          `Can not find a RPC URL for ${chainId}, provide a 'customRpcUrl' along with the 'chainId'`,
+          `Can not find a RPC URL for ${chainId}, provide a 'rpcUrl' along with the 'chainId'`,
           ErrorCodes.chainIdNotSupported,
         )
       }
 
-      this._ethersProvider = new StaticJsonRpcProvider(customRpcUrl, chainId)
+      this._ethersProvider = new StaticJsonRpcProvider(rpcUrl, chainId)
     } else if (isEthersProviderContext(this._providerContext)) {
       const { ethersProvider } = this._providerContext
 
@@ -84,9 +88,14 @@ export class MulticallProvider implements IMulticallProvider {
 
     this._multicall = new Multicall({
       ethersProvider: this._ethersProvider,
-      tryAggregate: this._providerContext.tryAggregate ?? true,
-      multicallCustomContractAddress:
+      customMulticallContractAddress:
         this._providerContext?.customNetwork?.multicallContractAddress,
+      tryAggregate: this._providerContext.tryAggregate ?? false,
+      enableBatching: this._providerContext.enableBatching ?? true,
+      maxCallDataSize:
+        this._providerContext.maxCallDataSize ?? DEFAULT_CALL_SIZE_LIMIT,
+      maxCallsPerBatch:
+        this._providerContext.maxCallsPerBatch ?? DEFAULT_MAX_BATCH_SIZE,
     })
   }
 
@@ -139,9 +148,9 @@ export class MulticallProvider implements IMulticallProvider {
   public getContract<TGeneratedTypedContext>(
     contractDetail: ContractDetail,
   ): TGeneratedTypedContext {
-    const { address, abi } = contractDetail ?? {}
+    const { address, abi, methods } = contractDetail ?? {}
 
-    if (!address) {
+    if (!isAddress(address)) {
       throw new MulticallError(
         'Contract address not found',
         ErrorCodes.contractAddressNotFound,
@@ -155,9 +164,13 @@ export class MulticallProvider implements IMulticallProvider {
       )
     }
 
+    const mappedAbi = methods
+      ? mapAbiFunctionNames<Record<string, string>>(abi, methods)
+      : abi
+
     const contract = new Contract(
       utils.getAddress(address),
-      abi,
+      mappedAbi,
       this._ethersProvider,
     )
 
@@ -199,7 +212,7 @@ export function parseMulticallProviderFromContext(
   multicallProviderContext: MulticallProviderContext,
 ): MulticallProvider {
   if (isMulticallProvider(multicallProviderContext)) {
-    return multicallProviderContext as MulticallProvider
+    return multicallProviderContext
   }
 
   return new MulticallProvider(multicallProviderContext)

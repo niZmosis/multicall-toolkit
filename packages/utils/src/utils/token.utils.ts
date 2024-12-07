@@ -46,7 +46,6 @@ export const defaultErc777MethodMap: Erc777Types.MethodNameMap = {
 } as const
 
 export const defaultErc721MethodMap: Erc721Types.MethodNameMap = {
-  // new: 'new', // TODO
   approve: 'approve',
   balanceOf: 'balanceOf',
   getApproved: 'getApproved',

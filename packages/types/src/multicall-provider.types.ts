@@ -10,31 +10,33 @@ import type {
 } from './call.types'
 import type { ChainId } from './chain.types'
 import type { ContractDetail } from './contract-detail.types'
-import type { IMulticall } from './multicall.types'
+import type { IMulticall, MulticallOptionsBase } from './multicall.types'
 import type { CustomNetwork } from './network.types'
 
-export type BaseProviderContext = {
-  /** (Optional) The custom network details. */
-  customNetwork?: CustomNetwork
-  /**
-   * When true, allows the multicall to continue even if individual calls fail, returning partial results instead of reverting the entire transaction.
-   * Defaults to true.
-   */
-  tryAggregate?: boolean
-}
-
-/** Represents a blockchain provider type. */
+/** Represents the base Ethers provider type. */
 export type EthersProvider = BaseProvider
 
-/** Context for a chain and its provider, including optional custom RPC URL and network details. */
+/**
+ * Base context for all provider contexts.
+ * This extends the `MulticallOptionsBase` type and includes an optional `customNetwork` property in place of the `multicallCustomContractAddress` property.
+ */
+export type BaseProviderContext = Omit<
+  MulticallOptionsBase,
+  'customMulticallContractAddress'
+> & {
+  /** (Optional) The custom network details. */
+  customNetwork?: CustomNetwork
+}
+
+/** Context for a Provider using a chain ID and RPC URL. */
 export type ChainIdAndProviderContext = BaseProviderContext & {
   /** The chain ID of the network. */
   chainId: ChainId
-  /** (Optional) The custom RPC URL for the chain. */
-  customRpcUrl?: string
+  /** The custom RPC URL for the chain. */
+  rpcUrl: string
 }
 
-/** Context for a blockchain provider, including optional custom network details. */
+/** Context for an Ethers provider. */
 export type EthersProviderContext = BaseProviderContext & {
   /** The blockchain provider instance. */
   ethersProvider: EthersProvider

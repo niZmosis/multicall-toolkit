@@ -1,8 +1,8 @@
-[**@ethereum-multicall/core v3.0.0**](README.md) • **Docs**
+[**@ethereum-multicall/core v1.0.0**](README.md) • **Docs**
 
 ***
 
-[Documentation v3.0.0](../../packages.md) / @ethereum-multicall/core
+[Documentation v1.0.0](../../packages.md) / @ethereum-multicall/core
 
 # @ethereum-multicall/core
 

@@ -1,8 +1,8 @@
-**@ethereum-multicall/contracts v3.0.0** • [**Docs**](globals.md)
+**@ethereum-multicall/contracts v1.0.0** • [**Docs**](globals.md)
 
 ***
 
-[Documentation v3.0.0](../../packages.md) / @ethereum-multicall/contracts
+[Documentation v1.0.0](../../packages.md) / @ethereum-multicall/contracts
 
 # Contracts Package
 
@@ -38,4 +38,4 @@ bun add @ethereum-multicall/contracts
 
 ## Links
 
-- [Github](https://github.com/joshstevens19/ethereum-multicall)
+- [Github](https://github.com/niZmosis/ethereum-multicall)

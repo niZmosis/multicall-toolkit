@@ -1,7 +1,7 @@
 {
   "name": "@ethereum-multicall/core",
-  "version": "3.0.0",
-  "author": "joshstevens19@hotmail.co.uk",
+  "version": "1.0.0",
+  "author": "niZmosis",
   "license": "ISC",
   "keywords": [
     "ethereum",
@@ -12,9 +12,9 @@
     "typescript"
   ],
   "bugs": {
-    "url": "https://github.com/joshstevens19/ethereum-multicall/issues"
+    "url": "https://github.com/niZmosis/ethereum-multicall/issues"
   },
-  "homepage": "https://github.com/joshstevens19/ethereum-multicall#readme",
+  "homepage": "https://github.com/niZmosis/ethereum-multicall#readme",
   "files": [
     "dist",
     "README.md",

@@ -1,8 +1,8 @@
-[**@ethereum-multicall/provider v3.0.0**](../README.md) • **Docs**
+[**@ethereum-multicall/provider v1.0.0**](../README.md) • **Docs**
 
 ***
 
-[Documentation v3.0.0](../../../packages.md) / [@ethereum-multicall/provider](../README.md) / MulticallProvider
+[Documentation v1.0.0](../../../packages.md) / [@ethereum-multicall/provider](../README.md) / MulticallProvider
 
 # Class: MulticallProvider
 
@@ -26,7 +26,7 @@
 
 #### Defined in
 
-[provider/src/multicall-provider.ts:37](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/provider/src/multicall-provider.ts#L37)
+[provider/src/multicall-provider.ts:41](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/provider/src/multicall-provider.ts#L41)
 
 ## Properties
 
@@ -42,7 +42,7 @@ The internal blockchain provider.
 
 #### Defined in
 
-[provider/src/multicall-provider.ts:31](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/provider/src/multicall-provider.ts#L31)
+[provider/src/multicall-provider.ts:35](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/provider/src/multicall-provider.ts#L35)
 
 ***
 
@@ -58,7 +58,7 @@ The Multicall instance.
 
 #### Defined in
 
-[provider/src/multicall-provider.ts:35](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/provider/src/multicall-provider.ts#L35)
+[provider/src/multicall-provider.ts:39](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/provider/src/multicall-provider.ts#L39)
 
 ***
 
@@ -74,7 +74,7 @@ The provider context, which includes chain and network details.
 
 #### Defined in
 
-[provider/src/multicall-provider.ts:33](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/provider/src/multicall-provider.ts#L33)
+[provider/src/multicall-provider.ts:37](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/provider/src/multicall-provider.ts#L37)
 
 ## Accessors
 
@@ -94,7 +94,7 @@ Retrieves the custom network configuration, if any.
 
 #### Defined in
 
-[provider/src/multicall-provider.ts:97](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/provider/src/multicall-provider.ts#L97)
+[provider/src/multicall-provider.ts:106](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/provider/src/multicall-provider.ts#L106)
 
 ***
 
@@ -114,7 +114,7 @@ Retrieves the network details for the blockchain provider.
 
 #### Defined in
 
-[provider/src/multicall-provider.ts:101](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/provider/src/multicall-provider.ts#L101)
+[provider/src/multicall-provider.ts:110](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/provider/src/multicall-provider.ts#L110)
 
 ***
 
@@ -134,7 +134,7 @@ Retrieves the blockchain provider instance.
 
 #### Defined in
 
-[provider/src/multicall-provider.ts:93](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/provider/src/multicall-provider.ts#L93)
+[provider/src/multicall-provider.ts:102](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/provider/src/multicall-provider.ts#L102)
 
 ## Methods
 
@@ -166,7 +166,7 @@ their results in a structured format.
 
 #### Defined in
 
-[provider/src/multicall-provider.ts:174](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/provider/src/multicall-provider.ts#L174)
+[provider/src/multicall-provider.ts:187](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/provider/src/multicall-provider.ts#L187)
 
 ***
 
@@ -210,7 +210,7 @@ A function that creates the contract call context.
 
 #### Defined in
 
-[provider/src/multicall-provider.ts:167](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/provider/src/multicall-provider.ts#L167)
+[provider/src/multicall-provider.ts:180](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/provider/src/multicall-provider.ts#L180)
 
 ***
 
@@ -242,4 +242,4 @@ The generated contract instance of the specified type.
 
 #### Defined in
 
-[provider/src/multicall-provider.ts:139](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/provider/src/multicall-provider.ts#L139)
+[provider/src/multicall-provider.ts:148](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/provider/src/multicall-provider.ts#L148)

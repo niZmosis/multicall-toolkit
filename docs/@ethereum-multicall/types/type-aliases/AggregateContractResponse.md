@@ -1,8 +1,8 @@
-[**@ethereum-multicall/types v3.0.0**](../README.md) • **Docs**
+[**@ethereum-multicall/types v1.0.0**](../README.md) • **Docs**
 
 ***
 
-[Documentation v3.0.0](../../../packages.md) / [@ethereum-multicall/types](../README.md) / AggregateContractResponse
+[Documentation v1.0.0](../../../packages.md) / [@ethereum-multicall/types](../README.md) / AggregateContractResponse
 
 # Type Alias: AggregateContractResponse
 
@@ -26,4 +26,4 @@ Array of return data strings for each method call
 
 ## Defined in
 
-[aggregate.types.ts:20](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/types/src/aggregate.types.ts#L20)
+[aggregate.types.ts:20](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/types/src/aggregate.types.ts#L20)

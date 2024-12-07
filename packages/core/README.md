@@ -32,4 +32,4 @@ bun add @ethereum-multicall/core
 
 ## Links
 
-- [Github](https://github.com/joshstevens19/ethereum-multicall)
+- [Github](https://github.com/niZmosis/ethereum-multicall)

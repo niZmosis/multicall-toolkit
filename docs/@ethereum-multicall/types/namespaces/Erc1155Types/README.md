@@ -1,8 +1,8 @@
-[**@ethereum-multicall/types v3.0.0**](../../README.md) • **Docs**
+[**@ethereum-multicall/types v1.0.0**](../../README.md) • **Docs**
 
 ***
 
-[Documentation v3.0.0](../../../../packages.md) / [@ethereum-multicall/types](../../README.md) / Erc1155Types
+[Documentation v1.0.0](../../../../packages.md) / [@ethereum-multicall/types](../../README.md) / Erc1155Types
 
 # Erc1155Types
 

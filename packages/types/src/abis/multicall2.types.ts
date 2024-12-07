@@ -1,5 +1,5 @@
 import type { EthersContractContextV5 } from '@ethereum-abi-types-generator/converter-typescript'
-import type { ContractTransaction, BytesLike as Arrayish } from 'ethers'
+import type { ContractTransaction, BytesLike } from 'ethers'
 
 import type { ContractTransactionOverrides } from './common.types'
 
@@ -17,11 +17,11 @@ export type MethodNameMap = {
 }
 export interface AggregateCallsRequest {
   target: string
-  callData: Arrayish
+  callData: BytesLike
 }
 export interface TryBlockAndAggregateCallsRequest {
   target: string
-  callData: Arrayish
+  callData: BytesLike
 }
 export interface Contract {
   /**

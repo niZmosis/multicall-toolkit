@@ -1,15 +1,15 @@
 import { MulticallProviderBase } from '@ethereum-multicall/provider'
 import type {
   MethodCall,
-  ContractDetail,
   MulticallProviderContext,
   Erc20Types,
   ContractTransactionOverrides,
   ContractDetailToken,
   ContractContextOptions,
-  ContractResults,
   DiscriminatedMethodCalls,
   MethodNames,
+  ExecutionResult,
+  ContractContext,
 } from '@ethereum-multicall/types'
 import {
   MulticallError,
@@ -18,13 +18,12 @@ import {
   erc20ABI,
 } from '@ethereum-multicall/utils'
 import type { BigNumber, BigNumberish, ContractTransaction } from 'ethers'
+import { getAddress } from 'ethers/lib/utils'
 
 export class Erc20Contract
   extends MulticallProviderBase
   implements Erc20Types.Contract
 {
-  protected _contractDetail: ContractDetail
-
   protected _contract: Erc20Types.ContractContext
 
   protected _methodNames: Erc20Types.MethodNameMap
@@ -33,26 +32,10 @@ export class Erc20Contract
     multicallProviderContext: MulticallProviderContext,
     contractDetail: ContractDetailToken,
   ) {
-    super(multicallProviderContext)
-
-    if (!contractDetail) {
-      throw new MulticallError(
-        'contractDetail is required',
-        ErrorCodes.functionArgumentError,
-      )
-    }
-
-    if (!contractDetail.address) {
-      throw new MulticallError(
-        'Contract address not found',
-        ErrorCodes.contractAddressNotFound,
-      )
-    }
-
-    this._contractDetail = {
+    super(multicallProviderContext, {
       ...contractDetail,
       abi: contractDetail.abi || erc20ABI,
-    }
+    })
 
     this._contract =
       this._multicallProvider.getContract<Erc20Types.ContractContext>(
@@ -63,11 +46,6 @@ export class Erc20Contract
       ...defaultErc20MethodMap,
       ...this._contractDetail.methods,
     }
-  }
-
-  /** Get the contract detail */
-  public get contractDetail(): ContractDetail {
-    return this._contractDetail
   }
 
   /** Get the ERC20 contract */
@@ -136,15 +114,45 @@ export class Erc20Contract
 
     if (typeof this._contract[contractMethodName] === 'function') {
       return {
-        methodName,
+        methodName: contractMethodName,
         methodParameters: methodParameters ?? [],
       } as MethodCall<Erc20Types.Contract, TMethod>
     } else {
       throw new MulticallError(
-        `Method ${String(methodName)} does not exist on the contract`,
+        `Method ${String(contractMethodName)} does not exist on the contract`,
         ErrorCodes.functionArgumentError,
       )
     }
+  }
+
+  /**
+   * Helper function to dynamically prepare a contract context based on custom or default method names.
+   * @param calls - An object containing method calls, each mapped to its parameters.
+   * @param customData - Optional custom data to include in the context.
+   * @returns The contract context, including the address, ABI, calls, and optional custom data.
+   */
+  prepareContractContext<
+    TCalls extends Record<
+      string,
+      DiscriminatedMethodCalls<Erc20Types.Contract>[MethodNames<Erc20Types.Contract>]
+    >,
+    TCustomData = unknown,
+  >(
+    calls: TCalls,
+    customData?: TCustomData,
+  ): ContractContext<Erc20Types.Contract, TCalls, TCustomData> {
+    const context: ContractContext<Erc20Types.Contract, TCalls, TCustomData> = {
+      contractAddress: getAddress(this._contractDetail.address),
+      abi: this._contractDetail.abi,
+      calls,
+      ...((customData !== undefined
+        ? { customData }
+        : {}) as TCustomData extends Record<string, any>
+        ? { customData: TCustomData }
+        : { customData?: TCustomData }),
+    }
+
+    return context
   }
 
   /**
@@ -170,11 +178,7 @@ export class Erc20Contract
   >(
     calls: TCalls,
     options: ContractContextOptions = {},
-  ): Promise<{
-    blockNumber: number
-    originContext: ContractResults<Erc20Types.Contract, TCalls>['originContext']
-    results: ContractResults<Erc20Types.Contract, TCalls>['results']
-  }> {
+  ): Promise<ExecutionResult<Erc20Types.Contract, TCalls>> {
     return super.executeCall<Erc20Types.Contract, TCalls>(calls, options)
   }
 

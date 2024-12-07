@@ -1,13 +1,16 @@
+/**
+ * Represents supported blockchain networks and their corresponding chain IDs.
+ */
 export enum Networks {
-  amoy = 80002,
   arbitrum = 42161,
+  arbitrumRinkeby = 421611,
   arbitrumSepolia = 421614,
   astar = 592,
   aurora = 1313161554,
   avalanche = 43114,
   avalancheFuji = 43113,
   base = 8453,
-  baseTestnet = 84531,
+  baseSepolia = 84532,
   blast = 81457,
   blastSepolia = 168587773,
   boba = 288,
@@ -18,8 +21,8 @@ export enum Networks {
   celoAlfajores = 44787,
   cronos = 25,
   energiMainnet = 39797,
-  energiTestnet = 49797,
   ethereumMainnet = 1,
+  ethereumHolesky = 17000,
   ethereumSepolia = 11155111,
   etherlite = 111,
   evmos = 9001,
@@ -54,12 +57,9 @@ export enum Networks {
   oasis = 26863,
   okc = 66,
   polygon = 137,
-  polygonMumbai = 80001,
-  polygonZkEvm = 1101,
-  polygonZkEvmTestnet = 1442,
+  polygonAmoy = 80002,
   pulsechain = 369,
   pulsechainTestnet = 943,
-  rinkebyArbitrum = 421611,
   rsk = 30,
   rskTestnet = 31,
   sapphire = 23294,
@@ -71,6 +71,8 @@ export enum Networks {
   thundercoreTestnet = 18,
   xdai = 100,
   xDaiTestnet = 10200,
+  zkEvm = 1101,
+  zkEvmCardona = 2442,
   zkSyncEra = 324,
   zkSyncEraSepoliaTestnet = 300,
   zkSyncEraTestnet = 280,
@@ -79,32 +81,39 @@ export enum Networks {
 }
 
 /**
+ * Array of all supported chain IDs for multicall functionality.
+ */
+export const multicallChainIds = Object.values(Networks).filter(
+  (value): value is number => typeof value === 'number',
+)
+
+/**
  * Get the contract based on the network
  *
  * @param network The network
- * @param multicallCustomContractAddress The multicall custom contract address
+ * @param customMulticallContractAddress The multicall custom contract address
  *
  * @returns The contract address
  */
 export function getContractBasedOnNetwork(
   network: Networks,
-  multicallCustomContractAddress?: string,
+  customMulticallContractAddress?: string,
 ): string {
   // If they have overridden the multicall custom contract address then use that
-  if (multicallCustomContractAddress) {
-    return multicallCustomContractAddress
+  if (customMulticallContractAddress) {
+    return customMulticallContractAddress
   }
 
   switch (network) {
-    case Networks.amoy:
     case Networks.arbitrum:
+    case Networks.arbitrumRinkeby:
     case Networks.arbitrumSepolia:
     case Networks.astar:
     case Networks.aurora:
     case Networks.avalanche:
     case Networks.avalancheFuji:
     case Networks.base:
-    case Networks.baseTestnet:
+    case Networks.baseSepolia:
     case Networks.blast:
     case Networks.blastSepolia:
     case Networks.boba:
@@ -114,9 +123,8 @@ export function getContractBasedOnNetwork(
     case Networks.celo:
     case Networks.celoAlfajores:
     case Networks.cronos:
-    case Networks.energiMainnet:
-    case Networks.energiTestnet:
     case Networks.ethereumMainnet:
+    case Networks.ethereumHolesky:
     case Networks.ethereumSepolia:
     case Networks.evmos:
     case Networks.evmosTestnet:
@@ -149,12 +157,9 @@ export function getContractBasedOnNetwork(
     case Networks.oasis:
     case Networks.okc:
     case Networks.polygon:
-    case Networks.polygonMumbai:
-    case Networks.polygonZkEvm:
-    case Networks.polygonZkEvmTestnet:
+    case Networks.polygonAmoy:
     case Networks.pulsechain:
     case Networks.pulsechainTestnet:
-    case Networks.rinkebyArbitrum:
     case Networks.rsk:
     case Networks.rskTestnet:
     case Networks.sapphire:
@@ -165,6 +170,8 @@ export function getContractBasedOnNetwork(
     case Networks.thundercoreTestnet:
     case Networks.xdai:
     case Networks.xDaiTestnet:
+    case Networks.zkEvm:
+    case Networks.zkEvmCardona:
     case Networks.zora:
     case Networks.zoraTestnet:
       // https://etherscan.io/address/0xca11bde05977b3631167028862be2a173976ca11#code
@@ -173,6 +180,8 @@ export function getContractBasedOnNetwork(
       return '0xBAba8373113Fb7a68f195deF18732e01aF8eDfCF'
     case Networks.etherlite:
       return '0x21681750D7ddCB8d1240eD47338dC984f94AF2aC'
+    case Networks.energiMainnet:
+      return '0xbD6706747a7B6C8868Cf48735f48C341ea386d07' // Multicall2
     case Networks.zkSyncEra:
     case Networks.zkSyncEraTestnet:
     case Networks.zkSyncEraSepoliaTestnet:

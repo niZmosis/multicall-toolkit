@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "ethereum-multicall",
-  "version": "3.0.0",
+  "version": "1.0.0",
   "description": "Multicall allows multiple smart contract constant function calls to be grouped into a single call and the results aggregated into a single result",
   "keywords": [
     "ethereum",
@@ -12,10 +12,10 @@
     "typescript"
   ],
   "bugs": {
-    "url": "https://github.com/joshstevens19/ethereum-multicall/issues"
+    "url": "https://github.com/niZmosis/ethereum-multicall/issues"
   },
-  "homepage": "https://github.com/joshstevens19/ethereum-multicall#readme",
-  "author": "joshstevens19@hotmail.co.uk",
+  "homepage": "https://github.com/niZmosis/ethereum-multicall#readme",
+  "author": "niZmosis",
   "license": "ISC",
   "type": "module",
   "scripts": {

@@ -1,7 +1,7 @@
 import type { EthersContractContextV5 } from '@ethereum-abi-types-generator/converter-typescript'
 import type {
   ContractTransaction,
-  BytesLike as Arrayish,
+  BytesLike,
   BigNumber,
   BigNumberish,
 } from 'ethers'
@@ -41,12 +41,12 @@ export type MethodNameMap = {
 }
 export interface AggregateCallsRequest {
   target: string
-  callData: Arrayish
+  callData: BytesLike
 }
 export interface Aggregate3CallsRequest {
   target: string
   allowFailure: boolean
-  callData: Arrayish
+  callData: BytesLike
 }
 export interface Aggregate3ReturnDataResponse {
   success: boolean
@@ -58,7 +58,7 @@ export interface Aggregate3ValueCallsRequest {
   target: string
   allowFailure: boolean
   value: BigNumberish
-  callData: Arrayish
+  callData: BytesLike
 }
 export interface Aggregate3ValueReturnDataResponse {
   success: boolean
@@ -68,11 +68,11 @@ export interface Aggregate3ValueReturnDataResponse {
 }
 export interface BlockAndAggregateCallsRequest {
   target: string
-  callData: Arrayish
+  callData: BytesLike
 }
 export interface TryAggregateCallsRequest {
   target: string
-  callData: Arrayish
+  callData: BytesLike
 }
 export interface TryAggregateReturnDataResponse {
   success: boolean
@@ -82,7 +82,7 @@ export interface TryAggregateReturnDataResponse {
 }
 export interface TryBlockAndAggregateCallsRequest {
   target: string
-  callData: Arrayish
+  callData: BytesLike
 }
 export interface Contract {
   /**

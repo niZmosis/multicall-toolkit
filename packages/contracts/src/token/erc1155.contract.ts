@@ -1,6 +1,5 @@
 import { MulticallProviderBase } from '@ethereum-multicall/provider'
 import type {
-  ContractDetail,
   MulticallProviderContext,
   Erc1155Types,
   ContractTransactionOverrides,
@@ -9,7 +8,8 @@ import type {
   DiscriminatedMethodCalls,
   MethodNames,
   ContractContextOptions,
-  ContractResults,
+  ExecutionResult,
+  ContractContext,
 } from '@ethereum-multicall/types'
 import {
   MulticallError,
@@ -23,13 +23,12 @@ import type {
   ContractTransaction,
   BigNumber,
 } from 'ethers'
+import { getAddress } from 'ethers/lib/utils'
 
 export class Erc1155Contract
   extends MulticallProviderBase
   implements Erc1155Types.Contract
 {
-  protected _contractDetail: ContractDetail
-
   protected _contract: Erc1155Types.ContractContext
 
   protected _methodNames: Erc1155Types.MethodNameMap
@@ -38,19 +37,10 @@ export class Erc1155Contract
     multicallProviderContext: MulticallProviderContext,
     contractDetail: ContractDetailToken,
   ) {
-    super(multicallProviderContext)
-
-    if (!contractDetail) {
-      throw new MulticallError(
-        'contractDetail is required',
-        ErrorCodes.functionArgumentError,
-      )
-    }
-
-    this._contractDetail = {
+    super(multicallProviderContext, {
       ...contractDetail,
       abi: contractDetail.abi || erc1155ABI,
-    }
+    })
 
     this._contract =
       this._multicallProvider.getContract<Erc1155Types.ContractContext>(
@@ -61,11 +51,6 @@ export class Erc1155Contract
       ...defaultErc1155MethodMap,
       ...this._contractDetail.methods,
     }
-  }
-
-  /** Get the contract detail */
-  public get contractDetail(): ContractDetail {
-    return this._contractDetail
   }
 
   /** Get the ERC1155 contract */
@@ -134,15 +119,46 @@ export class Erc1155Contract
 
     if (typeof this._contract[contractMethodName] === 'function') {
       return {
-        methodName,
+        methodName: contractMethodName,
         methodParameters: methodParameters ?? [],
       } as MethodCall<Erc1155Types.Contract, TMethod>
     } else {
       throw new MulticallError(
-        `Method ${methodName} does not exist on the contract`,
+        `Method ${String(contractMethodName)} does not exist on the contract`,
         ErrorCodes.functionArgumentError,
       )
     }
+  }
+
+  /**
+   * Helper function to dynamically prepare a contract context based on custom or default method names.
+   * @param calls - An object containing method calls, each mapped to its parameters.
+   * @param customData - Optional custom data to include in the context.
+   * @returns The contract context, including the address, ABI, calls, and optional custom data.
+   */
+  prepareContractContext<
+    TCalls extends Record<
+      string,
+      DiscriminatedMethodCalls<Erc1155Types.Contract>[MethodNames<Erc1155Types.Contract>]
+    >,
+    TCustomData = unknown,
+  >(
+    calls: TCalls,
+    customData?: TCustomData,
+  ): ContractContext<Erc1155Types.Contract, TCalls, TCustomData> {
+    const context: ContractContext<Erc1155Types.Contract, TCalls, TCustomData> =
+      {
+        contractAddress: getAddress(this._contractDetail.address),
+        abi: this._contractDetail.abi,
+        calls,
+        ...((customData !== undefined
+          ? { customData }
+          : {}) as TCustomData extends Record<string, any>
+          ? { customData: TCustomData }
+          : { customData?: TCustomData }),
+      }
+
+    return context
   }
 
   /**
@@ -168,14 +184,7 @@ export class Erc1155Contract
   >(
     calls: TCalls,
     options: ContractContextOptions = {},
-  ): Promise<{
-    blockNumber: number
-    originContext: ContractResults<
-      Erc1155Types.Contract,
-      TCalls
-    >['originContext']
-    results: ContractResults<Erc1155Types.Contract, TCalls>['results']
-  }> {
+  ): Promise<ExecutionResult<Erc1155Types.Contract, TCalls>> {
     return super.executeCall<Erc1155Types.Contract, TCalls>(calls, options)
   }
 

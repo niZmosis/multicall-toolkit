@@ -1,8 +1,8 @@
-[**@ethereum-multicall/provider v3.0.0**](../README.md) • **Docs**
+[**@ethereum-multicall/provider v1.0.0**](../README.md) • **Docs**
 
 ***
 
-[Documentation v3.0.0](../../../packages.md) / [@ethereum-multicall/provider](../README.md) / MulticallProviderBase
+[Documentation v1.0.0](../../../packages.md) / [@ethereum-multicall/provider](../README.md) / MulticallProviderBase
 
 # Class: `abstract` MulticallProviderBase
 
@@ -10,11 +10,13 @@
 
 ### new MulticallProviderBase()
 
-> **new MulticallProviderBase**(`multicallProviderContext`): [`MulticallProviderBase`](MulticallProviderBase.md)
+> **new MulticallProviderBase**(`multicallProviderContext`, `contractDetail`?): [`MulticallProviderBase`](MulticallProviderBase.md)
 
 #### Parameters
 
 • **multicallProviderContext**: `MulticallProviderContext`
+
+• **contractDetail?**: `ContractDetail`
 
 #### Returns
 
@@ -22,9 +24,19 @@
 
 #### Defined in
 
-[provider/src/multicall-provider-base.ts:19](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/provider/src/multicall-provider-base.ts#L19)
+[provider/src/multicall-provider-base.ts:27](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/provider/src/multicall-provider-base.ts#L27)
 
 ## Properties
+
+### \_contractDetail
+
+> `protected` **\_contractDetail**: `ContractDetail`
+
+#### Defined in
+
+[provider/src/multicall-provider-base.ts:23](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/provider/src/multicall-provider-base.ts#L23)
+
+***
 
 ### \_multicallProvider
 
@@ -32,13 +44,13 @@
 
 #### Defined in
 
-[provider/src/multicall-provider-base.ts:17](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/provider/src/multicall-provider-base.ts#L17)
+[provider/src/multicall-provider-base.ts:25](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/provider/src/multicall-provider-base.ts#L25)
 
 ## Accessors
 
 ### contractDetail
 
-> `get` `abstract` **contractDetail**(): `ContractDetail`
+> `get` **contractDetail**(): `ContractDetail`
 
 Returns the contract details.
 
@@ -50,7 +62,7 @@ The contract details of the concrete class.
 
 #### Defined in
 
-[provider/src/multicall-provider-base.ts:39](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/provider/src/multicall-provider-base.ts#L39)
+[provider/src/multicall-provider-base.ts:70](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/provider/src/multicall-provider-base.ts#L70)
 
 ***
 
@@ -68,13 +80,13 @@ The `MulticallProvider` instance used by this class.
 
 #### Defined in
 
-[provider/src/multicall-provider-base.ts:30](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/provider/src/multicall-provider-base.ts#L30)
+[provider/src/multicall-provider-base.ts:61](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/provider/src/multicall-provider-base.ts#L61)
 
 ## Methods
 
 ### executeCall()
 
-> `protected` **executeCall**\<`TContract`, `TCalls`\>(`calls`, `options`): `Promise`\<`object`\>
+> `protected` **executeCall**\<`TContract`, `TCalls`\>(`calls`, `options`): `Promise`\<`ExecutionResult`\<`TContract`, `TCalls`\>\>
 
 Executes a multicall for the given contract methods.
 
@@ -100,23 +112,11 @@ Optional configuration for the contract call.
 
 #### Returns
 
-`Promise`\<`object`\>
+`Promise`\<`ExecutionResult`\<`TContract`, `TCalls`\>\>
 
 A promise that resolves to an object containing the block number,
          origin context, and the results of each method call.
 
-##### blockNumber
-
-> **blockNumber**: `number`
-
-##### originContext
-
-> **originContext**: `ContractContext`\<`TContract`, `TCalls`, `unknown`\>
-
-##### results
-
-> **results**: `ContractMethodResult`\<`TContract`, `TCalls`\>
-
 #### Defined in
 
-[provider/src/multicall-provider-base.ts:53](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/provider/src/multicall-provider-base.ts#L53)
+[provider/src/multicall-provider-base.ts:93](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/provider/src/multicall-provider-base.ts#L93)

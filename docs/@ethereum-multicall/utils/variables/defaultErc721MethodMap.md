@@ -1,8 +1,8 @@
-[**@ethereum-multicall/utils v3.0.0**](../README.md) • **Docs**
+[**@ethereum-multicall/utils v1.0.0**](../README.md) • **Docs**
 
 ***
 
-[Documentation v3.0.0](../../../packages.md) / [@ethereum-multicall/utils](../README.md) / defaultErc721MethodMap
+[Documentation v1.0.0](../../../packages.md) / [@ethereum-multicall/utils](../README.md) / defaultErc721MethodMap
 
 # Variable: defaultErc721MethodMap
 
@@ -10,4 +10,4 @@
 
 ## Defined in
 
-[packages/utils/src/utils/token.utils.ts:48](https://github.com/niZmosis/ethereum-multicall/blob/759805f36c7ddb05e5fad0eb8478dcf22871af59/packages/utils/src/utils/token.utils.ts#L48)
+[packages/utils/src/utils/token.utils.ts:48](https://github.com/niZmosis/ethereum-multicall/blob/2a2d077a99c23b464a4e40dd6375d06ce98594bd/packages/utils/src/utils/token.utils.ts#L48)
