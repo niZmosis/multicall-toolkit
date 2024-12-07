@@ -40,7 +40,7 @@
     "ethers": "5.7.2"
   },
   "devDependencies": {
-    "@ethereum-abi-types-generator/types": "workspace:*",
+    "@abi-toolkit/types": "workspace:*",
     "@ethereum-multicall/types": "workspace:*",
     "@ethersproject/abi": "5.7.0"
   }

@@ -139,7 +139,7 @@ const GlobalPositionABI = [
   },
 ]
 
-// Mock type definition for the contract. You can generate a typings file for your ABI using the `ethereum-abi-types-generator` package.
+// Mock type definition for the contract. You can generate a typings file for your ABI using the `abi-toolkit` package.
 type GlobalPositionContract = {
   globalPositionData(overrides?: ContractCallOverrides): Promise<{
     totalTokensOutstanding: {

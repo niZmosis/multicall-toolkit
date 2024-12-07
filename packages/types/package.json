@@ -35,8 +35,8 @@
     "start": "tsc -p tsconfig.esm.json --watch"
   },
   "devDependencies": {
-    "@ethereum-abi-types-generator/converter-typescript": "workspace:*",
-    "@ethereum-abi-types-generator/types": "workspace:*",
+    "@abi-toolkit/converter-typescript": "workspace:*",
+    "@abi-toolkit/types": "workspace:*",
     "@ethersproject/abi": "5.7.0",
     "@ethersproject/providers": "5.7.2",
     "ethers": "5.7.2"

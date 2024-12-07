@@ -36,8 +36,8 @@
   },
   "devDependencies": {
     "@ethereum-multicall/types": "workspace:*",
-    "@ethereum-abi-types-generator/converter-typescript": "workspace:*",
-    "@ethereum-abi-types-generator/core": "workspace:*",
+    "@abi-toolkit/converter-typescript": "workspace:*",
+    "@abi-toolkit/core": "workspace:*",
     "@ethersproject/providers": "5.7.2",
     "ethers": "5.7.2"
   }

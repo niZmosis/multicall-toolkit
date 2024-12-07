@@ -1,4 +1,4 @@
-import type { AbiItem, AbiOutput } from '@ethereum-abi-types-generator/types'
+import type { AbiItem, AbiOutput } from '@abi-toolkit/types'
 import type {
   AggregateCallContext,
   AggregateContractResponse,
