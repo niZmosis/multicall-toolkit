@@ -1,3 +1,6 @@
 [submodule "submodules/abi-toolkit"]
 	path = submodules/abi-toolkit
 	url = git@github.com:niZmosis/abi-toolkit.git
+[submodule "submodules/chain-toolkit"]
+	path = submodules/chain-toolkit
+	url = git@github.com:niZmosis/chain-toolkit.git
