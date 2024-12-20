@@ -1,4 +1,6 @@
 import type { AbiItem, AbiOutput } from '@abi-toolkit/types'
+import type { JsonFragment } from '@ethersproject/abi'
+import type { Provider } from '@ethersproject/providers'
 import type {
   AggregateCallContext,
   AggregateContractResponse,
@@ -24,8 +26,6 @@ import {
   multicall3ABI,
   MulticallError,
 } from '@multicall-toolkit/utils'
-import type { JsonFragment } from '@ethersproject/abi'
-import type { Provider } from '@ethersproject/providers'
 import { BigNumber, ethers } from 'ethers'
 import { defaultAbiCoder } from 'ethers/lib/utils'
 

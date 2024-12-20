@@ -34,6 +34,10 @@
     "start": "tsc -p tsconfig.esm.json --watch",
     "gen:abis": "abi-types-generator generate"
   },
+  "dependencies": {
+    "@chain-toolkit/networks": "workspace:*",
+    "@chain-toolkit/schemas": "workspace:*"
+  },
   "devDependencies": {
     "@multicall-toolkit/types": "workspace:*",
     "@abi-toolkit/converter-typescript": "workspace:*",

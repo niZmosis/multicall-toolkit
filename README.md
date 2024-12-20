@@ -721,8 +721,6 @@ The common multicall address `0xcA11bde05977b3631167028862bE2a173976CA11`
 | Harmony | 1666600000 | common |
 | Heco | 128 | common |
 | Klatyn | 8217 | common |
-| Kovan | 42 | common |
-| Kovan Optimism | 69 | common |
 | KCC | 321 | common |
 | Linea | 59144 | common |
 | Linea Testnet | 59140 | common |
@@ -781,6 +779,7 @@ Check out my other projects and forks for blockchain development!
 
 | Toolkit | Description |
 |---------|-------------|
+| [chain-toolkit](https://github.com/niZmosis/chain-toolkit) | Blockchain network management and configuration utilities |
 | [abi-toolkit](https://github.com/niZmosis/abi-toolkit) | Smart contract ABI management and interaction utilities |
 | [provider-toolkit](https://github.com/niZmosis/provider-toolkit) | Web3 provider management and configuration tools |
 | [dex-toolkit](https://github.com/niZmosis/dex-toolkit) | A powerful and flexible toolkit designed for seamless integration with multiple decentralized exchanges (DEXs) across various blockchain networks |

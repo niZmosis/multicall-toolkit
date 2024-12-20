@@ -1,4 +1,5 @@
 packages:
   - 'packages/*'
   - 'submodules/abi-toolkit/packages/*'
+  - 'submodules/chain-toolkit/packages/*'
   - 'examples/*'
