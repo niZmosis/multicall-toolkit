@@ -1,3 +1,4 @@
+import type { ChainId } from '@chain-toolkit/schemas'
 import type { BaseProvider, Network } from '@ethersproject/providers'
 
 import type {
@@ -8,7 +9,6 @@ import type {
   MulticallResults,
   ReferencedContracts,
 } from './call.types'
-import type { ChainId } from './chain.types'
 import type { ContractDetail } from './contract-detail.types'
 import type { IMulticall, MulticallOptionsBase } from './multicall.types'
 import type { CustomNetwork } from './network.types'

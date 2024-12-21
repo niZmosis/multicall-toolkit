@@ -37,6 +37,7 @@
   "devDependencies": {
     "@abi-toolkit/converter-typescript": "workspace:*",
     "@abi-toolkit/types": "workspace:*",
+    "@chain-toolkit/schemas": "workspace:*",
     "@ethersproject/abi": "5.7.0",
     "@ethersproject/providers": "5.7.2",
     "ethers": "5.7.2"

@@ -1,4 +1,5 @@
 import type { AbiItem, AbiOutput } from '@abi-toolkit/types'
+import type { ChainId } from '@chain-toolkit/schemas'
 import type { JsonFragment } from '@ethersproject/abi'
 import type { Provider } from '@ethersproject/providers'
 
@@ -15,7 +16,6 @@ import type {
   MulticallResults,
   ReferencedContracts,
 } from './call.types'
-import type { ChainId } from './chain.types'
 
 /**
  * Represents the different types of execution environments available.
